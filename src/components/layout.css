@@ -1,0 +1,303 @@
+/*Project D. 2017-2018*/
+/*See license for rights and conditions*/
+
+/*-----------------Styling for frequently used elements-----------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+a[href],
+input[type='submit'],
+input[type='image'],
+label[for],
+select,
+button,
+.pointer {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+hr {
+  height: 3px;
+  background-color: #FFB006;
+  border: none;
+}
+
+/*~~~~General texts and highlights~~~~*/
+
+.barlow {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: normal;
+}
+
+.bold {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: bold;
+}
+
+.cc {
+  max-width: 1rem;
+  height: auto;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contents-table {
+  width: 70%;
+  margin: 3rem auto;
+  padding: 0 0 0 2rem;
+  border-left: 3px solid #000;
+}
+
+.emphasize {
+  padding: 0.125rem;
+  border: 0.125rem solid white;
+  background: linear-gradient(to right, rgba(255, 188, 4, 0.86), rgba(255, 177, 117, 0.84));
+}
+
+.general-text {
+  width: 70%;
+  background-color: #f2f2f2;
+  padding: 0.5rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: white;
+  background-color: black;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.indention {
+  padding-left: 1rem;
+}
+
+.left {
+  position: relative;
+  float: left;
+}
+
+.local-nav {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 0.8rem 0.5rem;
+  font-size: 1.2rem;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.local-nav span {
+  margin: 1rem;
+}
+
+.local-nav a {
+  color: #272727;
+}
+
+.local-nav a:hover {
+  color: #272727;
+  text-decoration: none;
+  border-bottom: 3px solid #4b6677;
+}
+
+.local-nav a:active {
+  background-color: #999999;
+}
+
+.right {
+  position: relative;
+  float: right;
+}
+
+.social-media-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: 0 0.5rem;
+}
+
+#github {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  bottom: 0.4rem;
+}
+
+.social-media-icon:hover {
+  opacity: 0.85;
+}
+
+.sub-heading {
+  text-align: center;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  padding-top: 5rem;
+}
+
+/*--------General Footer--------*/
+
+.general-footer {
+  width: 100%;
+  height: 10rem;
+  margin-top: 2rem;
+  background: linear-gradient(to right, rgba(255, 188, 4, 0.76), rgba(255, 177, 117, 0.54));
+}
+
+.footer-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 2rem 1.3rem;
+  grid-auto-flow: row;
+  grid-auto-rows: 1.3rem;
+  grid-gap: 0.6rem;
+  justify-content: space-around;
+}
+
+.footer-grid-item {
+  display: inline;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1rem;
+}
+
+.first-row {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.6rem;
+}
+
+.footer-grid-item a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.footer-grid-item a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline solid;
+  /*#ffb006*/
+}
+
+.footer-grid-item a:active {
+  color: black;
+  background-color: lightgray;
+  text-decoration: none;
+}
+
+#footer-email-link {
+  color: black;
+}
+
+/*~~~~Links~~~~*/
+
+a {
+  color: #4b6677;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 0.2rem;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+  color: white;
+  background-color: #666666;
+}
+
+/* external links */
+a[href^="http://"] {
+  padding-left: 0.8125rem;
+  color: #1abc9c;
+}
+
+/* emails */
+a[href^="mailto:"] {
+  padding-left: 2rem;
+  color: #6e85a7;
+  background: "assets/mailto_transparent.png"no-repeat left;
+  /*background: url(../pics/mail_ico.svg) no-repeat left, none;*/
+  background-size: auto 1.125rem;
+}
+
+/* pdfs */
+a[href$=".pdf"] {
+  padding-left: 1.5625rem;
+  color: #6e85a7;
+  background: "assets/file_transparent.png"no-repeat left;
+  /*background: url(../pics/file_ico.svg) no-repeat left, none;*/
+  background-size: 1.125rem auto;
+}
+
+/*rsponsivity*/
+@media screen and (max-width: 1000px) {
+  .general-text {
+    width: 90%;
+  }
+
+  .local-nav {
+    width: 90%;
+    height: auto;
+  }
+
+  .sub-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .general-footer {
+    height: 38rem;
+  }
+
+  .footer-grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: 3rem 3rem 3rem 3rem;
+    grid-auto-flow: row;
+    grid-auto-rows: 2rem;
+    text-align: center;
+  }
+
+  #license,
+  #footer-email,
+  .footer-blank {
+    display: none;
+  }
+
+  .footer-grid-item {
+    font-size: 1.3rem;
+  }
+
+  .first-row {
+    font-size: 1.8rem;
+  }
+}

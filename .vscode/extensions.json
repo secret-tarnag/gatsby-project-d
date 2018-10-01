@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "eg2.tslint",
+    "davidanson.vscode-markdownlint",
+    "kumar-harsh.graphql-for-vscode",
+    "christian-kohler.npm-intellisense",
+    "streetsidesoftware.code-spell-checker",
+    "eamodio.gitlens",
+    "donjayamanne.githistory",
+  ]
+}
