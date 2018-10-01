@@ -244,8 +244,7 @@ a[href^="http://"] {
 a[href^="mailto:"] {
   padding-left: 2rem;
   color: #6e85a7;
-  background: "assets/mailto_transparent.png"no-repeat left;
-  /*background: url(../pics/mail_ico.svg) no-repeat left, none;*/
+  background: url(../../static/assets/mail_ico.svg) no-repeat left, none;
   background-size: auto 1.125rem;
 }
 
@@ -253,8 +252,7 @@ a[href^="mailto:"] {
 a[href$=".pdf"] {
   padding-left: 1.5625rem;
   color: #6e85a7;
-  background: "assets/file_transparent.png"no-repeat left;
-  /*background: url(../pics/file_ico.svg) no-repeat left, none;*/
+  background: url(../../static/assets/file_ico.svg) no-repeat left, none;
   background-size: 1.125rem auto;
 }
 

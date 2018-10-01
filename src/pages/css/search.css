@@ -1,0 +1,102 @@
+/*Project D. 2017-2018*/
+/*See license for rights and conditions*/
+
+
+/*--Search bar styling--*/
+
+.search-bar-container {
+  width: 60%;
+  height: 3rem;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  background-color: transparent;
+  /*display: none; !!*/
+}
+
+input[type=search] {
+  width: 84%;
+  min-width: 6rem;
+  height: 3rem;
+  padding: 0.25rem 1.25rem;
+  margin: 0rem;
+  display: inline;
+  float: left;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.125rem;
+  color: #6C6C6C;
+  border: none;
+  border-bottom: 3px solid #fff;
+  border-radius: 2px;
+}
+
+input[type=search]:hover {
+  border-bottom: 3px solid #727272;
+}
+
+input[type=search]:focus {
+  border-bottom: 3px solid black;
+  color: black;
+}
+
+.search-button {
+  width: 13%;
+  min-width: 2.125rem;
+  height: 3rem;
+  display: block;
+  color: white;
+  float: right;
+  background-color: black;
+  background-image: url("../../../static/assets/search_ico_invert.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2rem 2rem;
+  border: 2px solid black;
+  /*#009999*/
+  border-radius: 2px;
+}
+
+.search-button:hover {
+  background-color: transparent;
+  /*#00b3b3*/
+  /*transparent miatt a ftlen és prop-nál nem látszik az ikon*/
+  border: 2px solid black;
+  /*#00b3b3*/
+  background-image: url("../../../static/assets/search_ico_transparent.png");
+}
+
+.search-button:active {
+  color: black;
+  background-color: lightgray;
+}
+
+.results-container {
+  width: 95%;
+  height: auto;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: none;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+#no-result {
+  width: 20%;
+  font-size: 1.3rem;
+  margin: 1rem auto;
+  padding: 0.2rem 0;
+  display: none;
+  border-bottom: 3px solid #d9272a;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  .search-bar-container {
+    width: 73%;
+  }
+
+  .search-button {
+    width: 15%;
+  }
+}

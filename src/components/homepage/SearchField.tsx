@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { css } from 'emotion';
+import HelpText from './HelpText';
 
 interface SearchFieldProps {
   newsOutlets: any[];
@@ -19,22 +20,16 @@ export default (props: SearchFieldProps) => (
           name="q"
           placeholder="keresés"
           value=""
-          onKeyUp={() => null} // Todo
+          onChange={() => null} // Todo
         />
         <button id="submit" className="search-button" />
       </form>
     </div>
-    <div id="helptext" className="barlow">
-      <h3 id="helptext-title" className="helptext-title">
-        Tudd meg, hogy ki áll a hírek mögött!
-      </h3>
-      <br />
-      <p id="helptext-p" className="helptext-p">
-        Itt megtalálhatsz minden fontos információt a különböző médiumok
-        tulajdonosairól, azok politikai kapcsolatairól, a médium
-        beállítottságáról, az általa támogatott politikai oldalról és
-        megismerheted alapvető adatait.
-      </p>
-    </div>
+    <HelpText
+      mainText={'Tudd meg, hogy ki áll a hírek mögött!'}
+      helpText={
+        'Itt megtalálhatsz minden fontos információt a különböző médiumok tulajdonosairól, azok politikai kapcsolatairól, a médium beállítottságáról, az általa támogatott politikai oldalról és megismerheted alapvető adatait.'
+      }
+    />
   </div>
 );

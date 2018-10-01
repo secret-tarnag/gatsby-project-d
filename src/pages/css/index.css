@@ -1,0 +1,71 @@
+/*Project D. 2017-2018*/
+/*See license for rights and conditions*/
+
+
+/*-------------Styling for the main page--------------*/
+
+
+
+
+/*~~~~Main content~~~~*/
+
+#main-content {
+  width: 100%;
+  background-color: transparent;
+}
+
+#sub-heading-et-search {
+  width: 100%;
+  height: 26rem;
+  margin: 0;
+  background: url(../../../static/assets/search_background.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  /*opacity: 0.8;*/
+}
+
+#helptext {
+  width: 85%;
+  text-align: center;
+  margin: 0.5rem auto;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.helptext-title {
+  cursor: help;
+  font-weight: normal;
+}
+
+.helptext-p {
+  opacity: 0;
+  padding: 0.3rem;
+  /*border-left: 3px solid #ffb006;
+   border-right: 3px solid #ffb006;
+   background-color: rgba(255,255,255,0.15);*/
+  transition: opacity .2s;
+}
+
+.helptext-p.is-visible {
+  opacity: 1;
+}
+
+/*mobile optimization*/
+@media screen and (max-width: 1000px) {
+  #helptext {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #sub-heading-et-search {
+    height: 29rem;
+  }
+}
+
+@media (max-width: 390px) {
+  #sub-heading-et-search {
+    height: 32rem;
+  }
+}
