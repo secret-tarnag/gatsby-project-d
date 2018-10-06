@@ -28,10 +28,10 @@ export default function Template({ data }: OutletTemplateProps) {
 }
 
 export const pageQuery = graphql`
-  query OutletByTitle($title: String!) {
+  query OutletByPath($path: String!) {
     outlet: markdownRemark(
-      fileAbsolutePath: { glob: "**/content/outlets/*" }
-      frontmatter: { title: { eq: $title } }
+      fileAbsolutePath: { glob: "**/src/pages/outlets/*" }
+      fields: { slug: { eq: $path } }
     ) {
       html
       frontmatter {

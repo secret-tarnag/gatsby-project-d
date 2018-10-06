@@ -1,61 +1,38 @@
-import * as React from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
-import Navbar from '../components/Navbar';
-import SearchField from '../components/homepage/SearchField';
+import { getUserLangKey } from 'ptz-i18n';
+import { withPrefix } from 'gatsby-link';
 
-import './css/index.css';
-import './css/search.css';
-import LinkList from '../components/homepage/LinkList';
-import Footer from '../components/Footer';
+// Automatically detects user language and redirects to appropriate site
+class RedirectIndex extends React.PureComponent {
+  constructor(args) {
+    super(args);
 
-export interface NewsOutletNodes {
-  node: {
-    frontmatter: {
-      title: string;
-    };
-  };
+    // Skip build, Browsers only
+    if (typeof window !== 'undefined') {
+      const { langs, defaultLangKey } = args.data.site.siteMetadata.languages;
+      const langKey = getUserLangKey(langs, defaultLangKey);
+      const homeUrl = withPrefix(`/${langKey}/`);
+      console.log(homeUrl);
+
+      (window as any).location.replace(homeUrl);
+    }
+  }
+
+  render() {
+    return <div />;
+  }
 }
 
-interface MainPageProps {
-  data: {
-    outlets: {
-      edges: NewsOutletNodes[];
-    };
-  };
-}
-
-const links = [
-  {
-    text: 'Hogy miért is van ez az oldal? ...',
-    to: '/cselekves#cause',
-  },
-];
-
-export default ({ data }: MainPageProps) => (
-  <div>
-    {' '}
-    <Navbar isHomePage={true} />
-    <header id="heading" role="banner">
-      <h1>Democrable</h1>
-    </header>
-    <SearchField newsOutlets={data.outlets.edges} />
-    <div id="main-content" role="main">
-      <LinkList links={links} />
-    </div>
-    <Footer />
-  </div>
-);
+export default RedirectIndex;
 
 export const pageQuery = graphql`
-  query HomePageQuery {
-    outlets: allMarkdownRemark(
-      filter: { fileAbsolutePath: { glob: "**/content/outlets/*" } }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-          }
+  query IndexQuery {
+    site {
+      siteMetadata {
+        languages {
+          defaultLangKey
+          langs
         }
       }
     }

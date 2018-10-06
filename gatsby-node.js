@@ -17,4 +17,4 @@ require('ts-node').register({
 });
 
 
-exports.createPages = require('./util/createPage').createPages;
+// exports.createPages = require('./util/createPage').createPages;

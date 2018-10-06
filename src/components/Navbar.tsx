@@ -3,7 +3,67 @@ import Link from 'gatsby-link';
 
 interface NavBarProps {
   isHomePage: boolean;
+  lng: 'en' | 'hu';
+  urlSlug: string;
 }
+
+const links = [
+  {
+    en: 'Independent Media',
+    hu: 'Független média',
+    link: 'fuggetlen',
+  },
+  {
+    en: 'Propaganda',
+    hu: 'Propaganda',
+    link: 'propaganda',
+  },
+];
+
+const sideNav = [
+  {
+    en: 'take action',
+    hu: 'cselekedj',
+    logo: <i className="icon fa material-icons">accessibility_new</i>,
+    link: 'cselekves',
+  },
+  {
+    en: 'dictionary',
+    hu: 'kisokos',
+    logo: <i className="icon fa material-icons">explore</i>,
+    link: 'kisokos',
+  },
+  {
+    en: 'documents',
+    hu: 'dokumentumtár',
+    logo: <i className="icon fa material-icons">format_align_justify</i>,
+    link: 'dokumentumtar',
+  },
+  {
+    en: 'join us',
+    hu: 'csatlakozz',
+    logo: <i className="icon fa material-icons">supervised_user_circle</i>,
+    link: 'csatlakozz',
+  },
+  {
+    en: 'donate',
+    hu: 'támogass',
+    logo: <i className="icon fa material-icons">monetization_on</i>,
+    link: 'tamogatas',
+  },
+  {
+    en: 'about us',
+    hu: 'rólunk',
+    logo: <i className="icon fa material-icons">all_inclusive</i>,
+    link: 'rolunk',
+  },
+  {
+    en: 'log in',
+    hu: 'belépés',
+    logo: <i className="icon fa material-icons">chevron_right</i>,
+    link: 'sorry',
+  },
+];
 
 export default (props: NavBarProps) => (
   <div>
@@ -23,12 +83,11 @@ export default (props: NavBarProps) => (
         ) : (
           ''
         )}
-        <li className="nav-li">
-          <Link to="fuggetlen">Független média</Link>
-        </li>
-        <li className="nav-li">
-          <Link to="propaganda">Propaganda</Link>
-        </li>
+        {links.map(link => (
+          <li className="nav-li">
+            <Link to={link.link}>{link[props.lng]}</Link>
+          </li>
+        ))}
         <li id="nav-right" className="nav-li">
           <button
             className="hamburger hamburger--3dy"
@@ -52,68 +111,22 @@ export default (props: NavBarProps) => (
     </nav>
     <div id="sidenav" className="menu" role="menu">
       <ul className="menu-list">
-        <li id="act" className="menu_item">
-          <a href="cselekves.html">
-            <span className="menu_item_title" id="cselekedj" />
-            <span className="menu_item_icon">
-              <i className="icon fa material-icons">accessibility_new</i>
-            </span>
-          </a>
-        </li>
-        <li id="fakenews" className="menu_item">
-          <a href="kisokos.html">
-            <span className="menu_item_title" id="kisokos" />
-            <span className="menu_item_icon">
-              <i className="icon fa material-icons">explore</i>
-            </span>
-          </a>
-        </li>
-        <li id="documents" className="menu_item">
-          <a href="dokumentumtar.html">
-            <span className="menu_item_title" id="dokumentumtar" />
-            <span className="menu_item_icon">
-              <i className="icon fa material-icons">format_align_justify</i>
-            </span>
-          </a>
-        </li>
-        <li id="getinvolved" className="menu_item">
-          <a href="csatlakozz.html">
-            <span className="menu_item_title" id="csatlakozz" />
-            <span className="menu_item_icon">
-              <i className="icon fa material-icons">supervised_user_circle</i>
-            </span>
-          </a>
-        </li>
-        <li id="donate" className="menu_item">
-          <a href="tamogatas.html">
-            <span className="menu_item_title" id="tamogatas" />
-            <span className="menu_item_icon">
-              <i className="icon fa material-icons">monetization_on</i>
-            </span>
-          </a>
-        </li>
-        <li id="about" className="menu_item">
-          <a href="rolunk.html">
-            <span className="menu_item_title" id="rolunk" />
-            <span className="menu_item_icon">
-              <i className="icon fa material-icons">all_inclusive</i>
-            </span>
-          </a>
-        </li>
-        <li id="signin" className="menu_item">
-          <a href="sorry.html">
-            <span className="menu_item_title" id="belepes" />
-            <span id="signin_icon" className="menu_item_icon">
-              <i className="icon fa material-icons">chevron_right</i>
-            </span>
-          </a>
-        </li>
+        {sideNav.map(item => (
+          <li id="act" className="menu_item">
+            <Link to={item.link}>
+              <span className="menu_item_title">{item[props.lng]}</span>
+              <span className="menu_item_icon">
+                <i className="icon fa material-icons">{item.logo}</i>
+              </span>
+            </Link>
+          </li>
+        ))}
         <li className="language-link-container barlow bold">
           <span className="language-link">
-            <a href="javascript:i18next.changeLanguage('hu')">HU</a>
+            <Link to={`/hu/${props.urlSlug}`}>HU</Link>
           </span>
           <span className="language-link">
-            <a href="javascript:i18next.changeLanguage('en')">EN</a>
+            <Link to={`/en/${props.urlSlug}`}>EN</Link>
           </span>
         </li>
       </ul>
