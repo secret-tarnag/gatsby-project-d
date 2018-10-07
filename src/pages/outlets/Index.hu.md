@@ -1,32 +1,32 @@
 ---
 title: index.hu
-lang: en
+lang: hu
 slug: Index
 logo: index_logo.png
 properties:
-  - key: Category
-    value: Online News Site
-  - key: Ideology
-    value: Objectivity
-  - key: Editor in Chief
+  - key: Kategória
+    value: online híroldal
+  - key: Világnézet
+    value: értéksemlegesség
+  - key: Főszerkesztő
     value: Tóth-Szenesi Attila
-  - key: Owner
-    value: Magyar Fejlődésért Alapítvány (dr. Bodolai László – curator)
+  - key: Tulajdonosok
+    value: Magyar Fejlődésért Alapítvány (dr. Bodolai László – kurátor)
 contact:
-  - name: Contact
-    fields:
-      - key: Address
+  - key: Kiadó elérhetőségei
+    value:
+      - key: Cím
         value: Flórián Udvar, 1033 Budapest, Flórián tér 1., Floors I. and II.
-      - key: Telephone
+      - key: Telefon
         value: +36 555-7000
       - key: Fax
         value: 349-0393
 sources:
   - text: index.hu
     link: https://index.hu/
-  - text: Wikipedia article
+  - text: Wikipedia szócikk
     link: https://hu.wikipedia.org/wiki/Index.hu
-  - text: Visits Statistics
+  - text: Látogatottsági adatok - Digitális Közönségmérési Tanács
     link: http://dkt.hu/hu/menu/ola.html
 ---
 
