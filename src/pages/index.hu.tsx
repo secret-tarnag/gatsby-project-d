@@ -7,6 +7,7 @@ import './css/index.css';
 import './css/search.css';
 import LinkList from '../components/homepage/LinkList';
 import Footer from '../components/Footer';
+import Layout from '../components/layout';
 
 export interface NewsOutletNodes {
   node: {
@@ -32,7 +33,7 @@ const links = [
 ];
 
 export default ({ data }: MainPageProps) => (
-  <div>
+  <Layout>
     {' '}
     <Navbar isHomePage={true} lng="hu" urlSlug="" />
     <header id="heading" role="banner">
@@ -43,7 +44,7 @@ export default ({ data }: MainPageProps) => (
       <LinkList links={links} />
     </div>
     <Footer />
-  </div>
+  </Layout>
 );
 
 export const pageQuery = graphql`

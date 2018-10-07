@@ -71,20 +71,20 @@ export default (props: NavBarProps) => (
       <ul>
         <li id="logo-container" className="nav-li">
           <Link id="logo-link" to="#heading">
-            <img id="logo" src="assets/logo_hires_40826d.png" alt="D logo" />
+            <img id="logo" src="/assets/logo_hires_40826d.png" alt="D logo" />
           </Link>
         </li>
         {!props.isHomePage ? (
           <li className="nav-li">
             <Link id="home-container" to="/">
-              <img id="home" src="assets/baseline-home-white.svg" alt="home" />
+              <img id="home" src="/assets/baseline-home-white.svg" alt="home" />
             </Link>
           </li>
         ) : (
           ''
         )}
         {links.map(link => (
-          <li className="nav-li">
+          <li className="nav-li" key={link.hu}>
             <Link to={link.link}>{link[props.lng]}</Link>
           </li>
         ))}
@@ -112,7 +112,7 @@ export default (props: NavBarProps) => (
     <div id="sidenav" className="menu" role="menu">
       <ul className="menu-list">
         {sideNav.map(item => (
-          <li id="act" className="menu_item">
+          <li id="act" className="menu_item" key={item.hu}>
             <Link to={item.link}>
               <span className="menu_item_title">{item[props.lng]}</span>
               <span className="menu_item_icon">
