@@ -1,9 +1,12 @@
 import * as React from 'react';
 import { css } from 'emotion';
 import HelpText from './HelpText';
+import { NewsOutletNodes } from '../../pages/index.en';
+import Link from 'gatsby-link';
 
 interface SearchFieldProps {
-  newsOutlets: any[];
+  newsOutlets: NewsOutletNodes[];
+  lang: 'en' | 'hu';
 }
 
 interface SearchFieldState {
@@ -38,9 +41,35 @@ export default class SearchField extends React.PureComponent<
             name="search"
             action="javascript:void(0)"
             onSubmit={e => this.handleSubmit(e)}
+            autoComplete="off"
           >
-            <input id="input" type="search" name="q" placeholder="keresés" />
+            <input
+              id="input"
+              type="search"
+              name="q"
+              placeholder="keresés"
+              onChange={e => this.setState({ searchText: e.target.value })}
+            />
             <button id="submit" className="search-button" type="submit" />
+            {/* Suggestions */}
+            {this.props.newsOutlets
+              .filter(
+                outlet =>
+                  outlet.node.frontmatter.title
+                    .toLowerCase()
+                    .startsWith(this.state.searchText.toLowerCase()) &&
+                  outlet.node.frontmatter.lang === this.props.lang &&
+                  this.state.searchText.length > 0
+              )
+              .map(outlet => (
+                <Link
+                  to={`/${this.props.lang}/outlets/${
+                    outlet.node.frontmatter.slug
+                  }`}
+                >
+                  <span>{outlet.node.frontmatter.title}</span>
+                </Link>
+              ))}
           </form>
         </div>
         <HelpText

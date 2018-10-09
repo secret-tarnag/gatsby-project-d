@@ -15,6 +15,7 @@ export interface NewsOutletNodes {
       title: string;
       lang: 'en' | 'hu';
       isIndependent: boolean;
+      slug: string;
     };
   };
 }
@@ -41,7 +42,7 @@ export default ({ data }: AllOutletsQueryType) => (
     <header id="heading" role="banner">
       <h1>Democrable</h1>
     </header>
-    <SearchField newsOutlets={data.outlets.edges} />
+    <SearchField newsOutlets={data.outlets.edges} lang={'en'} />
     <div id="main-content" role="main">
       <LinkList links={links} />
     </div>
@@ -60,6 +61,7 @@ export const pageQuery = graphql`
             title
             lang
             isIndependent
+            slug
           }
         }
       }
