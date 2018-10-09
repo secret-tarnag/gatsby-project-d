@@ -8,22 +8,7 @@ import './css/search.css';
 import LinkList from '../components/homepage/LinkList';
 import Footer from '../components/Footer';
 import Layout from '../components/layout';
-
-export interface NewsOutletNodes {
-  node: {
-    frontmatter: {
-      title: string;
-    };
-  };
-}
-
-interface MainPageProps {
-  data: {
-    outlets: {
-      edges: NewsOutletNodes[];
-    };
-  };
-}
+import { AllOutletsQueryType } from './index.en';
 
 const links = [
   {
@@ -32,7 +17,7 @@ const links = [
   },
 ];
 
-export default ({ data }: MainPageProps) => (
+export default ({ data }: AllOutletsQueryType) => (
   <Layout>
     {' '}
     <Navbar isHomePage={true} lng="hu" urlSlug="" />
@@ -56,6 +41,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
+            lang
           }
         }
       }

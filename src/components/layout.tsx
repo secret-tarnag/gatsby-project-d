@@ -30,11 +30,11 @@ const Layout = ({ children }) => (
             },
           ]}
         >
-          <a
+          <link
             href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Cabin+Sketch"
             rel="stylesheet"
           />
-          <a
+          <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
           />

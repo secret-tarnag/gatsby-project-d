@@ -13,11 +13,13 @@ export interface NewsOutletNodes {
   node: {
     frontmatter: {
       title: string;
+      lang: 'en' | 'hu';
+      isIndependent: boolean;
     };
   };
 }
 
-interface MainPageProps {
+export interface AllOutletsQueryType {
   data: {
     outlets: {
       edges: NewsOutletNodes[];
@@ -32,7 +34,7 @@ const links = [
   },
 ];
 
-export default ({ data }: MainPageProps) => (
+export default ({ data }: AllOutletsQueryType) => (
   <Layout>
     {' '}
     <Navbar isHomePage={true} lng="en" urlSlug="" />
@@ -56,6 +58,8 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
+            lang
+            isIndependent
           }
         }
       }

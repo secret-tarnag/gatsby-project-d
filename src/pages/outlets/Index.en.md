@@ -3,6 +3,7 @@ title: index.hu
 lang: en
 slug: Index
 logo: index_logo.png
+isIndependent: true
 properties:
   - key: Category
     value: Online News Site

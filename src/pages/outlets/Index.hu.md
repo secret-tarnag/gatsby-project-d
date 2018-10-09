@@ -3,6 +3,7 @@ title: index.hu
 lang: hu
 slug: Index
 logo: index_logo.png
+isIndependent: true
 properties:
   - key: Kategória
     value: online híroldal
