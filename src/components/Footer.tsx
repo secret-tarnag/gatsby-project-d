@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 
 export default () => (
   <footer className="general-footer" role="contentinfo">
+    <hr></hr>
     <div className="footer-grid-container">
       <div className="footer-grid-item first-row">
         <Link to="/rolunk">Rólunk</Link>
@@ -21,7 +22,7 @@ export default () => (
         <Link to="/sorry">események</Link>
       </div>
       <div className="footer-grid-item">
-        <Link to="/sorry">partnerek</Link>
+        <Link to="/sorry">átláthatóság</Link>
       </div>
       <div className="footer-grid-item" id="license">
         <a
@@ -45,8 +46,8 @@ export default () => (
       <div className="footer-grid-item">
         <Link to="/kisokos">kisokos</Link>
       </div>
-      <div className="footer-grid-item">
-        <Link to="/sorry">támogatók</Link>
+      <div className="footer-grid-item footer-blank">
+        <Link to="/sorry"></Link>
       </div>
       <div className="footer-grid-item" id="footer-email">
         <a href="mailto:democrable@gmail.com" id="footer-email-link">
@@ -67,14 +68,14 @@ export default () => (
           <img
             className="social-media-icon"
             alt="Facebook logo"
-            src="assets/if_facebook_2136487.svg"
+            src="/assets/if_facebook_2136487.svg"
           />
         </Link>
         <Link to="/sorry" target="_blank">
           <img
             className="social-media-icon"
             alt="Twitter logo"
-            src="assets/if_twitter_2136496.svg"
+            src="/assets/if_twitter_2136496.svg"
           />
         </Link>
         <a href="https://github.com/daroczypal/project-d-." target="_blank">
@@ -82,7 +83,7 @@ export default () => (
             id="github"
             className="social-media-icon"
             alt="Github logo"
-            src="assets/if_icon-social-github_211904.svg"
+            src="/assets/if_icon-social-github_211904.svg"
           />
         </a>
       </div>
