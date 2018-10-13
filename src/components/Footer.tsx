@@ -1,29 +1,79 @@
 import * as React from 'react';
 import Link from 'gatsby-link';
 
-export default () => (
+interface FooterProps {
+  lng: 'en' | 'hu';
+}
+
+const firstRow = [
+  {
+    en: 'About us',
+    hu: 'Rólunk',
+    link: 'rolunk'
+  },
+  {
+    en: 'Take action',
+    hu: 'Cselekedj',
+    link: 'cselekves'
+  },
+  {
+    en: 'Donate',
+    hu: 'Támogatás',
+    link: 'tamogatas'
+  }
+];
+const secondRow = [
+  {
+    en: 'voluntary',
+    hu: 'önkéntesség',
+    link: 'rolunk#contribution'
+  },
+  {
+    en: 'events',
+    hu: 'események',
+    link: 'sorry'
+  },
+  {
+    en: 'transparency',
+    hu: 'átláthatóság',
+    link: 'sorry'
+  }
+];
+const thirdRow = [
+  {
+    en: 'privacy',
+    hu: 'adatvédelem',
+    link: 'rolunk#privacy'
+  },
+  {
+    en: 'dictionary',
+    hu: 'kisokos',
+    link: 'kisokos'
+  }
+];
+const fourthRow = [
+  {
+    en: 'contributors',
+    hu: 'impresszum',
+    link: 'rolunk#contributors'
+  }
+];
+
+export default (props: FooterProps) => (
   <footer className="general-footer" role="contentinfo">
     <hr></hr>
     <div className="footer-grid-container">
-      <div className="footer-grid-item first-row">
-        <Link to="/rolunk">Rólunk</Link>
-      </div>
-      <div className="footer-grid-item first-row">
-        <Link to="/cselekves">Cselekedj</Link>
-      </div>
-      <div className="footer-grid-item first-row">
-        <Link to="/tamogatas">Támogatás</Link>
-      </div>
+      {firstRow.map(item => (
+        <div className="footer-grid-item first-row" key={item.hu}>
+          <Link to={item.link}>{item[props.lng]}</Link>
+        </div>
+      ))}
       <div className="footer-grid-item first-row">2017-2018; Democrable</div>
-      <div className="footer-grid-item">
-        <Link to="/rolunk#contribution">önkéntesség</Link>
-      </div>
-      <div className="footer-grid-item">
-        <Link to="/sorry">események</Link>
-      </div>
-      <div className="footer-grid-item">
-        <Link to="/sorry">átláthatóság</Link>
-      </div>
+      {secondRow.map(item => (
+        <div className="footer-grid-item" key={item.hu}>
+          <Link to={item.link}>{item[props.lng]}</Link>
+        </div>
+      ))}
       <div className="footer-grid-item" id="license">
         <a
           rel="license"
@@ -40,12 +90,11 @@ export default () => (
           href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
         />
       </div>
-      <div className="footer-grid-item">
-        <Link to="/rolunk#privacy">adatvédelem</Link>
-      </div>
-      <div className="footer-grid-item">
-        <Link to="/kisokos">kisokos</Link>
-      </div>
+      {thirdRow.map(item => (
+        <div className="footer-grid-item" key={item.hu}>
+          <Link to={item.link}>{item[props.lng]}</Link>
+        </div>
+      ))}
       <div className="footer-grid-item footer-blank">
         <Link to="/sorry"></Link>
       </div>
@@ -54,9 +103,11 @@ export default () => (
           democrable@gmail.com
         </a>
       </div>
-      <div className="footer-grid-item">
-        <Link to="/rolunk#contributors">impresszum</Link>
-      </div>
+      {fourthRow.map(item => (
+        <div className="footer-grid-item" key={item.hu}>
+          <Link to={item.link}>{item[props.lng]}</Link>
+        </div>
+      ))}
       <div className="footer-grid-item footer-blank">
         <Link to="/sorry" />
       </div>
@@ -64,20 +115,20 @@ export default () => (
         <Link to="/sorry" />
       </div>
       <div className="footer-grid-item">
-        <Link to="/sorry" target="_blank">
+        <a href="https://www.facebook.com/Democrable" target="_blank">
           <img
             className="social-media-icon"
             alt="Facebook logo"
             src="/assets/if_facebook_2136487.svg"
           />
-        </Link>
-        <Link to="/sorry" target="_blank">
+        </a>
+        <a href="https://twitter.com/democrable" target="_blank">
           <img
             className="social-media-icon"
             alt="Twitter logo"
             src="/assets/if_twitter_2136496.svg"
           />
-        </Link>
+        </a>
         <a href="https://github.com/daroczypal/project-d-." target="_blank">
           <img
             id="github"

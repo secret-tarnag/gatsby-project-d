@@ -46,7 +46,7 @@ export default ({ data }: AllOutletsQueryType) => (
     <div id="main-content" role="main">
       <LinkList links={links} />
     </div>
-    <Footer />
+    <Footer lng="en" />
   </Layout>
 );
 
