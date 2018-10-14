@@ -65,13 +65,13 @@ export default (props: FooterProps) => (
     <div className="footer-grid-container">
       {firstRow.map(item => (
         <div className="footer-grid-item first-row" key={item.hu}>
-          <Link to={item.link}>{item[props.lng]}</Link>
+          <Link to={`${props.lng}/${item.link}`}>{item[props.lng]}</Link>
         </div>
       ))}
       <div className="footer-grid-item first-row">2017-2018; Democrable</div>
       {secondRow.map(item => (
         <div className="footer-grid-item" key={item.hu}>
-          <Link to={item.link}>{item[props.lng]}</Link>
+          <Link to={`${props.lng}/${item.link}`}>{item[props.lng]}</Link>
         </div>
       ))}
       <div className="footer-grid-item" id="license">
@@ -92,7 +92,7 @@ export default (props: FooterProps) => (
       </div>
       {thirdRow.map(item => (
         <div className="footer-grid-item" key={item.hu}>
-          <Link to={item.link}>{item[props.lng]}</Link>
+          <Link to={`${props.lng}/${item.link}`}>{item[props.lng]}</Link>
         </div>
       ))}
       <div className="footer-grid-item footer-blank">
@@ -105,7 +105,7 @@ export default (props: FooterProps) => (
       </div>
       {fourthRow.map(item => (
         <div className="footer-grid-item" key={item.hu}>
-          <Link to={item.link}>{item[props.lng]}</Link>
+          <Link to={`${props.lng}/${item.link}`}>{item[props.lng]}</Link>
         </div>
       ))}
       <div className="footer-grid-item footer-blank">
