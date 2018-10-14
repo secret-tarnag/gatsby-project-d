@@ -1,0 +1,207 @@
+/*Project D. 2017-2018*/
+/*See license for rights and conditions*/
+
+/*----Styling for about us page----*/
+
+.about_main {
+	margin: 10rem 0 5rem 0;
+}
+
+h2 {
+	text-align: center;
+	font-size: 2.5rem;
+}
+p {
+	margin: 0.3rem 0rem;
+}
+#get-mbb-container {
+	width: 15rem;
+	margin: 1rem auto;
+}
+#get-messagebox-button {
+	border: 1px solid black;
+	/*border-radius: 2px;*/
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	color: white;
+	background-color: black;
+}
+#get-messagebox-button:hover {
+	color: black;
+	background-color: white;
+}
+.contact-form-container {
+	width: 100%;
+	height: 28rem;
+	background-color: #4b6677;/*temporary color: 4582D5*/
+	display: none;
+	grid-template-columns: 25% 15% 59%;
+	grid-template-rows: 26rem;
+	align-content: center;
+}
+.title-container {
+	background-color: transparent;
+	color: white;
+	text-align: center;
+}
+.title-container h3 {
+	border-left: 3px solid white;
+	margin: 0.2rem;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.5rem;
+}
+.input-container {
+	background-color: transparent;
+}
+.form-text {
+	margin: 2.5rem 1rem;
+	color: white;
+	padding: 0.3rem;
+	border-bottom: 3px solid white;
+}
+.form-field{
+	height: 1.6rem;
+	margin: 1.3rem 1rem;
+	padding: 0.2rem;
+	font-size: 1.2rem;
+	border: none;
+	border-bottom: 3px solid #4b6677;
+}
+#name {
+	width: 70%;
+	margin-top: 2.5rem; 
+}
+#email {
+	width: 70%;
+}
+#subject{
+	width: 85%;
+}
+#message {
+	width: 85%;
+	height: 4rem;
+	resize: none;
+}
+#subject:hover, #subject:focus, #message:hover, #message:focus, #name:hover, #name:focus, #email:hover, #email:focus{
+	border-bottom: 3px solid black;
+}
+#submit-button {
+	width: 30%;
+	height: 2.25rem;
+	margin-left: 1rem; 
+	border: none;
+	border-bottom: 3px solid white;
+	background-color: #6899DC;
+	color: white;
+	font-weight: bold;
+}
+#submit-button:hover{
+	background-color: #97B9E7;
+	border-bottom: 3px solid #1C4158;
+}
+#submit-button:active{
+	border-bottom: 3px solid #1C4158;
+	background-color: #8E8E8E;
+}
+.close {
+	position: relative;
+	float: right;
+	margin: 1rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: white;
+	bottom: 0.5rem;
+	cursor: pointer;
+	clear: both;
+}
+#message-sent {
+	width: 100%;
+	height: 2rem;
+	padding: 1rem 0;
+	font-size: 1.2rem;
+	text-align: center;
+	color: white;
+	background-color: #318a31;
+	display: none;
+}
+#message-error {
+	width: 100%;
+	height: 2rem;
+	padding: 1rem 0;
+	font-size: 1.2rem;
+	text-align: center;
+	color: white;
+	background-color: #d9272a;
+	display: none;
+}
+.contributors{
+	width: 100%;
+	height: 15rem;
+	display: grid;
+	grid-template-columns: 75% 25%;
+	grid-template-rows: auto;
+}
+.icon-container{
+	background: linear-gradient(45deg, #FFB006 50%, #5F9EA0 50%);
+	background: url(../../../static/assets/icon/designedIco2.ico) no-repeat center, linear-gradient(45deg, #FFB006 50%, #4B6677 50%);
+	
+}
+.grid-item-center {
+	margin: 2.5rem;
+}
+.license {
+	padding-top: 3rem;
+}
+#cc-about {
+	position: relative;
+	top: 0.2rem;
+}
+#left {
+	background-color: #FFB006;
+}
+
+/*Special links for aboutus*/
+.about-links {
+	color: #cc650b;
+}
+.about-links:hover {
+	color: #4b6677;
+}
+.about-links:active {
+	color: white;
+}
+@media screen and (max-width: 1150px)
+{
+	.contact-form-container
+	{
+		grid-template-columns: 15% 84%;
+	}
+	.title-container
+	{
+		display: none;
+	}
+}
+@media screen and (max-width: 1000px)
+{
+	.icon-container
+	{
+		background: none;
+		background-color: #ffb006;
+	}
+}
+@media screen and (max-width: 500px)
+{
+	.contact-form-container
+	{
+		grid-template-columns: 20% 79%;
+	}
+}
+@media (max-width: 360px)
+{
+	#name, #email
+	{
+		width: 60%;
+	}
+}

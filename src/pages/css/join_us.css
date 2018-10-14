@@ -1,0 +1,207 @@
+/*Project D. 2017-2018*/
+/*See license for rights and conditions*/
+
+
+/*-------------------Styling for join us page--------------------------*/
+
+nav{
+	width: 97.6%;
+	margin: 0rem auto;
+	padding: 1rem;
+	background: linear-gradient(to right, rgba(95,158,160,0.9), rgba(110,133,167, 0.7));
+}
+nav a{
+	margin: 0.5rem;
+	position:relative;
+	top: 1rem;
+	float: right;
+}
+p{
+	display: inline;
+}
+.horizontal{
+	height: 0.125rem;
+	background-color: black;
+	border:none;
+}
+/*error box*/
+#error-box {
+	width: 100%;
+	height: 2rem;
+	padding: 1rem 0;
+	font-size: 1.2rem;
+	text-align: center;
+	color: white;
+	background-color: #d9272a;
+	display: none;
+}
+.close {
+	position: relative;
+	float: right;
+	margin: 0.5rem 4rem 0 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: white;
+	bottom: 0.5rem;
+	cursor: pointer;
+	clear: both;
+}
+#verification-box {
+	width: 100%;
+	height: 3rem;
+	padding: 1rem 0;
+	font-size: 1.2rem;
+	text-align: center;
+	color: white;
+	background-color: #318a31;
+	display: none;
+}
+
+/*---------Application form-------------*/
+.form-title{
+	width: 12%;
+	margin: 1rem auto;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 2rem;
+}
+.form-text {
+	width: 40%;
+	margin-top: 2rem;
+	margin: 1rem auto;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 1.15rem;
+}
+.form-list {
+	list-style-type: square;
+}
+.form-container{
+    width: 40%;
+    margin: 2rem auto;
+	padding: 1rem;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 1.2rem;
+	background-color: white;
+	opacity: 0.8;
+	/*border: 0.125rem solid #5F9EA0;*/
+}
+label {
+	padding-left: 0.3rem;
+}
+#logo{
+	width: 4.6rem;
+	height: 4.6rem;
+}
+input[type=text], input[type=email]{
+	width: 94%;
+	height: 2rem;
+	margin: 0.5rem auto;
+	padding: 0.2rem 1rem;
+	background-color: #DDDDDD;
+	border: 0.125rem solid transparent;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 1.2rem;
+}
+input[type=text]:focus, input[type=email]:focus {
+	border: 0.125rem solid #747474;
+}
+
+#submit, input[type=reset]{
+	width: 5rem;
+	height: 2rem;
+	margin: 0.5rem auto;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 1.2rem;
+	border:none;
+	opacity: inherit;
+	background-color: #DDDDDD;
+	font-weight: bold;
+}
+#submit:hover, input[type=reset]:hover{
+	background-color: white;
+	border: 0.125rem solid #727272;
+}
+input[type=checkbox]{
+	display: inline;
+}
+footer{
+	text-align: center;
+	height: 5rem;
+	background-color: #DDDDDD; 
+}
+.footer-span{
+	font-style: italic;
+	margin-top: 1rem;
+}
+#cc-join {
+	position: relative;
+	top: 1.4rem;
+	right: 5rem;
+}
+ /* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 0.0625rem dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 20rem;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 0.3125rem 0rem;
+    border-radius: 0.1875rem;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    margin-left: -0.3125rem;
+    border-width: 0.3125rem;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+} 
+@media screen and (max-width: 1000px)
+{
+	.form-text {
+		width: 80%;
+	}
+	.form-container{
+    width: 70%;
+	font-size: 1.3rem;
+	}
+}
+@media screen and (max-width: 500px)
+{
+	#fuggetlen_media, #propaganda_media {
+		display: none;
+	}
+	nav a {
+		margin: 0.5rem 1.5rem;
+	}
+	.form-title {
+		margin: 1rem 3rem;
+	}
+}
