@@ -28,11 +28,10 @@ html {
 abbr {
   text-decoration: none;
 }
-
 hr {
-  height: 3px;
-  background-color: #FFB006;
-  border: none;
+	height: 3px;
+	background-color: #FFB006;
+	border: none;
 }
 
 /*~~~~General texts and highlights~~~~*/
@@ -223,7 +222,7 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: #4b6677;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -274,7 +273,7 @@ a[href$=".pdf"] {
 
 @media screen and (max-width: 600px) {
   .general-footer {
-    height: 38rem;
+    height: 35rem;
   }
 
   .footer-grid-container {
