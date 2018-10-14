@@ -260,7 +260,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.28);*/
   }
 
   h1 {
@@ -337,7 +336,7 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 1.25rem;
     text-transform: lowercase;
-    display: inline-block;
+    display: block;
     position: relative;
     float: left;
     top: 0.35rem;
@@ -527,6 +526,8 @@
   @media screen and (max-height: 600px) {
     .language-link-container {
       top: 0;
+      margin-top: 2rem;
+	 	  margin-bottom: 3rem;
     }
 
     .menu-list {

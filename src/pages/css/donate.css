@@ -1,0 +1,99 @@
+/*Project D. 2017-2018*/
+/*See license for rights and conditions*/
+
+/*----Styling for tamogatas.html----*/
+
+#bckg-pic {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: url(../../../static/assets/donate_background.JPG) no-repeat center;
+	background-size: cover;
+	opacity: 0.45;
+	z-index: -1;
+}
+#donate-container {
+	width: 60%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 6rem;
+	text-align: center;
+	background-color: transparent;
+}
+.donate-title {
+	font-weight: normal;
+	font-size: 4rem;
+	margin-bottom: 1rem;
+}
+.donate-text {
+	font-size: 1.6rem;
+	line-height: 2.3rem;
+	margin-bottom: 2rem;
+}
+.donate-label {
+	font-size: 1.2rem;
+}
+.donate-button {
+	margin: 1rem;
+}
+.donate-link a{
+	font-size: 1.3rem;
+	color: #d9272a;
+	padding: 0 1rem;
+}
+.donate-link:hover a{
+	color: #d9272a;
+}
+.donate-link:active a{
+	background-color: transparent;
+}
+.donate-footer {
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+}
+#cc-join {
+	position: relative;
+	top: 1.35rem;
+	right: 1.5rem;
+}
+
+@media (max-width: 1025px)
+{
+	#donate-container
+	{
+		width: 95%;
+	}
+	#bckg-pic
+	{
+		height: 120%;
+	}
+	.donate-footer
+	{
+		bottom: -7rem;
+	}
+}
+@media (max-width: 550px)
+{
+	#bckg-pic
+	{
+		height: 150%;
+	}
+	.donate-footer
+	{
+		bottom: -17rem;
+	}
+}
+@media (max-width: 450px)
+{
+	#bckg-pic
+	{
+		height: 165%;
+	}
+	.donate-footer
+	{
+		bottom: -23rem;
+	}
+}
