@@ -24,44 +24,51 @@ const sideNav = [
   {
     en: 'take action',
     hu: 'cselekedj',
-    logo: <i className="icon fa material-icons">accessibility_new</i>,
+    logo: 'accessibility_new',
     link: 'cselekves',
+    iconId: 'takeaction_icon'
   },
   {
     en: 'dictionary',
     hu: 'kisokos',
-    logo: <i className="icon fa material-icons">explore</i>,
+    logo: 'explore',
     link: 'kisokos',
+    iconId: 'dictionary_icon'
   },
   {
     en: 'documents',
     hu: 'dokumentumtár',
-    logo: <i className="icon fa material-icons">format_align_justify</i>,
+    logo: 'format_align_justify',
     link: 'dokumentumtar',
+    iconId: 'documents_icon'
   },
   {
     en: 'join us',
     hu: 'csatlakozz',
-    logo: <i className="icon fa material-icons">supervised_user_circle</i>,
+    logo: 'supervised_user_circle',
     link: 'csatlakozz',
+    iconId: 'joinus_icon'
   },
   {
     en: 'donate',
-    hu: 'támogass',
-    logo: <i className="icon fa material-icons">monetization_on</i>,
+    hu: 'támogatás',
+    logo: 'monetization_on',
     link: 'tamogatas',
+    iconId: 'donate_icon'
   },
   {
     en: 'about us',
     hu: 'rólunk',
-    logo: <i className="icon fa material-icons">all_inclusive</i>,
+    logo: 'all_inclusive',
     link: 'rolunk',
+    iconId: 'about_icon'
   },
   {
     en: 'log in',
     hu: 'belépés',
-    logo: <i className="icon fa material-icons">chevron_right</i>,
+    logo: 'chevron_right',
     link: 'sorry',
+    iconId: 'signin_icon'
   },
 ];
 
@@ -81,8 +88,8 @@ export default (props: NavBarProps) => (
             </Link>
           </li>
         ) : (
-          ''
-        )}
+            ''
+          )}
         {links.map(link => (
           <li className="nav-li" key={link.hu}>
             <Link to={link.link}>{link[props.lng]}</Link>
@@ -112,10 +119,10 @@ export default (props: NavBarProps) => (
     <div id="sidenav" className="menu" role="menu">
       <ul className="menu-list">
         {sideNav.map(item => (
-          <li id="act" className="menu_item" key={item.hu}>
+          <li className="menu_item" key={item.hu}>
             <Link to={item.link}>
               <span className="menu_item_title">{item[props.lng]}</span>
-              <span className="menu_item_icon">
+              <span id={item.iconId} className="menu_item_icon">
                 <i className="icon fa material-icons">{item.logo}</i>
               </span>
             </Link>
