@@ -92,7 +92,7 @@ export default (props: NavBarProps) => (
           )}
         {links.map(link => (
           <li className="nav-li" key={link.hu}>
-            <Link to={link.link}>{link[props.lng]}</Link>
+            <Link to={`${props.lng}/${link.link}`}>{link[props.lng]}</Link>
           </li>
         ))}
         <li id="nav-right" className="nav-li">
@@ -120,7 +120,7 @@ export default (props: NavBarProps) => (
       <ul className="menu-list">
         {sideNav.map(item => (
           <li className="menu_item" key={item.hu}>
-            <Link to={item.link}>
+            <Link to={`${props.lng}/${item.link}`}>
               <span className="menu_item_title">{item[props.lng]}</span>
               <span id={item.iconId} className="menu_item_icon">
                 <i className="icon fa material-icons">{item.logo}</i>
