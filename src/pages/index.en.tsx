@@ -30,9 +30,21 @@ export interface AllOutletsQueryType {
 
 const links = [
   {
-    text: 'Hogy miért is van ez az oldal? ...',
-    to: '/cselekves#cause',
+    text: 'Why was this page created? ...',
+    to: '/en/cselekves#cause',
   },
+  {
+    text: 'What is the problem with non-independent media? ...',
+    to: '/en/cselekves#summary',
+  },
+  {
+    text: 'Types of not telling the truth ...',
+    to: '/en/cselekves#variety',
+  },
+  {
+    text: 'What can I do to avoid fake news? ...',
+    to: '/en/cselekves#possibilities',
+  }
 ];
 
 export default ({ data }: AllOutletsQueryType) => (

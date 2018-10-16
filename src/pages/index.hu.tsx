@@ -13,8 +13,20 @@ import { AllOutletsQueryType } from './index.en';
 const links = [
   {
     text: 'Hogy miért is van ez az oldal? ...',
-    to: '/cselekves#cause',
+    to: '/hu/cselekves#cause',
   },
+  {
+    text: 'Miért rossz, ami nem független? ...',
+    to: '/hu/cselekves#summary',
+  },
+  {
+    text: 'A nem igazmondás fajtái ...',
+    to: '/hu/cselekves#variety',
+  },
+  {
+    text: 'Mit tehetünk, ha nem akarunk valótlanságokat olvasni? ...',
+    to: '/hu/cselekves#possibilities',
+  }
 ];
 
 export default ({ data }: AllOutletsQueryType) => (
