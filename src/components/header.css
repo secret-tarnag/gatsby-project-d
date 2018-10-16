@@ -398,7 +398,7 @@
     height: 3.125rem;
     overflow: hidden;
     position: relative;
-    border-radius: 0rem;
+    border-radius: 3px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2), 2px 2px 0 rgba(0, 0, 0, 0.05);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
