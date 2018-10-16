@@ -1,0 +1,58 @@
+/*----Sorry page style----*/
+
+#pic {
+  width: 60%;
+  height: 18rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../../../static/assets/header-background_hres_transparent.png) no-repeat center;
+  background-size: contain;
+}
+
+#sorry {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.sorrylink {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+p {
+  text-align: center;
+  margin: 1rem;
+}
+
+.sorrylink:visited {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+.sorrylink:hover {
+  color: #2F4F4F;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.sorrylink:active {
+  background-color: lightgray;
+}
+
+.language-button-container {
+  width: 15%;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.language-button {
+  margin: 0rem 1rem;
+}
