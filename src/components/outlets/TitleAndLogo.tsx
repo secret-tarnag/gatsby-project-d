@@ -30,7 +30,7 @@ export default (props: TitleAndLogoProps) => (
       </div>
       <div className="title">
         <h2>{props.title}</h2>
-        <hr />
+        <hr className="horizontal" />
       </div>
     </div>
   </div>
