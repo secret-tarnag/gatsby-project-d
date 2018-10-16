@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import { AllOutletsQueryType } from './index.en';
 import Navbar from '../components/Navbar';
 import { css } from 'emotion';
+import Footer from '../components/Footer';
 
 export default ({ data }: AllOutletsQueryType) => (
   <Layout>
@@ -25,6 +26,7 @@ export default ({ data }: AllOutletsQueryType) => (
           </li>
         ))}
     </ul>
+    <Footer lng="en" />
   </Layout>
 );
 
