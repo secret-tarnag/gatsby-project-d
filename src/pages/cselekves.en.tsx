@@ -10,20 +10,20 @@ import ScrollToTopButton from '../components/ScrollToTopButton';
 
 const links = [
   {
-    text: 'Hogy miért is van ez az oldal? ...',
-    to: '/hu/cselekves#cause',
+    text: 'Why was this page created? ...',
+    to: '/en/cselekves#cause',
   },
   {
-    text: 'Miért rossz, ami nem független? ...',
-    to: '/hu/cselekves#summary',
+    text: 'What is the problem with non-independent media? ...',
+    to: '/en/cselekves#summary',
   },
   {
-    text: 'A nem igazmondás fajtái ...',
-    to: '/hu/cselekves#variety',
+    text: 'Types of not telling the truth ...',
+    to: '/en/cselekves#variety',
   },
   {
-    text: 'Mit tehetünk, ha nem akarunk valótlanságokat olvasni? ...',
-    to: '/hu/cselekves#possibilities',
+    text: 'What can I do to avoid fake news? ...',
+    to: '/en/cselekves#possibilities',
   }
 ];
 
@@ -32,7 +32,7 @@ export default () => (
     <Navbar isHomePage={false} lng="hu" urlSlug="cselekves" />
     <ScrollToTopButton />
     <div className="barlow acting-main" id="heading">
-      <h2 id="heading-cselekves">Cselekedj</h2>
+      <h2 id="heading-cselekves">Take Action</h2>
     </div>
     <LinkList links={links} />
 
