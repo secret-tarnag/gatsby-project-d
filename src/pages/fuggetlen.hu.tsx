@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 
 export default ({ data }: AllOutletsQueryType) => (
   <Layout>
-    <Navbar isHomePage={false} lng="hu" urlSlug="fuggetlen" />
+    <Navbar id="" isHomePage={false} lng="hu" urlSlug="fuggetlen" />
     <ul
       className={css({
         marginTop: 100,
@@ -26,7 +26,7 @@ export default ({ data }: AllOutletsQueryType) => (
           </li>
         ))}
     </ul>
-    <Footer lng="hu" />
+    <Footer lng="hu" id="" />
   </Layout>
 );
 

@@ -5,6 +5,7 @@ interface NavBarProps {
   isHomePage: boolean;
   lng: 'en' | 'hu';
   urlSlug: string;
+  id: string;
 }
 
 const links = [
@@ -74,7 +75,7 @@ const sideNav = [
 
 export default (props: NavBarProps) => (
   <div>
-    <nav id="topnav" className="nav" role="navigation">
+    <nav id={props.id} className="nav" role="navigation">
       <ul>
         <li id="logo-container" className="nav-li">
           <Link id="logo-link" to="#heading">

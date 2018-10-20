@@ -50,7 +50,7 @@ const links = [
 export default ({ data }: AllOutletsQueryType) => (
   <Layout>
     {' '}
-    <Navbar isHomePage={true} lng="en" urlSlug="" />
+    <Navbar id="" isHomePage={true} lng="en" urlSlug="" />
     <header id="heading" role="banner">
       <h1>Democrable</h1>
     </header>
@@ -58,7 +58,7 @@ export default ({ data }: AllOutletsQueryType) => (
     <div id="main-content" role="main">
       <LinkList links={links} />
     </div>
-    <Footer lng="en" />
+    <Footer lng="en" id="" />
   </Layout>
 );
 
