@@ -27,16 +27,16 @@ const links = [
   }
 ];
 
-const causeTitle = "";
-const causeP1 = "";
-const causeP2 = "";
-const causeP3 = "";
+const causeTitle = "Why was this page created?";
+const causeP1 = "Assume we have a very wealthy person, let’s call him Anselm. His wealth in unmeasurable, only few people know how he got to it. Anselm is an active supporter of the Innocent Politicians Party, the IPP. He is of very much use to the party, as he is the owner of the most viewed television channel and the most read newspaper in the country. This means that he has a huge influence on the media.";
+const causeP2 = "Unfortunately, Mr. A. and his party have lost most of their ethical boundaries, however most of the population doesn’t have the faintest idea what the party is spending much of their payed taxes on, as neither the television, nor the newspapers mention these news. On the contrary, all such news is deemed ‘fake news’ and is stripped of its credibility.";
+const causeP3 = "But how is it even possible for the average population to get to the truth and find out what is happening? This is exactly why we need newspapers, TV channels, radios and online news portals which are not owned by Anselm, but are <span class='highlight'>independent</span> of him and other politically engaged people. This way, these mediums could say what is <span class='highlight'>actually</span> happening.";
 const causeP4 = "";
 
-const summaryTitle = "";
+const summaryTitle = "What is the problem with non-independent media?";
 const summaryP1 = "";
 
-const varietyTitle = "";
+const varietyTitle = "Types of not telling the truth:";
 const varietyP1 = "";
 const varietyP2 = "";
 const varietyP3 = "";
@@ -52,17 +52,17 @@ const varietyP12 = "";
 const varietyP13 = "";
 const varietyP14 = "";
 
-const possibilitiesTitle = "";
+const possibilitiesTitle = "What can I do to avoid fake news?";
 const possibilitiesP1 = "";
-const possibilitiesP2 = "";
-const possibilitiesP3 = "";
-const possibilitiesP4 = "";
-const possibilitiesP5 = "";
-const possibilitiesP6 = "";
-const possibilitiesP7 = "";
-const possibilitiesP8 = "";
-const possibilitiesP9 = "";
-const possibilitiesP10 = "";
+const possibilitiesP2 = "Navigate!";
+const possibilitiesP3 = "Find out about the following:<br> Is it a trustable source?<br>Does it have editorial staff, is it a legit organization, not just a Facebook page written by random people who eant to influence you?<br>Does it have any reviews? If yes, read them.<br>Is it on one of the fake-news lists?<br>Did you yourself hear about it?<br>Who is the owner?";
+const possibilitiesP4 = "Collect information about the given news source, and then decide.";
+const possibilitiesP5 = "Test it!";
+const possibilitiesP6 = "If it has passed the above tests, try reading it sceptically, and compare it with other trustable news sources. Does it write anything differently? Does it exaggerate?";
+const possibilitiesP7 = "Do not let trust grow too quickly towards a news source, believing everything because you read one trustable article is not a wise decision.";
+const possibilitiesP8 = "<span class='highlight'>ATTENTION! </span> Just because we read articles which we dont 'like' does NOT mean that it is not a trustable source of information. You don't get to choose your stories like in a DVD store. This is about staying informed and up-to-date, not about enjoying yourself.";
+const possibilitiesP9 = "Read it!";
+const possibilitiesP10 = "If you found an independent source, that's great! :) You can also support it financially, to help them spread their word elsewhere. However, stay alert: any independent medium can be bought at any time, making it dependent, maybe even a source of propaganda. It is therefore adviseable to have a solid base and get your information from multiple sources.";
 
 export default () => (
   <Layout>
