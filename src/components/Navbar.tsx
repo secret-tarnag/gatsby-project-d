@@ -77,8 +77,8 @@ export default (props: NavBarProps) => (
     <nav id="topnav" className="nav" role="navigation">
       <ul>
         <li id="logo-container" className="nav-li">
-          <Link id="logo-link" to="#heading">
-            <img id="logo" src="/assets/logo_hires_40826d.png" alt="D logo" />
+          <Link id="logo-link" to={`${props.lng}#heading`}>
+            <img id="logo" src="/assets/logo_hres_40826d.png" alt="D logo" />
           </Link>
         </li>
         {!props.isHomePage ? (
