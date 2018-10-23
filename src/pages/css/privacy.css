@@ -43,10 +43,12 @@ body {
 .privacy-content h3 {
   font-family: 'Slabo 27px', serif;
   font-size: 2.2rem;
+  margin: 1rem;
 }
 .privacy-content h4 {
   font-family: 'Slabo 27px', serif;
   font-size: 1.5rem;
+  margin: 1.33rem;
 }
 .italic {
   font-style: italic;
@@ -64,11 +66,15 @@ th, td {
   padding: 0.6rem 2rem;
   text-align: center;
 }
+.privacy-content p {
+  margin: 1rem;
+}
 .privacy-content span {
   margin: 0 1rem;
 }
 .privacy-content ul {
   list-style-type: square;
+  padding-left: 2rem;
 }
 .privacy-content li span {
   margin: 0;
