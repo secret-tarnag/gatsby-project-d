@@ -6,18 +6,18 @@ import Footer from '../components/Footer';
 import './css/library.css';
 import LibraryListItem from '../components/library/LibraryListItem';
 
-const a = [
+const p = [
   {
-    text: 'Adatvédelmi Nyilatkozat',
-    to: '/hu/adatvedelem',
-    comment: '2018. október 4.'
+    text: 'Privacy Protection Declaration',
+    to: '/en/adatvedelem',
+    comment: '04/10/2018'
   }
 ];
 const c = [
   {
     text: 'Csepeli Hírmondó',
     to: '',
-    comment: '2018.02.22. szám'
+    comment: 'Issue 22/02/2018'
   }
 ];
 const f = [
@@ -29,24 +29,24 @@ const f = [
 ];
 const j = [
   {
-    text: 'Józsefváros (kerületi lap)',
+    text: 'Józsefváros (local newspaper)',
     to: '',
-    comment: '2018. július 4-i szám'
+    comment: 'Issue 04/07/2018'
   }
 ];
 
 export default () => (
   <Layout>
-    <Navbar id="topnav" isHomePage={true} lng="hu" urlSlug="dokumentumtar" />
+    <Navbar id="topnav" isHomePage={true} lng="en" urlSlug="dokumentumtar" />
     <div className="barlow library-main" id="heading">
       <h2>Dokumentumtár</h2>
     </div>
     <div className="library-list barlow">
-      <LibraryListItem title="A" links={a} />
-      <LibraryListItem title="C" links={c} />
-      <LibraryListItem title="F" links={f} />
-      <LibraryListItem title="J" links={j} />
+      <LibraryListItem title="A" links={c} />
+      <LibraryListItem title="C" links={f} />
+      <LibraryListItem title="F" links={j} />
+      <LibraryListItem title="J" links={p} />
     </div>
-    <Footer lng="hu" id="library-footer-grid" />
+    <Footer lng="en" id="library-footer-grid" />
   </Layout>
 );
