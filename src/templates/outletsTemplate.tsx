@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import './css/outlets.css';
 import TitleAndLogo from '../components/outlets/TitleAndLogo';
 import Properties from '../components/outlets/Properties';
+import OutletFooter from '../components/outlets/OutletFooter';
 
 interface KeyValue {
   key: string;
@@ -46,6 +47,7 @@ export default ({ data }: OutletTemplateProps) => {
         <TitleAndLogo {...frontmatter} />
         <Properties {...frontmatter} />
       </div>
+      <OutletFooter lng={frontmatter.lang} />
     </Layout>
   );
 };

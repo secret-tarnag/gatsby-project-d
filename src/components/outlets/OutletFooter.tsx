@@ -13,7 +13,7 @@ const footerText = {
 
 export default (props: OutletFooterProps) => (
   <footer className="barlow">
-    <hr></hr>
+    <hr className="horizontal"></hr>
     <p id="media-footer">
       <br></br>{footerText[props.lng]}
       <br></br>{footerText.license}
