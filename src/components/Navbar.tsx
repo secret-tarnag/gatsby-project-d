@@ -83,7 +83,7 @@ export default (props: NavBarProps) => (
         </li>
         {!props.isHomePage ? (
           <li className="nav-li">
-            <Link id="home-container" to="/">
+            <Link id="home-container" to={`/${props.lng}/`}>
               <img id="home" src="/assets/baseline-home-white.svg" alt="home" />
             </Link>
           </li>
