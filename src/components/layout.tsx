@@ -35,6 +35,10 @@ const Layout = ({ children }) => (
             rel="stylesheet"
           />
           <link
+            href="https://fonts.googleapis.com/css?family=Slabo+27px|Comfortaa|Roboto+Condensed"
+            rel="stylesheet"
+          />
+          <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
           />
