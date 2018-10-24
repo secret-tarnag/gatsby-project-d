@@ -4,6 +4,7 @@ import SocialMediaLinks from './SocialMediaLinks';
 
 interface FooterProps {
   lng: 'en' | 'hu';
+  id: string;
 }
 
 const firstRow = [
@@ -61,7 +62,7 @@ const fourthRow = [
 ];
 
 export default (props: FooterProps) => (
-  <footer className="general-footer" role="contentinfo">
+  <footer id={props.id} className="general-footer" role="contentinfo">
     <hr></hr>
     <div className="footer-grid-container">
       {firstRow.map(item => (
