@@ -11,7 +11,8 @@
     "quotemark": false,
     "arrow-parens": [true, "ban-single-arg-parens"],
     "object-literal-sort-keys": false,
-    "object-literal-key-quotes": [true, "as-needed"]
+    "object-literal-key-quotes": [true, "as-needed"],
+    "linebreak-style": [true, "LF"]
   },
   "rulesDirectory": []
 }

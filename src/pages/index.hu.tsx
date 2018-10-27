@@ -26,7 +26,7 @@ const links = [
   {
     text: 'Mit tehetünk, ha nem akarunk valótlanságokat olvasni? ...',
     to: '/hu/cselekves#possibilities',
-  }
+  },
 ];
 
 export default ({ data }: AllOutletsQueryType) => (

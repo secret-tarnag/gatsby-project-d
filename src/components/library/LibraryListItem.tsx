@@ -7,7 +7,7 @@ interface LibListItemProps {
     text: string;
     to: string;
     comment: string;
-  }>
+  }>;
 }
 
 export default (props: LibListItemProps) => (

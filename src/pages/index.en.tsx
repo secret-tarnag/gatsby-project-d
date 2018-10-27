@@ -44,7 +44,7 @@ const links = [
   {
     text: 'What can I do to avoid fake news? ...',
     to: '/en/cselekves#possibilities',
-  }
+  },
 ];
 
 export default ({ data }: AllOutletsQueryType) => (
