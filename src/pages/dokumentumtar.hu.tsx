@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Layout from '../components/layout';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -10,29 +10,29 @@ const a = [
   {
     text: 'Adatvédelmi Nyilatkozat',
     to: '/hu/adatvedelem',
-    comment: '2018. október 4.'
-  }
+    comment: '2018. október 4.',
+  },
 ];
 const c = [
   {
     text: 'Csepeli Hírmondó',
     to: '',
-    comment: '2018.02.22. szám'
-  }
+    comment: '2018.02.22. szám',
+  },
 ];
 const f = [
   {
     text: 'Foglalt nevek listája',
     to: '',
-    comment: 'Democrable tagok görög álnevei'
-  }
+    comment: 'Democrable tagok görög álnevei',
+  },
 ];
 const j = [
   {
     text: 'Józsefváros (kerületi lap)',
     to: '',
-    comment: '2018. július 4-i szám'
-  }
+    comment: '2018. július 4-i szám',
+  },
 ];
 
 export default () => (

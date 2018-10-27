@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Layout from '../components/layout';
 import { graphql } from 'gatsby';
 import { AllOutletsQueryType } from './index.en';
@@ -18,7 +18,7 @@ export default ({ data }: AllOutletsQueryType) => (
         .filter(
           outlet =>
             outlet.node.frontmatter.lang === 'en' &&
-            outlet.node.frontmatter.isIndependent
+            outlet.node.frontmatter.isIndependent,
         )
         .map(outlet => (
           <li key={outlet.node.frontmatter.title}>

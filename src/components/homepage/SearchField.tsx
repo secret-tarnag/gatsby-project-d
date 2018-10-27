@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { css } from 'emotion';
 import HelpText from './HelpText';
 import { NewsOutletNodes } from '../../pages/index.en';
 import Link from 'gatsby-link';
@@ -17,7 +16,7 @@ export default class SearchField extends React.PureComponent<
   SearchFieldProps,
   SearchFieldState
 > {
-  constructor(props) {
+  constructor(props: SearchFieldProps) {
     super(props);
     this.state = {
       searchText: '',
@@ -25,7 +24,7 @@ export default class SearchField extends React.PureComponent<
   }
 
   handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    console.log(e.currentTarget[0].value);
+    console.log((e.currentTarget[0] as any).value); // This is a VERY UGLY use of as any
     console.log(this.props);
   }
 
@@ -59,7 +58,7 @@ export default class SearchField extends React.PureComponent<
                     .toLowerCase()
                     .startsWith(this.state.searchText.toLowerCase()) &&
                   outlet.node.frontmatter.lang === this.props.lang &&
-                  this.state.searchText.length > 0
+                  this.state.searchText.length > 0,
               )
               .map(outlet => (
                 <Link
@@ -75,7 +74,9 @@ export default class SearchField extends React.PureComponent<
         <HelpText
           mainText={'Tudd meg, hogy ki áll a hírek mögött!'}
           helpText={
-            'Itt megtalálhatsz minden fontos információt a különböző médiumok tulajdonosairól, azok politikai kapcsolatairól, a médium beállítottságáról, az általa támogatott politikai oldalról és megismerheted alapvető adatait.'
+            'Itt megtalálhatsz minden fontos információt a különböző médiumok tulajdonosairól, azok politikai' +
+            'kapcsolatairól, a médium beállítottságáról, az általa támogatott politikai oldalról és megismerheted' +
+            'alapvető adatait.'
           }
         />
       </div>
