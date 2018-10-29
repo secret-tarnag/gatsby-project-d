@@ -5,12 +5,12 @@ import './css/privacy.css';
 
 export default () => (
   <Layout>
-    <div className="container">
-      <div className="nav">
+    <div className="privacy-container">
+      <div className="privacy-nav">
         <a id="backlink" href="index.html"><i className="material-icons">chevron_left</i> Vissza a főoldalra</a>
       </div>
-      <div className="content">
-        <h2 className="title">Adatvédelmi Nyilatkozat</h2>
+      <div className="privacy-content">
+        <h2 className="privacy-title">Adatvédelmi Nyilatkozat</h2>
         <p>A democrable.org-ot a Democrable Community (a továbbiakban DC) üzemelteti. A DC jelen nyilatkozatával
             tájékoztatja a honlap felhasználóit, látogatóit adatkezelési gyakorlatáról, az adatok védelmére tett
                 intézkedésekről, valamint a felhasználók jogorvoslati lehetőségeiről.</p>
