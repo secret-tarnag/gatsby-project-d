@@ -24,7 +24,7 @@ const links = [
   {
     text: 'Mit tehetünk, ha nem akarunk valótlanságokat olvasni? ...',
     to: '/hu/cselekves#possibilities',
-  }
+  },
 ];
 
 const causeTitle = "Hogy miért is van ez az oldal?";

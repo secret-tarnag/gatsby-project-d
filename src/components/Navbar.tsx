@@ -5,7 +5,7 @@ interface NavBarProps {
   isHomePage: boolean;
   lng: 'en' | 'hu';
   urlSlug: string;
-  id: string;
+  id?: string;
 }
 
 const links = [
@@ -27,55 +27,55 @@ const sideNav = [
     hu: 'cselekedj',
     logo: 'accessibility_new',
     link: 'cselekves',
-    iconId: 'takeaction_icon'
+    iconId: 'takeaction_icon',
   },
   {
     en: 'dictionary',
     hu: 'kisokos',
     logo: 'explore',
     link: 'kisokos',
-    iconId: 'dictionary_icon'
+    iconId: 'dictionary_icon',
   },
   {
     en: 'documents',
     hu: 'dokumentumtár',
     logo: 'format_align_justify',
     link: 'dokumentumtar',
-    iconId: 'documents_icon'
+    iconId: 'documents_icon',
   },
   {
     en: 'join us',
     hu: 'csatlakozz',
     logo: 'supervised_user_circle',
     link: 'csatlakozz',
-    iconId: 'joinus_icon'
+    iconId: 'joinus_icon',
   },
   {
     en: 'donate',
     hu: 'támogatás',
     logo: 'monetization_on',
     link: 'tamogatas',
-    iconId: 'donate_icon'
+    iconId: 'donate_icon',
   },
   {
     en: 'about us',
     hu: 'rólunk',
     logo: 'all_inclusive',
     link: 'rolunk',
-    iconId: 'about_icon'
+    iconId: 'about_icon',
   },
   {
     en: 'log in',
     hu: 'belépés',
     logo: 'chevron_right',
     link: 'sorry',
-    iconId: 'signin_icon'
+    iconId: 'signin_icon',
   },
 ];
 
 export default (props: NavBarProps) => (
   <div>
-    <nav id={props.id} className="nav" role="navigation">
+    <nav id={props.id ? props.id : ''} className="nav" role="navigation">
       <ul>
         <li id="logo-container" className="nav-li">
           <Link id="logo-link" to={`${props.lng}#heading`}>
@@ -89,8 +89,8 @@ export default (props: NavBarProps) => (
             </Link>
           </li>
         ) : (
-            ''
-          )}
+          ''
+        )}
         {links.map(link => (
           <li className="nav-li" key={link.hu}>
             <Link to={`${props.lng}/${link.link}`}>{link[props.lng]}</Link>

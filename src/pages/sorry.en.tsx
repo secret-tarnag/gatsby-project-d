@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import './css/sorry.css'
+import './css/sorry.css';
 import { Link } from '@reach/router';
 
 const SorryPage = () => (
@@ -23,6 +23,6 @@ const SorryPage = () => (
       <span className="language-button"><Link className='sorrylink' to='/en/sorry'>EN</Link></span>
     </div>
   </Layout>
-)
+);
 
-export default SorryPage
+export default SorryPage;
