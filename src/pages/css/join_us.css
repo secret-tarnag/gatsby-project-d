@@ -4,25 +4,19 @@
 
 /*-------------------Styling for join us page--------------------------*/
 
-nav{
-	width: 97.6%;
-	margin: 0rem auto;
-	padding: 1rem;
+.shortnav{
+	width: 100%;
+	height: 4rem;
+	padding: 1rem 0;
 	background: linear-gradient(to right, rgba(95,158,160,0.9), rgba(110,133,167, 0.7));
+	border-bottom: 3px solid black;
 }
-nav a{
+.shortnav a{
 	margin: 0.5rem;
 	position:relative;
 	top: 1rem;
 	float: right;
-}
-p{
-	display: inline;
-}
-.horizontal{
-	height: 0.125rem;
-	background-color: black;
-	border:none;
+	text-transform: uppercase;
 }
 /*error box*/
 #error-box {
