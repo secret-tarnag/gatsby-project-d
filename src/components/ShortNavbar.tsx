@@ -32,8 +32,8 @@ const shortnav = css({
   width: '100%',
   height: '4rem',
   padding: '1rem 0',
-  background: 'linear-gradient(to right, rgba(95, 158, 160, 0.9), rgba(110, 133, 167, 0.7))',
-  borderBottom: '3px solid black',
+  background: 'linear-gradient(to right, rgba(95, 158, 160, 0.9), rgba(70, 167, 170, 0.9))',
+  /*borderBottom: '3px solid black',*/
 });
 
 const shortnavLinks = css({
@@ -42,10 +42,10 @@ const shortnavLinks = css({
   top: '1.1rem',
   float: 'right',
   fontSize: '1.3rem',
-  color: 'black',
+  color: 'white',
   ':hover': {
     textDecoration: 'none',
-    color: 'black',
+    color: 'white',
   },
   '::after': {
     content: '""',
@@ -55,7 +55,7 @@ const shortnavLinks = css({
     height: '3px',
     transition: 'transform .25s ease',
     transform: 'scaleX(0)',
-    backgroundColor: 'black',
+    backgroundColor: 'white',
   },
   ':hover::after': {
     transform: 'scaleX(1)',
@@ -65,11 +65,15 @@ const shortnavLinks = css({
 const shortnavLogo = css({
   width: '4.5rem',
   height: '4.5rem',
+  position: 'relative',
+  top: '50%',
+  transform: 'translateY(-50%)',
+  marginLeft: '1rem',
 });
 
 export default (props: ShortNavBarProps) => (
   <nav role="navigation" className={`barlow ${shortnav}`}>
-    <img className={shortnavLogo} src="/assets/logo_hres_transparent.png" alt="D logo" />
+    <img className={shortnavLogo} src="/assets/logo_hres_whitetransparent.png" alt="D logo" />
     <Link className={shortnavLinks} to={`/hu/${props.urlSlug}`}>HU</Link>
     <Link className={shortnavLinks} to={`/en/${props.urlSlug}`}>EN</Link>
     {links.map(link => (
