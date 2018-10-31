@@ -24,7 +24,7 @@ const links = [
     en: 'independent media',
     hu: 'függetlenek',
     link: 'fuggetlen',
-    id: 'independent_media',
+    id: 'fuggetlen_media',
   },
 ];
 
@@ -33,7 +33,6 @@ const shortnav = css({
   height: '4rem',
   padding: '1rem 0',
   background: 'linear-gradient(to right, rgba(95, 158, 160, 0.9), rgba(70, 167, 170, 0.9))',
-  /*borderBottom: '3px solid black',*/
 });
 
 const shortnavLinks = css({
@@ -57,7 +56,7 @@ const shortnavLinks = css({
     transform: 'scaleX(0)',
     backgroundColor: 'white',
   },
-  ':hover::after': {
+  ':hover::after, :active::after': {
     transform: 'scaleX(1)',
   }
 });

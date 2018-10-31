@@ -4,33 +4,6 @@
 
 /*-------------------Styling for join us page--------------------------*/
 
-/*.shortnav{
-	width: 100%;
-	height: 4rem;
-	padding: 1rem 0;
-	background: linear-gradient(to right, rgba(95,158,160,0.9), rgba(110,133,167, 0.7));
-	border-bottom: 3px solid black;
-}*/
-/*.shortnav a{
-	margin: 0 0.5rem;
-	position:relative;
-	top: 1.1rem;
-	float: right;
-	font-size: 1.1rem;
-	color: black;
-	padding-bottom: 0.3rem;
-	border-bottom: 3px solid transparent;
-	transition: all .4s;
-}*/
-/*.shortnav a:hover {
-	padding-bottom: 0.1rem;
-	border-bottom: 3px solid black;
-	text-decoration: none; 
-}*/
-.shortnav-logo{
-	width: 4.6rem;
-	height: 4.6rem;
-}
 /*error box*/
 #error-box {
 	width: 100%;
@@ -116,30 +89,12 @@ input[type=submit]:hover, input[type=reset]:hover{
 input[type=checkbox]{
 	display: inline;
 }
-.shortfooter{
-	text-align: center;
-	height: 5rem;
-	background-color: #DDDDDD;
-	display:grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 5rem; 
-}
-.shortfooter-span{
-	font-style: italic;
-	margin-top: 1rem;
-}
-#cc-join {
-	position: relative;
-	top: 1.4rem;
-	right: 5rem;
-}
  /* Tooltip container */
 .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 0.0625rem dotted black; /* If you want dots under the hoverable text */
 }
-
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -149,19 +104,16 @@ input[type=checkbox]{
     text-align: center;
     padding: 0.3125rem 0rem;
     border-radius: 0.1875rem;
-
     /* Position the tooltip text */
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
     margin-left: -60px;
-
     /* Fade in tooltip */
     opacity: 0;
     transition: opacity 0.3s;
 }
-
 /* Tooltip arrow */
 .tooltip .tooltiptext::after {
     content: "";
@@ -173,7 +125,6 @@ input[type=checkbox]{
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
-
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -193,9 +144,6 @@ input[type=checkbox]{
 {
 	#fuggetlen_media, #propaganda_media {
 		display: none;
-	}
-	nav a {
-		margin: 0.5rem 1.5rem;
 	}
 	.form-title {
 		margin: 1rem 3rem;
