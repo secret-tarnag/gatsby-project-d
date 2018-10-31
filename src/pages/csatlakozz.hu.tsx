@@ -10,7 +10,7 @@ export default () => (
     <ShortNavbar lng="hu" urlSlug="csatlakozz" />
     <div className="joinus-container">
       <div className="form-container" role="form">
-        <h2 className="form-title">Jelentkezés</h2>
+        <h2 className="form-title barlow">Jelentkezés</h2>
         <form id="join-us-form" action="csatlakozz.html" method="post">
           <div className="tooltip">
             <p id="alias-text">álnév*:</p>
