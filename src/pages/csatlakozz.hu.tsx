@@ -31,8 +31,6 @@ export default () => (
           <input id="w4" type="radio" name="worktype" value="administrator" /><label for="w4">adminisztráció</label>
           <input id="accept" type="checkbox" name="acceptedTermsAndConditions" required />
           <label for="accept"> elolvastam és elfogadom az <Link to="docs/adatvedelmi_nyilatkozat.pdf" target="_blank">Adatvédelmi Nyilatkozatot</Link>*.</label>
-          {/*Kell a script is*/}
-          <div className="g-recaptcha" data-sitekey="6Lf1_msUAAAAAHWQFF0BQnqDgm92WVW1aR6S1PFI"></div>
           <input type="reset" value="törlés" />
           <input id="submit" type="submit" value="küldés" disabled />
         </form>

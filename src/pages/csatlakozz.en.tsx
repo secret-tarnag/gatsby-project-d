@@ -29,8 +29,6 @@ export default () => (
           <input id="w4" type="radio" name="worktype" value="administrator" /><label for="w4">administration</label>
           <input id="accept" type="checkbox" name="acceptedTermsAndConditions" required />
           <label for="accept"> I have read and agree with the <Link to="docs/adatvedelmi_nyilatkozat.pdf" target="_blank">Data Protection Declaration</Link>*.</label>
-          {/*Kell a script is*/}
-          <div className="g-recaptcha" data-sitekey="6Lf1_msUAAAAAHWQFF0BQnqDgm92WVW1aR6S1PFI"></div>
           <input type="reset" value="clear" />
           <input id="submit" type="submit" value="send" disabled />
         </form>

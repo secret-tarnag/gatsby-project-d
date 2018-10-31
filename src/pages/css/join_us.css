@@ -4,32 +4,29 @@
 
 /*-------------------Styling for join us page--------------------------*/
 
-.shortnav{
+/*.shortnav{
 	width: 100%;
 	height: 4rem;
 	padding: 1rem 0;
 	background: linear-gradient(to right, rgba(95,158,160,0.9), rgba(110,133,167, 0.7));
 	border-bottom: 3px solid black;
-}
-.shortnav a{
+}*/
+/*.shortnav a{
 	margin: 0 0.5rem;
 	position:relative;
 	top: 1.1rem;
-	/*transform: translateY(-50%);*/
 	float: right;
 	font-size: 1.1rem;
-	font-weight: bold;
 	color: black;
-	text-transform: uppercase;
 	padding-bottom: 0.3rem;
 	border-bottom: 3px solid transparent;
 	transition: all .4s;
-}
-.shortnav a:hover {
+}*/
+/*.shortnav a:hover {
 	padding-bottom: 0.1rem;
 	border-bottom: 3px solid black;
 	text-decoration: none; 
-}
+}*/
 .shortnav-logo{
 	width: 4.6rem;
 	height: 4.6rem;
