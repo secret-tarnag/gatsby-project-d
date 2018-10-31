@@ -117,12 +117,12 @@ input[type=text]:focus, input[type=email]:focus {
 input[type=checkbox]{
 	display: inline;
 }
-footer{
+.shortfooter{
 	text-align: center;
 	height: 5rem;
 	background-color: #DDDDDD; 
 }
-.footer-span{
+.shortfooter-span{
 	font-style: italic;
 	margin-top: 1rem;
 }
