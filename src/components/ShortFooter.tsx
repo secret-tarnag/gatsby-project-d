@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import SocialMediaLinks from './SocialMediaLinks';
 
 export default () => (
-  <footer className="barlow" role="contentinfo">
+  <footer className="barlow shortfooter" role="contentinfo">
     <div className="shortfooter-social">
       <SocialMediaLinks />
     </div>

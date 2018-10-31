@@ -29,11 +29,11 @@ const links = [
 
 export default (props: ShortNavBarProps) => (
   <nav role="navigation" className="barlow shortnav">
-    <img id="logo" src="/assets/logo_hres_transparent.png" alt="D logo" />
+    <img className="shortnav-logo" src="/assets/logo_hres_transparent.png" alt="D logo" />
     <Link to={`/hu/${props.urlSlug}`}>HU</Link>
     <Link to={`/en/${props.urlSlug}`}>EN</Link>
     {links.map(link => (
-      <Link id={link.id} to={link.link}>{link[props.lng]}</Link>
+      <Link id={link.id} to={`${props.lng}/${link.link}`}>{link[props.lng]}</Link>
     ))}
   </nav>
 );

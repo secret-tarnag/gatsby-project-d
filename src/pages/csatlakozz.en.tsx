@@ -10,7 +10,7 @@ export default () => (
     <ShortNavbar lng="en" urlSlug="csatlakozz" />
     <div className="joinus-container">
       <div className="form-container" role="form">
-        <h2 className="form-title">Applying</h2>
+        <h2 className="form-title barlow">Applying</h2>
         <form id="join-us-form" action="csatlakozz.html" method="post">
           <div className="tooltip">
             <p id="alias-text">alias*:</p>
