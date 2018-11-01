@@ -150,7 +150,14 @@ input[type=checkbox]{
 {
 	.joinus-form-container{
     width: 70%;
-	font-size: 1.3rem;
+		font-size: 1.3rem;
+	}
+}
+@media screen and (max-width: 600px)
+{
+	input[type=text], input[type=email]
+	{
+		width: 90%;
 	}
 }
 @media screen and (max-width: 500px)
@@ -159,6 +166,6 @@ input[type=checkbox]{
 		display: none;
 	}
 	.joinus-form-title {
-		margin: 1rem 3rem;
+		font-size: 2rem;
 	}
 }

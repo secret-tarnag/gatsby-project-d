@@ -24,6 +24,10 @@ const shortfooter = css({
     top: '50%',
     transform: 'translateY(-50%)',
   },
+  '@media (max-width: 500px)': {
+    gridTemplateColumns: '100%',
+    gridTemplateRows: '3.5rem 3rem',
+  },
 });
 
 const ccJoin = css({
