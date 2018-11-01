@@ -11,7 +11,7 @@ export default () => (
     <div className="joinus-container">
       <div className="joinus-form-container barlow" role="form">
         <h2 className="joinus-form-title">Jelentkezés</h2>
-        <form className="joinus-form" action="csatlakozz.html" method="post">
+        <form className="joinus-form" action="" method="post">
           <div className="tooltip">
             <p id="alias-text">álnév*:</p>
             <span id="alias-tooltip" className="tooltiptext">az igazit nem tudja meg senki, ellenben ez nyilvános; magasabb
@@ -31,8 +31,10 @@ export default () => (
           <input id="w4" type="radio" name="worktype" value="administrator" /><label for="w4">adminisztráció</label><br /><br />
           <input id="accept" type="checkbox" name="acceptedTermsAndConditions" required />
           <label for="accept"> elolvastam és elfogadom az <Link to="docs/adatvedelmi_nyilatkozat.pdf" target="_blank">Adatvédelmi Nyilatkozatot</Link>*.</label><br /><br />
-          <input type="reset" value="törlés" />
-          <input id="submit" type="submit" value="küldés" />
+          <div className="joinus-form-controls">
+            <input type="reset" value="törlés" />
+            <input id="submit" type="submit" value="küldés" />
+          </div>
         </form>
       </div>
     </div>

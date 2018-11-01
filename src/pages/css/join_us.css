@@ -42,6 +42,10 @@
 	background-color: #eee;
 	padding: 2rem 0;
 }
+.login-container {
+	background-color: #eee;
+	padding: 2rem 0;
+}
 .joinus-form-container{
 	width: 40%;
   margin: 2rem auto;
@@ -67,7 +71,13 @@
 .joinus-form span{
 	margin-bottom: 0.5rem;
 }
-input[type=text], input[type=email]{
+.joinus-form-controls {
+	width: 14rem;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+input[type=text], input[type=email], input[type=password]{
 	width: 94%;
 	height: 2rem;
 	margin: 0.5rem auto;
@@ -77,16 +87,16 @@ input[type=text], input[type=email]{
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	font-size: 1.2rem;
 }
-input[type=text]:focus, input[type=email]:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
 	border: 0.125rem solid #727272;
 	background-color: #ddd;
 }
 
-input[type=text]:hover, input[type=email]:hover {
+input[type=text]:hover, input[type=email]:hover, input[type=password]:hover {
 	background-color: #ddd;
 }
 
-input[type=submit], input[type=reset]{
+input[type=submit], input[type=reset], #cancelbtn{
 	width: 5rem;
 	height: 2rem;
 	margin: 0.7rem;
@@ -94,13 +104,18 @@ input[type=submit], input[type=reset]{
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	font-size: 1.2rem;
 	border:none;
+	color: #000;
 	background-color: #eee;
 	font-weight: bold;
+	text-decoration: none;
 	transition: all .2s;
 }
-input[type=submit]:hover, input[type=reset]:hover{
+input[type=submit]:hover, input[type=reset]:hover, #cancelbtn:hover{
 	color: #fff;
 	background-color: rgba(70, 167, 170, 0.9);
+}
+#cancelbtn {
+	padding: 0.3rem 0.9rem;
 }
 input[type=checkbox]{
 	display: inline;

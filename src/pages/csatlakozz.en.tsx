@@ -29,8 +29,10 @@ export default () => (
           <input id="w4" type="radio" name="worktype" value="administrator" /><label for="w4">administration</label><br /><br />
           <input id="accept" type="checkbox" name="acceptedTermsAndConditions" required />
           <label for="accept"> I have read and agree with the <Link to="docs/adatvedelmi_nyilatkozat.pdf" target="_blank">Data Protection Declaration</Link>*.</label><br /><br />
-          <input type="reset" value="clear" />
-          <input id="submit" type="submit" value="send" />
+          <div className="joinus-form-controls">
+            <input type="reset" value="clear" />
+            <input id="submit" type="submit" value="send" />
+          </div>
         </form>
       </div>
     </div>
