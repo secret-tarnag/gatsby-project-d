@@ -36,6 +36,10 @@ export default () => (
             <input id="submit" type="submit" value="küldés" />
           </div>
         </form>
+        <div className="joinus-register-link">
+          <span>A fenti formmal csatlakozhatsz a Democrable Communityhez. Csak regisztrálni akartál? </span>
+          <span><Link to="/hu/regisztracio">Akkor ez az utad :)</Link></span>
+        </div>
       </div>
     </div>
     <ShortFooter />
