@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Layout from '../components/layout';
 import { graphql } from 'gatsby';
 import { AllOutletsQueryType } from './index.en';
@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 
 export default ({ data }: AllOutletsQueryType) => (
   <Layout>
-    <Navbar isHomePage={false} lng="en" urlSlug="fuggetlen" />
+    <Navbar id="" isHomePage={false} lng="en" urlSlug="fuggetlen" />
     <ul
       className={css({
         marginTop: 100,
@@ -18,7 +18,7 @@ export default ({ data }: AllOutletsQueryType) => (
         .filter(
           outlet =>
             outlet.node.frontmatter.lang === 'en' &&
-            outlet.node.frontmatter.isIndependent
+            outlet.node.frontmatter.isIndependent,
         )
         .map(outlet => (
           <li key={outlet.node.frontmatter.title}>
@@ -26,7 +26,7 @@ export default ({ data }: AllOutletsQueryType) => (
           </li>
         ))}
     </ul>
-    <Footer lng="en" />
+    <Footer lng="en" id="" />
   </Layout>
 );
 

@@ -26,13 +26,13 @@ const links = [
   {
     text: 'Mit tehetünk, ha nem akarunk valótlanságokat olvasni? ...',
     to: '/hu/cselekves#possibilities',
-  }
+  },
 ];
 
 export default ({ data }: AllOutletsQueryType) => (
   <Layout>
     {' '}
-    <Navbar isHomePage={true} lng="hu" urlSlug="" />
+    <Navbar id="" isHomePage={true} lng="hu" urlSlug="" />
     <header id="heading" role="banner">
       <h1>Democrable</h1>
     </header>
@@ -40,7 +40,7 @@ export default ({ data }: AllOutletsQueryType) => (
     <div id="main-content" role="main">
       <LinkList links={links} />
     </div>
-    <Footer lng="hu" />
+    <Footer lng="hu" id="" />
   </Layout>
 );
 

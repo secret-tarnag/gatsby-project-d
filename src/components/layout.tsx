@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
@@ -6,7 +6,7 @@ import Header from './header';
 import './layout.css';
 import './header.css';
 
-const Layout = ({ children }) => (
+const Layout = ({ children }: any) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -32,6 +32,10 @@ const Layout = ({ children }) => (
         >
           <link
             href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Cabin+Sketch"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Slabo+27px|Comfortaa|Roboto+Condensed"
             rel="stylesheet"
           />
           <link

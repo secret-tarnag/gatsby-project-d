@@ -61,8 +61,8 @@ export const createPages = async ({
       async ({ node }: { node: MarkdownNode }) =>
         node.parent.relativeDirectory
           ? await createConfigForCategoryPage(node)
-          : createConfigForStandalonePage(node)
-    )
+          : createConfigForStandalonePage(node),
+    ),
   );
 
   console.log(pageConfigs);
@@ -101,7 +101,7 @@ async function createConfigForCategoryPage({
   if (templates.length === 0) {
     console.error(
       `No template component specified for ${fileNode.relativeDirectory}
-Skipping markdown file ${fileNode.relativeDirectory}/${fileNode.name}`
+Skipping markdown file ${fileNode.relativeDirectory}/${fileNode.name}`,
     );
     return [];
   }

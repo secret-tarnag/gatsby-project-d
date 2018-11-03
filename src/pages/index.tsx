@@ -1,11 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 import { graphql } from 'gatsby';
-import { getUserLangKey } from 'ptz-i18n';
+const getUserLangKey = require('ptz-i18n'); // (Unfortunately no type declarations)
 import { withPrefix } from 'gatsby-link';
 
 // Automatically detects user language and redirects to appropriate site
 class RedirectIndex extends React.PureComponent {
-  constructor(args) {
+  constructor(args: any) {
     super(args);
 
     // Skip build, Browsers only

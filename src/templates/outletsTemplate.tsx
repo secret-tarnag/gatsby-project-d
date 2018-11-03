@@ -39,6 +39,7 @@ export default ({ data }: OutletTemplateProps) => {
   return (
     <Layout>
       <Navbar
+        id=""
         isHomePage={false}
         lng={frontmatter.lang}
         urlSlug={`outlets/${frontmatter.slug}`}

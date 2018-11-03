@@ -4,65 +4,70 @@ import SocialMediaLinks from './SocialMediaLinks';
 
 interface FooterProps {
   lng: 'en' | 'hu';
+  id?: string;
 }
 
 const firstRow = [
   {
     en: 'About us',
     hu: 'Rólunk',
-    link: 'rolunk'
+    link: 'rolunk',
   },
   {
     en: 'Take action',
     hu: 'Cselekedj',
-    link: 'cselekves'
+    link: 'cselekves',
   },
   {
     en: 'Donate',
     hu: 'Támogatás',
-    link: 'tamogatas'
-  }
+    link: 'tamogatas',
+  },
 ];
 const secondRow = [
   {
     en: 'voluntary',
     hu: 'önkéntesség',
-    link: 'rolunk#contribution'
+    link: 'rolunk#contribution',
   },
   {
     en: 'events',
     hu: 'események',
-    link: 'sorry'
+    link: 'sorry',
   },
   {
     en: 'transparency',
     hu: 'átláthatóság',
-    link: 'sorry'
-  }
+    link: 'sorry',
+  },
 ];
 const thirdRow = [
   {
     en: 'privacy',
     hu: 'adatvédelem',
-    link: 'rolunk#privacy'
+    link: 'rolunk#privacy',
   },
   {
     en: 'dictionary',
     hu: 'kisokos',
-    link: 'kisokos'
-  }
+    link: 'kisokos',
+  },
 ];
 const fourthRow = [
   {
     en: 'contributors',
     hu: 'impresszum',
-    link: 'rolunk#contributors'
-  }
+    link: 'rolunk#contributors',
+  },
 ];
 
 export default (props: FooterProps) => (
-  <footer className="general-footer" role="contentinfo">
-    <hr></hr>
+  <footer
+    id={props.id ? props.id : ''}
+    className="general-footer"
+    role="contentinfo"
+  >
+    <hr />
     <div className="footer-grid-container">
       {firstRow.map(item => (
         <div className="footer-grid-item first-row" key={item.hu}>
@@ -97,7 +102,7 @@ export default (props: FooterProps) => (
         </div>
       ))}
       <div className="footer-grid-item footer-blank">
-        <Link to="/sorry"></Link>
+        <Link to="/sorry" />
       </div>
       <div className="footer-grid-item" id="footer-email">
         <a href="mailto:democrable@gmail.com" id="footer-email-link">
