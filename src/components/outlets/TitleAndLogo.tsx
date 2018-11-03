@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Link from 'gatsby-link';
 
 interface TitleAndLogoProps {
   title: string;
