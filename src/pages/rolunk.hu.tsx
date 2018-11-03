@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import Navbar from '../components/Navbar';
 import { Link } from '@reach/router';
 import './css/about_us.css';
+import SocialMediaLinks from '../components/SocialMediaLinks';
 
 export default () => (
   <Layout>
@@ -49,21 +50,8 @@ export default () => (
     </div>
     <div className="general-text" id="privacy">
       <h2>Adatvédelem</h2><br />
-      <p>Kérünk titeket, olvassátok el az <a href="docs/Adatvédelmi Nyilatkozat.pdf" target="_blank">Adatvédelmi
+      <p>Kérünk titeket, olvassátok el az <a href="/hu/adatvedelem" target="_blank">Adatvédelmi
 				Nyilatkozatot</a>.</p>
-      <h3>Anonim statisztikai adatok</h3>
-      <p>Az oldal anonim használati adatokat gyűjt (még nincs bekapcsolva) a felhasználói élmény
-			fejlesztése érdekében. Ezeket Google Analytics-szel dolgozzuk fel.</p>
-      <h3>Személyes adatok</h3>
-      <p>A honlapra való regisztrációkor, a Democrable Community-hez való csatlakozáskor, és a Democrable
-        támogatásakor, valamint a Support használatakor személyes adatok keletkeznek, melyeket bizalmasan kezelünk és nem adunk tovább
-        harmadik félnek (különösen a mostani politikai helyzetben). A támogatáskor megadott adatokat technikai szükségszerűségből a
-			fizetési szolgáltató (PayPal) is meg fogja tudni.</p>
-      <p>A személyes adatok tárolásáról, módosításáról, törléséről, illetve az ezekhez kapcsolódó
-        felhasználói jogokról és jogérvényesítési lehetőségekről és az automatikusan gyűjtött használati adatokról bővebb leírás az
-			Adatvédelmi Nyilatkozatban található.</p>
-      <h4>Részletesebben:</h4>
-      <p><a href="docs/Adatvédelmi Nyilatkozat.pdf" target="_blank">Adatvédelmi Nyilatkozat</a></p>
       <h4>Forráskód</h4>
       <p>Egyébként a weboldal <a className="about-links" href="https://github.com/daroczypal/project-d-."
         target="_blank">forráskódját</a>
@@ -74,7 +62,8 @@ export default () => (
       <h2>Elérhetőségeink</h2>
       <p>E-mail: <a href="mailto:democrable@gmail.com">democrable@gmail.com</a><br />Ezt biztosan
         elolvassuk, és válaszolunk. De ha valaki nem szeretne ímélt küldeni, akkor megfontolhatja, hogy az alábbi formmal küld nekünk
-			üzenetet.</p>
+			üzenetet vagy valamelyik közösségi oldalon:</p>
+      <span className="rolunk-sm-span"><SocialMediaLinks /></span>
       <div id="get-mbb-container">
         <button id="get-messagebox-button" className="barlow" name="get-messagebox-button" type="button">direkt üzenetet küldök</button>
       </div>
@@ -112,7 +101,7 @@ export default () => (
           <h3 className="bold inline">Impresszum</h3>
           <p className="inline">&nbsp;- közreműködők, írók, fejlesztők:</p>
           <p className="indention">webfejlesztés: Démokritosz, Hermész</p>
-          <p className="indention">tartalom, design: Lakedaimón</p>
+          <p className="indention">tartalom, dizájn: Lakedaimón</p>
           <p className="indention">fotó: </p>
           <p className="license">2017-2018; <img className="cc" id="cc-about" alt="Creative Commons" src="/assets/cc.svg" /> by-nc-sa 4.0</p>
         </div>
