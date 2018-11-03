@@ -19,16 +19,35 @@ export default () => (
           <p>jelszó:</p>
           <input id="password" type="password" name="password" required />
           <p>jelszó újra:</p>
-          <input id="verifypsw" type="password" name="verifypsw" required /><br /><br />
-          <input id="accept" type="checkbox" name="acceptedTermsAndConditions" required />
-          <label for="accept"> elolvastam és elfogadom az <Link to="docs/adatvedelmi_nyilatkozat.pdf" target="_blank">Adatvédelmi Nyilatkozatot</Link>*.</label><br /><br />
+          <input id="verifypsw" type="password" name="verifypsw" required />
+          <br />
+          <br />
+          <input
+            id="accept"
+            type="checkbox"
+            name="acceptedTermsAndConditions"
+            required
+          />
+          <label htmlFor="accept">
+            {' '}
+            elolvastam és elfogadom az{' '}
+            <Link to="docs/adatvedelmi_nyilatkozat.pdf" target="_blank">
+              Adatvédelmi Nyilatkozatot
+            </Link>
+            *.
+          </label>
+          <br />
+          <br />
           <div className="joinus-form-controls">
             <input type="reset" value="törlés" />
             <input id="submit" type="submit" value="küldés" />
           </div>
         </form>
         <div className="joinus-register-link">
-          <span>Már van fiókod? </span><span><Link to="/hu/belepes">Jelentkezz be!</Link></span>
+          <span>Már van fiókod? </span>
+          <span>
+            <Link to="/hu/belepes">Jelentkezz be!</Link>
+          </span>
         </div>
       </div>
     </div>

@@ -58,9 +58,9 @@ const shortnavLinks = css({
   },
   ':hover::after, :active::after': {
     transform: 'scaleX(1)',
-  }
+  },
 });
-//media query
+// media query
 const shortnavLogo = css({
   width: '4.5rem',
   height: '4.5rem',

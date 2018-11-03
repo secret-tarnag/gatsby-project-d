@@ -8,8 +8,7 @@ import ShortFooter from '../components/ShortFooter';
 export default () => (
   <Layout>
     <ShortNavbar lng="hu" urlSlug="belepes" />
-    <div className="joinus-background">
-    </div>
+    <div className="joinus-background" />
     <div className="login-container">
       <div className="joinus-form-container">
         <h2 className="joinus-form-title">Belépés</h2>
@@ -21,14 +20,23 @@ export default () => (
           <input id="uname" type="text" name="uname" required />
           <p>jelszó:</p>
           <input id="password" type="password" name="password" required />
-          <span className="joinus-small-link"><Link to="/hu/sorry">elfelejtettem a jelszavam...</Link></span><br /><br />
+          <span className="joinus-small-link">
+            <Link to="/hu/sorry">elfelejtettem a jelszavam...</Link>
+          </span>
+          <br />
+          <br />
           <div className="joinus-form-controls">
-            <Link id="cancelbtn" to="/hu/">mégse</Link>
+            <Link id="cancelbtn" to="/hu/">
+              mégse
+            </Link>
             <input id="submit" type="submit" value="belépés" />
           </div>
         </form>
         <div className="joinus-register-link">
-          <span>Nincs még fiókod? </span><span><Link to="/hu/regisztracio">Regisztrálj most!</Link></span>
+          <span>Nincs még fiókod? </span>
+          <span>
+            <Link to="/hu/regisztracio">Regisztrálj most!</Link>
+          </span>
         </div>
       </div>
     </div>
