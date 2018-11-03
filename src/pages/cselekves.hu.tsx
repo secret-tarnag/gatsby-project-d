@@ -27,29 +27,30 @@ const links = [
   },
 ];
 
-const causeTitle = "Hogy miért is van ez az oldal?";
+const causeTitle = 'Hogy miért is van ez az oldal?';
 const causeParagraphs = [
   'Nos, tegyük fel, hogy van egy nagyon gazdag emberünk, hívjuk Anzelmnek. ' +
-  'Vagyona óriási, igazán csak ő tudja, milyen praktikák és machinációk árán szerezte meg. ' +
-  'Anzelmünk az ÁPISZ -- Ártalmatlan Politikusok és Intrikusok Szövetsége -- nevű párt támogatója, és ami különösen jó a pártnak: emberünk kezében van az ország legnagyobb példányszámban eladott lapja és a legnézettebb tévéje. ' +
-  'Ezt úgy nevezik, hogy nagy befolyása van a médiára.',
+    'Vagyona óriási, igazán csak ő tudja, milyen praktikák és machinációk árán szerezte meg. ' +
+    'Anzelmünk az ÁPISZ -- Ártalmatlan Politikusok és Intrikusok Szövetsége -- nevű párt támogatója, és ami különösen jó a pártnak: emberünk kezében van az ország legnagyobb példányszámban eladott lapja és a legnézettebb tévéje. ' +
+    'Ezt úgy nevezik, hogy nagy befolyása van a médiára.',
   'Sajnos A. úr és pártja tisztessége és becsülete eléggé megkopott, mondhatni a bűnözés útjára léptek, ám az ország' +
-  ' többi rendes lakója még csak nem is sejti, hogy az ÁPISZ miként garázdálkodik az általuk adóként befizetett pénzzel, ' +
-  'hiszen Anzelm tévéje és újságja ilyen híreket nem közöl, valamint az igazság terjesztőit kémnek, hazaárulónak vagy ' +
-  'ilyesmiknek titulálja, hitelteleníti.',
+    ' többi rendes lakója még csak nem is sejti, hogy az ÁPISZ miként garázdálkodik az általuk adóként befizetett pénzzel, ' +
+    'hiszen Anzelm tévéje és újságja ilyen híreket nem közöl, valamint az igazság terjesztőit kémnek, hazaárulónak vagy ' +
+    'ilyesmiknek titulálja, hitelteleníti.',
   'Hogyan tudhatják meg a tisztességes polgárok, hogy mi történik? Nos, szükség van olyan újságokra, ' +
-  'tévéadókra, rádiókra, online híroldalakra, melyek nem emberünk tulajdonai, <span class="highlight">függetlenek</span> tőle ' +
-  'és a politikai szereplőktől, ezért le tudják írni mi történik <span class="highlight">valójában</span>.',
+    'tévéadókra, rádiókra, online híroldalakra, melyek nem emberünk tulajdonai, <span class="highlight">függetlenek</span> tőle ' +
+    'és a politikai szereplőktől, ezért le tudják írni mi történik <span class="highlight">valójában</span>.',
   'Na igen, de honnan tudjuk meg, hogy melyik médium független? <span class="emphasize">Ezért van ez a honlap' +
-  '</span>. Itt összegyűjtjük nektek a különböző hírforrások politikai irányultságát, tulajdonosait és ezek kapcsolódását a hatalomhoz, megbízhatóságát és olvasottságát azért, hogy következtethessetek az esetleges torzításra, elfogultságra.'
+    '</span>. Itt összegyűjtjük nektek a különböző hírforrások politikai irányultságát, tulajdonosait és ezek kapcsolódását a hatalomhoz, megbízhatóságát és olvasottságát azért, hogy következtethessetek az esetleges torzításra, elfogultságra.',
 ];
 
-const summaryTitle = "Foglaljuk össze miért rossz a politikusoktól, barátaiktől és üzletfeleiktől vagy pártoktól függő média:";
+const summaryTitle =
+  'Foglaljuk össze miért rossz a politikusoktól, barátaiktől és üzletfeleiktől vagy pártoktól függő média:';
 const summaryParagraphs = [
-  'Azért, mert - akár az öncenzúra, akár a tényleges iránytó hatás miatt - nem tudják/akarják a híreket pártatlanul és objektíven közölni.'
+  'Azért, mert - akár az öncenzúra, akár a tényleges iránytó hatás miatt - nem tudják/akarják a híreket pártatlanul és objektíven közölni.',
 ];
 
-const varietyTitle = "A nem igazmondás fajtái:";
+const varietyTitle = 'A nem igazmondás fajtái:';
 const varietyParagraphs = [
   '<span class="highlight">1. Torzítás:</span> "A gazdasági teljesítmény, köszönhetően a kormánynak már sokadik éve folyamatosan nő" (pártmédium). Valóság: A gazdasági teljesítmény tényleg nő, de csak tavaly óta, emellett viszont nő az államadósság is és a növekedés valójában sokkal kisebb, mint a környező országokban.',
   'Ezzel a módszerrel a híreket egészen más színben lehet feltüntetni mint ahogy megtörténtek, hiszen a legtöbb esetben a történések körülményei, mögöttes viszonyai ugyanolyan érdekesek, mint maga a cselekmény, ami kontextusától megfosztva, mondhatni, elveszti az információértékét.',
@@ -67,7 +68,7 @@ const varietyParagraphs = [
   'Reméljük, hogy sikerült valamennyire jól kategorizálni ezt a dolgot, annak ellenére, hogy a különböző fajták bizonyos mértékben fedik egymást, és legtöbbször a valójában halmozottan, vegyítetten fordulnak elő.',
 ];
 
-const possibilitiesTitle = "Mit tehetünk, ha nem akarunk hülyeségeket olvasni?";
+const possibilitiesTitle = 'Mit tehetünk, ha nem akarunk hülyeségeket olvasni?';
 const possibilitiesParagraphs = [
   'A legfontosabb, hogy legyünk tudatosak.',
   '<span class="emphasize">Tájékozódjunk!</span>',
