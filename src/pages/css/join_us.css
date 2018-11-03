@@ -44,15 +44,38 @@
 	/*TODO: backgrounds*/
 }
 .login-container {
-	background-color: #eee;
+	background-color: transparent;
 	padding: 2rem 0;
-	/*TODO: backgrounds*/
 }
 .register-container {
 	background-color: #eee;
 	padding: 2rem 0;
 	/*TODO: backgrounds*/
 }
+
+.joinus-background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 6rem;
+	left: 0rem;
+	z-index: -2;
+	/*display: grid;
+	grid-template-columns: repeat(10, 1px);
+	grid-template-rows: 100%;
+	grid-gap: 9%;
+	align-items: center;
+	justify-content: center;*/
+	background: url(../../../static/assets/proba_hatter2.jpg) no-repeat center;
+	background-size: 100%;
+	opacity: 0.8;
+}
+/*.background-lines {
+	width: 1px;
+	height: 100%;
+	background-color: #b1b1b1;
+}*/
+
 .joinus-form-container{
 	width: 40%;
   margin: 2rem auto;
@@ -60,7 +83,6 @@
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	font-size: 1.2rem;
 	background-color: white;
-	opacity: 0.8;
 	border: 0.125rem solid #fff;
 	border-radius: 4px;
 }
