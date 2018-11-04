@@ -31,7 +31,7 @@ export default () => (
           <label htmlFor="accept">
             {' '}
             elolvastam és elfogadom az{' '}
-            <Link to="docs/adatvedelmi_nyilatkozat.pdf" target="_blank">
+            <Link to="/hu/adatvedelem" target="_blank">
               Adatvédelmi Nyilatkozatot
             </Link>
             *.

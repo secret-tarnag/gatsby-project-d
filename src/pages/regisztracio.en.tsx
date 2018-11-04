@@ -31,7 +31,7 @@ export default () => (
           <label htmlFor="accept">
             {' '}
             I have read and agree with the{' '}
-            <Link to="docs/adatvedelmi_nyilatkozat.pdf" target="_blank">
+            <Link to="/en/adatvedelem" target="_blank">
               Data Protection Declaration
             </Link>
             *.
