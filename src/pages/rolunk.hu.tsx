@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import { Link } from '@reach/router';
 import './css/about_us.css';
 import SocialMediaLinks from '../components/SocialMediaLinks';
+import SendMessage from '../components/aboutpage/SendMessage';
 
 export default () => (
   <Layout>
@@ -47,11 +48,11 @@ export default () => (
         <p>
           Szabad médiát!
         <br /> Valaki mondta, hogy a választás nem lehet szabad, ha az emberek
-            nem dönthetnek szabadon. A szabad döntéshez azonban szükség van arra,
-            hogy a média ne befolyásolja az embereket, hanem hitelesen, tényszerűen
-            tájékoztassa. Nyilván nem lehet teljesen semlegesnek lenni - az akkor
-            lenne, ha nem is írnának egy szót sem - de el lehet érni azt a szintet,
-            amit független és objektív újságírásnak lehet nevezni.
+                  nem dönthetnek szabadon. A szabad döntéshez azonban szükség van arra,
+                  hogy a média ne befolyásolja az embereket, hanem hitelesen, tényszerűen
+                  tájékoztassa. Nyilván nem lehet teljesen semlegesnek lenni - az akkor
+                  lenne, ha nem is írnának egy szót sem - de el lehet érni azt a szintet,
+                  amit független és objektív újságírásnak lehet nevezni.
       </p>
         <br />
         <br />
@@ -129,78 +130,8 @@ export default () => (
         <span className="rolunk-sm-span">
           <SocialMediaLinks />
         </span>
-        <div id="get-mbb-container">
-          <button
-            id="get-messagebox-button"
-            className="barlow"
-            name="get-messagebox-button"
-            type="button"
-          >
-            direkt üzenetet küldök
-        </button>
-        </div>
-      </div>
-      <div className="contact-form-container" id="contact-form">
-        <div className="title-container">
-          <h3 id="contact-form-title" className="barlow">
-            Üzenj nekünk közvetlenül innen:
-        </h3>
-        </div>
-        <div className="label-container">
-          <p id="name-label" className="barlow form-text">
-            Név:
-        </p>
-          <p id="email-label" className="barlow form-text">
-            E-mail:
-        </p>
-          <p id="subject-label" className="barlow form-text">
-            Tárgy:
-        </p>
-          <p id="message-label" className="barlow form-text">
-            Üzenet:
-        </p>
-        </div>
-        <div className="input-container" role="form">
-          <span className="close">&times;</span>
-          <form id="form" action="rolunk.html" method="post">
-            <input
-              id="name"
-              className="barlow form-field"
-              type="text"
-              name="name"
-              required
-            />
-            <input
-              id="email"
-              className="barlow form-field"
-              type="email"
-              name="email"
-              required
-            />
-            <input
-              id="subject"
-              className="barlow form-field"
-              type="text"
-              name="subject"
-              required
-            />
-            <br />
-            <textarea
-              id="message"
-              className="barlow form-field"
-              name="message"
-              rows={1}
-              cols={100}
-              required
-            />
-            <input
-              id="submit-button"
-              className="barlow"
-              type="submit"
-              value="küldés"
-            />
-          </form>
-        </div>
+        {/*Modal comes here */}
+        <SendMessage />
       </div>
       <div id="message-sent">
         <span className="barlow">Az üzenet sikeresen elküldve.</span>
