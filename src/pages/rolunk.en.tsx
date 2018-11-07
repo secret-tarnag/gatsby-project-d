@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import { Link } from '@reach/router';
 import './css/about_us.css';
 import SocialMediaLinks from '../components/SocialMediaLinks';
+import SendMessage from '../components/aboutpage/SendMessage';
 
 export default () => (
   <Layout>
@@ -125,77 +126,8 @@ export default () => (
       <span className="rolunk-sm-span">
         <SocialMediaLinks />
       </span>
-      <div id="get-mbb-container">
-        <button
-          id="get-messagebox-button"
-          className="barlow"
-          name="get-messagebox-button"
-          type="button"
-        >
-          Direct message
-        </button>
-      </div>
-    </div>
-    <div className="contact-form-container" id="contact-form">
-      <div className="title-container">
-        <h3 id="contact-form-title" className="barlow">
-          You can send us a direct message through this form:
-        </h3>
-      </div>
-      <div className="label-container">
-        <p id="name-label" className="barlow form-text">
-          Name:
-        </p>
-        <p id="email-label" className="barlow form-text">
-          Email:
-        </p>
-        <p id="subject-label" className="barlow form-text">
-          Subject:
-        </p>
-        <p id="message-label" className="barlow form-text">
-          Message:
-        </p>
-      </div>
-      <div className="input-container" role="form">
-        <span className="close">&times;</span>
-        <form id="form" action="rolunk.html" method="post">
-          <input
-            id="name"
-            className="barlow form-field"
-            type="text"
-            name="name"
-            required
-          />
-          <input
-            id="email"
-            className="barlow form-field"
-            type="email"
-            name="email"
-            required
-          />
-          <input
-            id="subject"
-            className="barlow form-field"
-            type="text"
-            name="subject"
-            required
-          />
-          <br />
-          <textarea
-            id="message"
-            className="barlow form-field"
-            name="message"
-            rows={1}
-            cols={100}
-            required
-          />
-          <input
-            id="submit-button"
-            className="barlow"
-            type="submit"
-            value="küldés"
-          />
-        </form>
+      <div id="modal-root">
+        <SendMessage />
       </div>
     </div>
     <div id="message-sent">

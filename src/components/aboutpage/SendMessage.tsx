@@ -1,9 +1,5 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import * as Modal from 'react-modal';
-import * as ReactModal from 'react-modal';
-
-Modal.setAppElement('#about-root');
+import * as Modal from 'react-modal'
 
 interface SendMessageProps { };
 interface SendMessageState {
@@ -35,9 +31,11 @@ const SendMessageStyles = {
   }
 }
 
+Modal.setAppElement(document.getElementById('modal-root'));
+
 class SendMessage extends React.PureComponent<SendMessageProps, SendMessageState> {
   constructor() {
-    super("");
+    super('');
     this.state = {
       showModal: false
     };
@@ -65,7 +63,7 @@ class SendMessage extends React.PureComponent<SendMessageProps, SendMessageState
             direkt üzenetet küldök
         </button>
         </div>
-        <ReactModal isOpen={this.state.showModal} onRequestClose={this.handleCloseModal}>
+        <Modal isOpen={this.state.showModal} onRequestClose={this.handleCloseModal}>
           <div className="contact-form-container" id="contact-form">
             <div className="title-container">
               <h3 id="contact-form-title" className="barlow">
@@ -128,7 +126,7 @@ class SendMessage extends React.PureComponent<SendMessageProps, SendMessageState
               </form>
             </div>
           </div>
-        </ReactModal>
+        </Modal>
       </div>
     );
   }
