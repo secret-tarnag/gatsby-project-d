@@ -39,7 +39,7 @@ export default () => (
   <Layout>
     <Navbar id="topnav" isHomePage={true} lng="en" urlSlug="dokumentumtar" />
     <div className="barlow library-main" id="heading">
-      <h2>Dokumentumtár</h2>
+      <h2 className="library-title">Archive</h2>
     </div>
     <div className="library-list barlow">
       <LibraryListItem title="A" links={c} />
