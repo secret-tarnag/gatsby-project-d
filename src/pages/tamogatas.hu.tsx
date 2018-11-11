@@ -3,11 +3,12 @@ import Link from 'gatsby-link';
 import Layout from '../components/layout';
 import TabNav from '../components/donate/TabNav';
 import SocialMediaLinks from '../components/SocialMediaLinks';
+import './css/donate.css';
 
 export default () => (
   <Layout>
     <div className="donate-grid-container">
-      <div className="logo-container grid-item"></div>
+      <div className="comingsoon-logo-container"></div>
       <div className="donate-grid-item">
         <div className="donate-title">
           <span>Támogasd a Democrable-t!</span>
@@ -16,7 +17,7 @@ export default () => (
           <span id="countdown"></span>
         </div>
         <div className="donate-link-container">
-          <span><i className="icon material-icons">expand_more</i><a id="expand-more" onClick={openTab(event, 'contribute')}>
+          <span><i className="icon material-icons">expand_more</i><a id="expand-more">
             támogasd az indulásunkat.</a>
           </span>
           <div className="language-links">
@@ -34,13 +35,13 @@ export default () => (
     <TabNav />
 
     <div id="about" className="tabcontent">
-      <p>Kik vagyunk?</p>
+      <h2>Kik vagyunk?</h2>
       <p>Egy egyetemistákból álló csoport, és van egy nagy álmunk: azt kívánjuk, hogy a demokrácia
         Magyarországon újra
 			igazán demokratikus legyen.</p><br /><br />
     </div>
     <div id="goals" className="tabcontent">
-      <p>Hogyan szeretnénk ezt elérni?</p>
+      <h2>Hogyan szeretnénk ezt elérni?</h2>
       <p>A független és objektív média támogatásával és a médiatudatosság erősítésével.</p>
       <p>Valaki mondta, hogy a választás nem lehet szabad, ha az emberek nem dönthetnek szabadon. A szabad
         döntéshez
@@ -57,7 +58,7 @@ export default () => (
 			képes lesz felismerni és gyakorolni jogait, kiállni a jó ügyek mellett.</p><br /><br />
     </div>
     <div id="contribute" className="tabcontent">
-      <p>Támogass minket!</p>
+      <h2>Támogass minket!</h2>
       <p>Sokféleképp tudsz segíteni nekünk, legyen a mód bármelyik, nagyon hálásak leszünk:</p>
       <ul>
         <li>Ha tudsz programozni, és jártas vagy a webes technológiákban, akkor forkolj minket a <a href="https://github.com/daroczypal/project-d-."
@@ -72,7 +73,7 @@ export default () => (
     <div id="fundr">
       <div className="fundr-grid-item" id="paypal-account">
         <p>Paypal fiókkal:</p>
-        <span><img id="paypal-logo" alt="paypal logo" src="pics/paypal-logo-png-22.png" /><a href="https://www.paypal.me/DemocrableHU" >Paypal.me</a></span>
+        <span><img id="paypal-logo" alt="paypal logo" src="/assets/paypal-logo-png-22.png" /><a href="https://www.paypal.me/DemocrableHU" >Paypal.me</a></span>
       </div>
       <div className="fundr-grid-item" id="bank-account">
         <p>Bankkártyával:</p>
@@ -95,7 +96,7 @@ export default () => (
     </div>
 
     <footer id="donate-footer">
-      <div id="dataprotection"><a href="adatvedelem.html">Adatvédelem</a></div>
+      <div id="dataprotection"><Link to="/hu/adatvedelem">Adatvédelem</Link></div>
       <div id="license"><span>&copy; 2018; Democrable Community</span></div>
     </footer>
   </Layout>

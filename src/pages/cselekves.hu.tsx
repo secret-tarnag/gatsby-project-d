@@ -87,7 +87,7 @@ export default () => (
     <Navbar isHomePage={false} lng="hu" urlSlug="cselekves" />
     <ScrollToTopButton />
     <div className="barlow acting-main" id="heading">
-      <h2 id="heading-cselekves">Cselekedj</h2>
+      <h2 id="heading-cselekves" className="act-title">Cselekedj</h2>
     </div>
     <LinkList links={links} />
     <div id="cause" className="general-text">

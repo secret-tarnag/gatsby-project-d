@@ -17,9 +17,10 @@ font-family: 'Roboto Condensed', sans-serif;*/
 	align-content: center;
 	justify-content: center;
 	margin-bottom: 2rem;
+	font-family: 'Cabin Sketch', cursive;
 }
 .comingsoon-logo-container {
-	background: url(../logo/plogo_bw_comingsoon.png) no-repeat center;
+	background: url(../../../static/assets/logo_bw_comingsoon.png) no-repeat center;
 	background-size: contain;
 }
 .donate-title {
@@ -61,7 +62,7 @@ font-family: 'Roboto Condensed', sans-serif;*/
 .tab-image-container {
 	width: 100%;
 	height: 8rem;
-	background: url(../pics/shapes_bckg.png) no-repeat right;
+	background: url(../../../static/assets/shapes_bckg.png) no-repeat right;
 	background-size: contain;
 }
  /* Style the tab */
@@ -98,35 +99,41 @@ font-family: 'Roboto Condensed', sans-serif;*/
 }
 /* Create an active/current tablink class */
 #about-button.active {
-	background: url(../pics/link1_bw.png) no-repeat center;
+	background: url(../../../static/assets/link1_bw.png) no-repeat center;
 	background-size: contain;
 }
 #goals-button.active {
-	background: url(../pics/link2_bw.png) no-repeat center;
+	background: url(../../../static/assets/link2_bw.png) no-repeat center;
 	background-size: contain;
 }
 #contribute-button.active {
-	background: url(../pics/link3_bw.png) no-repeat center;
+	background: url(../../../static/assets/link3_bw.png) no-repeat center;
 	background-size: contain;
 }
 /* Style the tab content */
 .tabcontent {
-   font-family: 'Roboto Condensed', sans-serif;
-   width: 60%;
-   position: relative;
-   left: 50%;
-   transform: translateX(-50%);
-   line-height: 1.8rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 60%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+	line-height: 1.8rem;
 }
-.tabcontent center {
+.tabcontent h2 {
 	font-weight: bold;
 	font-size: 1.5rem;
+	text-align: center;
+	margin: 1.1rem;
+}
+.tabcontent p{
+	margin: 0.7rem;
 }
 .tabcontent p, .tabcontent li {
 	font-size: 1.2rem;
 }
 .tabcontent ul {
 	list-style-type: square;
+	padding-left: 2rem;
 }
 #fundr {
 	width: 100%;
@@ -137,7 +144,7 @@ font-family: 'Roboto Condensed', sans-serif;*/
 	grid-template-rows: 12rem 12rem 12rem;
 	justify-content: space-evenly;
 	align-content: center;
-	background: url(../pics//fund_pos_bckg.png) no-repeat bottom;
+	background: url(../../../static/assets/fund_pos_bckg.png) no-repeat bottom;
 	background-size: cover;
 }
 .fundr-grid-item {
