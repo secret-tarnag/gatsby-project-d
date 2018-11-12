@@ -25,23 +25,24 @@ font-family: 'Roboto Condensed', sans-serif;*/
 }
 .donate-title {
 	text-align: center;
-	font-size: 5rem;
+	font-size: 6rem;
 	color: #272727;
 	background-color: transparent;
 	margin-top: 2rem;
 }
 .donate-description{
-	text-align: right;
-	font-size: 3rem;
+	text-align: center;
+	font-size: 1.3rem;
+	font-family: 'Roboto Condensed', sans-serif;
 	color: #272727;
 	background-color: transparent;
 	position: relative;
-	top: 5rem;
+	top: 4rem;
 }
 .donate-link-container {
 	font-family: 'Comfortaa', cursive;
 	font-size: 1.5rem;
-	text-align: right;
+	text-align: center;
 	margin-top: 7rem;
 }
 .language-links .language-link {

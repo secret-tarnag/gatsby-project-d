@@ -11,7 +11,7 @@ export default () => (
       <div className="comingsoon-logo-container"></div>
       <div className="donate-grid-item">
         <div className="donate-title">
-          <span>Támogasd a Democrable-t!</span>
+          <span>Support Us!</span>
         </div>
         <div className="donate-description">
           <span id="countdown">Azért küzdünk, hogy mindenki átlátható formában hozzáférjen bármely híreket közlő médium információihoz, így erősítve a médiatudatosságot és az átláthatóságot, ezzel pedig a demokráciát.</span>
@@ -29,7 +29,7 @@ export default () => (
             // add an "active" class to the button that opened the tab
             document.getElementById(`contribute-button`).classList.add('active');
           }}>
-            támogasd az indulásunkat.</a>
+            donate us.</a>
           </span>
           <div className="language-links">
             <span>
@@ -43,53 +43,39 @@ export default () => (
       </div>
     </div>
 
-    <TabNav lng="hu" />
+    <TabNav lng="en" />
 
     <div id="about" className="tabcontent">
-      <h2>Kik vagyunk?</h2>
-      <p>Egy egyetemistákból álló csoport, és van egy nagy álmunk: azt kívánjuk, hogy a demokrácia
-        Magyarországon újra
-			igazán demokratikus legyen.</p><br /><br />
+      <h2>Who are we?</h2>
+      <p>We are a group of University students, and we have an aspiring dream: we want democracy in Hungary to be truly democratic again.</p><br /><br />
     </div>
     <div id="goals" className="tabcontent">
-      <h2>Hogyan szeretnénk ezt elérni?</h2>
-      <p>A független és objektív média támogatásával és a médiatudatosság erősítésével.</p>
-      <p>Valaki mondta, hogy a választás nem lehet szabad, ha az emberek nem dönthetnek szabadon. A szabad
-        döntéshez
-        azonban szükség van arra, hogy a média ne befolyásolja az embereket, hanem hitelesen, tényszerűen tájékoztassa.
-        Nyilván nem lehet teljesen
-        semlegesnek lenni - az akkor lenne, ha nem is írnának egy szót sem - de el lehet érni azt a szintet, amelyet
-        független és
-			objektív újságírásnak lehet nevezni.</p>
-      <p>Egy honlapot fejlesztünk, ahol az érdeklődők megtalálhatnak minden fontos információt az egyes
-        médiumokról:
-        tulajdonosok és politikai kötődéseik, szerkesztők, látogatottsági adatok, világnézet és ideológiai elköteleződés,
-        szavahihetőség és függetlenség. Ezen információk segítségével bárki képes lesz megtalálni a világnézetéhez illő,
-        objektív, tényeket közlő hírforrásokat, az általuk szolgáltatott tartalom segítségével pedig képes lesz dönteni,
-			képes lesz felismerni és gyakorolni jogait, kiállni a jó ügyek mellett.</p>
-      <p><Link to="/hu/rolunk">Bővebben a céljainkról...</Link></p><br /><br />
+      <h2>How do we want to achieve this?</h2>
+      <p>By supporting independent and objective media and stregthening media-awareness.</p>
+      <p>Someone said that an election cannot be independent if the people cannot vote freely. However, in order to vote freely, media must not influence people towards one particular decision, but rather inform in an objective and factual manner. Obviously, it is not necessarily possible to be 100% uninfluential, but there is a certain level that can be called independent and objective.</p>
+      <p>We are developing a webpage, where anyone will be able to find all important information about the individual mediums: owners and their political connections, publishers, editors, number of visitors/day, ideology, reliability and level of independence. With this information, everyone will be able to find a medium that suits their ideology, while being an independent and reliable source; inform themselves through this source and hence be able to decide upon what’s best for them in the elections. In this way everyone can contribute to free democracy.</p>
+      <p><Link to="/en/rolunk">More about our goals...</Link></p><br /><br />
     </div>
     <div id="contribute" className="tabcontent">
-      <h2>Támogass minket!</h2>
-      <p>Sokféleképp tudsz segíteni nekünk, legyen a mód bármelyik, nagyon hálásak leszünk:</p>
+      <h2>Support us</h2>
+      <p>There are multiple ways you can help us, or even contribute. Whichever you decide to choose, we will be very grateful.</p>
       <ul>
-        <li>Ha tudsz programozni, és jártas vagy a webes technológiákban, akkor forkolj minket a <a href="https://github.com/daroczypal/project-d-."
-          target="_blank">githubon</a>.</li>
-        <li>Kedved lenne ahhoz a lelkes csapathoz tartozni, amelyik ezt az oldalt készíti? Tárt karokkal
-				<a href="mailto:democrable@gmail.com"> várunk</a>.</li>
-        <li>Egy honlap beindítása rengeteg költséggel jár. Támogass minket, hogy jobb, színvonalasabb és
-          bővebb szolgáltatásokat nyújthassunk.</li>
-        <li><Link to="/hu/rolunk#contribution">Még több módja a segítségnek...</Link></li>
+        <li>If you know how to program and have some experience in web development, fork us on <a href="https://github.com/daroczypal/project-d-."
+          target="_blank">github</a>.</li>
+        <li>Would you like to be part of a motivated team creating and maintaining this site? We are awaiting your
+				<a href="mailto:democrable@gmail.com">email</a> with open arms.</li>
+        <li>Starting a successful webpage costs quite a lot. If you have the financial means, please consider supporting us. This way we will be able to provide a wider range of better services.</li>
+        <li><Link to="/en/rolunk#contribution">Other ways to help...</Link></li>
       </ul>
     </div>
 
     <div id="fundr">
       <div className="fundr-grid-item" id="paypal-account">
-        <p>Paypal fiókkal:</p>
+        <p>If you have a PayPal account:</p>
         <span><img id="paypal-logo" alt="paypal logo" src="/assets/paypal-logo-png-22.png" /><a href="https://www.paypal.me/DemocrableHU" >Paypal.me</a></span>
       </div>
       <div className="fundr-grid-item" id="bank-account">
-        <p>Bankkártyával:</p>
+        <p>Credit or debit card:</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
           <input type="hidden" name="hosted_button_id" value="5HFCSKRBMZQ2Q" />
@@ -99,17 +85,16 @@ export default () => (
         </form>
       </div>
       <div className="fundr-grid-item" id="social-media">
-        <p>Lépj velünk kapcsolatba, és tudj meg rólunk többet:</p>
+        <p>You are encouraged to get in touch if you would like to know more about us.</p>
         <SocialMediaLinks />
       </div>
       <div className="fundr-grid-item" id="bottom-text">
-        <h2>Legyen a demokráciában szabadság, átláthatóság. Támogass minket, támogasd a független médiát,
-          támogasd a demokráciát.</h2>
+        <h2>Let democracy be independent and transparent. Support us, support independent media, support democracy.</h2>
       </div>
     </div>
 
     <footer id="donate-footer">
-      <div id="dataprotection"><Link to="/hu/adatvedelem">Adatvédelem</Link></div>
+      <div id="dataprotection"><Link to="/en/adatvedelem">Data Protection</Link></div>
       <div id="license"><span>&copy; 2018; Democrable Community</span></div>
     </footer>
   </Layout>
