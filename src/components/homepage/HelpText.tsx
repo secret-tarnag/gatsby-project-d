@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { cx, css } from 'emotion';
 
 interface HelpTextProps {
   mainText: string;
@@ -9,10 +10,22 @@ interface HelpTextState {
   clicked: boolean;
 }
 
+const helptext = css({
+  width: '85%',
+  textAlign: 'center',
+  margin: '0.5rem auto',
+  fontSize: '1.1rem',
+  color: 'white',
+});
+const helptextTitle = css({
+  cursor: 'help',
+  fontWeight: 'normal',
+});
+
 export default class HelpText extends React.PureComponent<
   HelpTextProps,
   HelpTextState
-> {
+  > {
   constructor(props: HelpTextProps) {
     super(props);
     this.state = {
@@ -31,10 +44,10 @@ export default class HelpText extends React.PureComponent<
       ? 'helptext-p is-visible'
       : 'helptext-p';
     return (
-      <div id="helptext" className="barlow">
+      <div className={`barlow ${helptext}`}>
         <h3
           id="helptext-title"
-          className="helptext-title"
+          className={helptextTitle}
           onClick={() => this.clicked()}
         >
           {this.props.mainText}
