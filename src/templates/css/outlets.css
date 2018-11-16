@@ -63,15 +63,6 @@
 	margin: 1rem;
 }
 /*Informations Section*/
-.info-grid-container {
-	width: 90%;
-	margin: 2rem auto 3rem auto;
-	display: grid;
-	grid-template-columns: 55% 45%;
-	grid-template-rows: 2.5rem;
-	grid-auto-rows: 2.5rem;
-	background-color: transparent;
-}
 .info-grid-element {
 	font-size: 1.3rem;
 	padding: 0.3rem 0.8rem;
@@ -116,10 +107,6 @@
 
 @media (max-width: 1000px)
 {
-	.info-grid-container
-	{
-		grid-template-columns: auto;
-	}
 	.title-grid-container {
 		grid-template-columns: 45% 55%;
 	}
