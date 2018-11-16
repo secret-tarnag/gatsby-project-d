@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { css } from 'emotion';
 
 interface OutletFooterProps {
   lng: 'en' | 'hu';
@@ -12,10 +13,19 @@ const footerText = {
   license: '2017-2018; Democrable',
 };
 
+const footerStyle = css({
+  width: '100%',
+  height: 'auto',
+  minHeight: '6rem',
+  marginTop: '2rem',
+  textAlign: 'center',
+  backgroundColor: '#f5f5f5',
+});
+
 export default (props: OutletFooterProps) => (
-  <footer className="barlow">
+  <footer className={`barlow ${footerStyle}`}>
     <hr className="horizontal" />
-    <p id="media-footer">
+    <p>
       <br />
       {footerText[props.lng]}
       <br />
