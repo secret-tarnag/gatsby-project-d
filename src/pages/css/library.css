@@ -30,28 +30,11 @@ h2 {
 	transform: translateX(-50%);
 	margin-bottom: 5rem;
 }
-.library-list-section {
-	margin: 1rem 0;
-}
-.library-section-title {
-	font-size: 2rem;
-	font-weight: normal;
-	margin-bottom: 1rem;
-}
 .library-hr {
 	height: 1px;
 	background-color: #000;
 	border: none;
 	margin: 0.5rem;
-}
-.library-link {
-	font-size: 1.2rem;
-	margin-left: 3rem;
-}
-.library-comment {
-	font-size: 1.1rem;
-	font-style: italic;
-	margin-left: 5rem;
 }
 
 /*Special footer*/

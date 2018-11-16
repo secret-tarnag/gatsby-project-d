@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { cx, css } from 'emotion';
+import { css } from 'emotion';
 
 interface HelpTextProps {
   mainText: string;
