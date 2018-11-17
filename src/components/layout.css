@@ -124,23 +124,6 @@ hr {
   float: right;
 }
 
-.social-media-icon {
-  width: 2.6rem;
-  height: 2.6rem;
-  margin: 0 0.3rem;
-}
-
-#github {
-  width: 2rem;
-  height: 2rem;
-  position: relative;
-  bottom: 0.4rem;
-}
-
-.social-media-icon:hover {
-  opacity: 0.85;
-}
-
 .sub-heading {
   text-align: center;
   font-family: 'Barlow Semi Condensed', sans-serif;
