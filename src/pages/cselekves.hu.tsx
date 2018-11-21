@@ -30,18 +30,18 @@ const links = [
 const causeTitle = 'Hogy miért is van ez az oldal?';
 const causeParagraphs = [
   'Nos, tegyük fel, hogy van egy nagyon gazdag emberünk, hívjuk Anzelmnek. ' +
-    'Vagyona óriási, igazán csak ő tudja, milyen praktikák és machinációk árán szerezte meg. ' +
-    'Anzelmünk az ÁPISZ -- Ártalmatlan Politikusok és Intrikusok Szövetsége -- nevű párt támogatója, és ami különösen jó a pártnak: emberünk kezében van az ország legnagyobb példányszámban eladott lapja és a legnézettebb tévéje. ' +
-    'Ezt úgy nevezik, hogy nagy befolyása van a médiára.',
+  'Vagyona óriási, igazán csak ő tudja, milyen praktikák és machinációk árán szerezte meg. ' +
+  'Anzelmünk az ÁPISZ -- Ártalmatlan Politikusok és Intrikusok Szövetsége -- nevű párt támogatója, és ami különösen jó a pártnak: emberünk kezében van az ország legnagyobb példányszámban eladott lapja és a legnézettebb tévéje. ' +
+  'Ezt úgy nevezik, hogy nagy befolyása van a médiára.',
   'Sajnos A. úr és pártja tisztessége és becsülete eléggé megkopott, mondhatni a bűnözés útjára léptek, ám az ország' +
-    ' többi rendes lakója még csak nem is sejti, hogy az ÁPISZ miként garázdálkodik az általuk adóként befizetett pénzzel, ' +
-    'hiszen Anzelm tévéje és újságja ilyen híreket nem közöl, valamint az igazság terjesztőit kémnek, hazaárulónak vagy ' +
-    'ilyesmiknek titulálja, hitelteleníti.',
+  ' többi rendes lakója még csak nem is sejti, hogy az ÁPISZ miként garázdálkodik az általuk adóként befizetett pénzzel, ' +
+  'hiszen Anzelm tévéje és újságja ilyen híreket nem közöl, valamint az igazság terjesztőit kémnek, hazaárulónak vagy ' +
+  'ilyesmiknek titulálja, hitelteleníti.',
   'Hogyan tudhatják meg a tisztességes polgárok, hogy mi történik? Nos, szükség van olyan újságokra, ' +
-    'tévéadókra, rádiókra, online híroldalakra, melyek nem emberünk tulajdonai, <span class="highlight">függetlenek</span> tőle ' +
-    'és a politikai szereplőktől, ezért le tudják írni mi történik <span class="highlight">valójában</span>.',
+  'tévéadókra, rádiókra, online híroldalakra, melyek nem emberünk tulajdonai, <span class="highlight">függetlenek</span> tőle ' +
+  'és a politikai szereplőktől, ezért le tudják írni mi történik <span class="highlight">valójában</span>.',
   'Na igen, de honnan tudjuk meg, hogy melyik médium független? <span class="emphasize">Ezért van ez a honlap' +
-    '</span>. Itt összegyűjtjük nektek a különböző hírforrások politikai irányultságát, tulajdonosait és ezek kapcsolódását a hatalomhoz, megbízhatóságát és olvasottságát azért, hogy következtethessetek az esetleges torzításra, elfogultságra.',
+  '</span>. Itt összegyűjtjük nektek a különböző hírforrások politikai irányultságát, tulajdonosait és ezek kapcsolódását a hatalomhoz, megbízhatóságát és olvasottságát azért, hogy következtethessetek az esetleges torzításra, elfogultságra.',
 ];
 
 const summaryTitle =
@@ -87,7 +87,7 @@ export default () => (
     <Navbar isHomePage={false} lng="hu" urlSlug="cselekves" />
     <ScrollToTopButton />
     <div className="barlow acting-main" id="heading">
-      <h2 id="heading-cselekves">Take Action</h2>
+      <h2 id="heading-cselekves">Cselekedj</h2>
     </div>
     <LinkList links={links} />
     <div id="cause" className="general-text">
