@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-const getUserLangKey = require('ptz-i18n'); // (Unfortunately no type declarations)
+const i18n = require('ptz-i18n'); // (Unfortunately no type declarations)
 import { withPrefix } from 'gatsby-link';
 
 // Automatically detects user language and redirects to appropriate site
@@ -11,7 +11,7 @@ class RedirectIndex extends React.PureComponent {
     // Skip build, Browsers only
     if (typeof window !== 'undefined') {
       const { langs, defaultLangKey } = args.data.site.siteMetadata.languages;
-      const langKey = getUserLangKey(langs, defaultLangKey);
+      const langKey = i18n.getUserLangKey(langs, defaultLangKey);
       const homeUrl = withPrefix(`/${langKey}/`);
 
       (window as any).location.replace(homeUrl);

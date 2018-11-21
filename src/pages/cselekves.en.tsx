@@ -29,28 +29,29 @@ const links = [
 const causeTitle = 'Why was this page created?';
 const causeParagraphs = [
   'Assume we have a very wealthy person, let’s call him Anselm. His wealth in unmeasurable, ' +
-  'only few people know how he got to it. Anselm is an active supporter of the Innocent ' +
-  'Politicians Party, the IPP. He is of very much use to the party, as he is the owner of the ' +
-  'most viewed television channel and the most read newspaper in the country.' +
-  'This means that he has a huge influence on the media.',
+    'only few people know how he got to it. Anselm is an active supporter of the Innocent ' +
+    'Politicians Party, the IPP. He is of very much use to the party, as he is the owner of the ' +
+    'most viewed television channel and the most read newspaper in the country.' +
+    'This means that he has a huge influence on the media.',
   'Unfortunately, Mr. A. and his party have lost most of their ethical boundaries, however most of ' +
-  'the population doesn’t have the faintest idea what the party is spending much of their payed ' +
-  'taxes on, as neither the television, nor the newspapers mention these news. On the contrary, ' +
-  'all such news is deemed ‘fake news’ and is stripped of its credibility.',
+    'the population doesn’t have the faintest idea what the party is spending much of their payed ' +
+    'taxes on, as neither the television, nor the newspapers mention these news. On the contrary, ' +
+    'all such news is deemed ‘fake news’ and is stripped of its credibility.',
   'But how is it even possible for the average population to get to the truth and find out what is happening?' +
-  'This is exactly why we need newspapers, TV channels, radios and online news portals which are not owned by ' +
-  "Anselm, but are <span class='highlight'>independent</span> of him and other politically engaged people." +
-  "This way, these mediums could say what is <span class='highlight'>actually</span> happening.",
+    'This is exactly why we need newspapers, TV channels, radios and online news portals which are not owned by ' +
+    "Anselm, but are <span class='highlight'>independent</span> of him and other politically engaged people." +
+    "This way, these mediums could say what is <span class='highlight'>actually</span> happening.",
   'But how can one be sure about how independent the media is? <span class="emphasize">This is ' +
-  'why we created this webpage</span>. Here you can find the political orientations, owners of various news sources; ' +
-  'and how these are connected to political leaders. Additionally, popularity indicators and reliability indices will ' +
-  'help you notice any deviation from the truth.',
+    'why we created this webpage</span>. Here you can find the political orientations, owners of various news sources; ' +
+    'and how these are connected to political leaders. Additionally, popularity indicators and reliability indices ' +
+    'will help you notice any deviation from the truth.',
 ];
 
-const summaryTitle = 'Let us sum up why politically influenced media is unhealthy:';
+const summaryTitle =
+  'Let us sum up why politically influenced media is unhealthy:';
 const summaryParagraphs = [
   'Because they cannot or will not publish news objectively and impartially, due to pressure ' +
-  'from high-level officials.'
+    'from high-level officials.',
 ];
 
 const varietyTitle = 'Types of not telling the truth:';
@@ -71,28 +72,57 @@ const varietyParagraphs = [
   'We hope we managed to categorize the above in a mostly clear way, although different categories may be overlapping each other. In real life, they mostly appear as a combination of multiple types.',
 ];
 
-const possibilitiesTitle = 'What can we do if we don’t want to read bullshit and be manipulated?';
+const possibilitiesTitle =
+  'What can we do if we don’t want to read bullshit and be manipulated?';
 const possibilitiesParagraphs = [
-  'The most important thing is to be conscious.',
-  '<span class="emphasize">Navigate!</span>',
-  'Find out about the following:<br> Is it a trustable source?<br>Does it have editorial staff, ' +
-  'is it a legit organization, not just a Facebook page written by random people who want to influence you?' +
-  '<br>Does it have any reviews? If yes, read them.<br>Is it on one of the fake-news lists?' +
-  '<br>Did you yourself hear about it?<br>Who is the owner?',
-  'Collect information about the given news source, and then decide.',
-  '<span class="emphasize">Test it!</span>',
-  'If it has passed the above tests, try reading it sceptically, and compare it with other trustable news sources.' +
-  'Does it write anything differently? Does it exaggerate?',
-  'Do not let trust grow too quickly towards a news source, believing everything because you read one trustable ' +
-  'article is not a wise decision.',
-  "<span class='highlight'>ATTENTION! </span> Just because we read articles which we dont 'like' does NOT mean that " +
-  "it is not a trustable source of information. You don't get to choose your stories like in a DVD store." +
-  'This is about staying informed and up-to-date, not about enjoying yourself.',
-  '<span class="emphasize">Read it!</span>',
-  "If you found an independent source, that's great! :) You can also support it financially, to help them spread " +
-  'their word elsewhere. However, stay alert: any independent medium can be bought at any time, ' +
-  'making it dependent, maybe even a source of propaganda. It is therefore adviseable to have a solid base and get ' +
-  'your information from multiple sources.',
+  <p> The most important thing is to be conscious.</p>,
+  <p>
+    <span className="emphasize">Navigate!</span>
+  </p>,
+  <p>
+    Find out about the following:
+    <br /> Is it a trustable source?
+    <br />
+    Does it have editorial staff, is it a legit organization, not just a
+    Facebook page written by random people who want to influence you?
+    <br />
+    Does it have any reviews? If yes, read them.
+    <br />
+    Is it on one of the fake-news lists?
+    <br />
+    Did you yourself hear about it?
+    <br />
+    Who is the owner?
+  </p>,
+  <p>Collect information about the given news source, and then decide.</p>,
+  <p>
+    <span className="emphasize">Test it!</span>
+  </p>,
+  <p>
+    If it has passed the above tests, try reading it sceptically, and compare it
+    with other trustable news sources.Does it write anything differently? Does
+    it exaggerate?
+  </p>,
+  <p>
+    Do not let trust grow too quickly towards a news source, believing
+    everything because you read one trustable article is not a wise decision.
+  </p>,
+  <p>
+    <span className="highlight">ATTENTION! </span> Just because we read articles
+    which we dont 'like' does NOT mean that it is not a trustable source of
+    information. You don't get to choose your stories like in a DVD store. This
+    is about staying informed and up-to-date, not about enjoying yourself.
+  </p>,
+  <p>
+    <span className="emphasize">Read it!</span>
+  </p>,
+  <p>
+    If you found an independent source, that's great! :) You can also support it
+    financially, to help them spread " + 'their word elsewhere. However, stay
+    alert: any independent medium can be bought at any time, making it
+    dependent, maybe even a source of propaganda. It is therefore adviseable to
+    have a solid base and get your information from multiple sources.
+  </p>,
 ];
 
 export default () => (
@@ -147,7 +177,7 @@ export default () => (
       <br />
       {possibilitiesParagraphs.map(paragraph => (
         <div>
-          <p dangerouslySetInnerHTML={{ __html: paragraph }} />
+          {paragraph}
           <br />
         </div>
       ))}
