@@ -2,7 +2,7 @@ import * as React from 'react';
 import { css } from 'emotion';
 
 interface TabNavProps {
-  lng: 'en' | 'hu'
+  lng: 'en' | 'hu';
 }
 
 const links = [
@@ -20,7 +20,7 @@ const links = [
     en: 'Help us!',
     hu: 'Segíts nekünk!',
     id: 'contribute',
-  }
+  },
 ];
 
 const tabImage = css({
@@ -60,23 +60,22 @@ const tabStyle = css({
     textDecoration: 'underline',
   },
 });
-//media query
+// media query
 
-export default class TabNav extends React.PureComponent<TabNavProps, ''>
-{
+export default class TabNav extends React.PureComponent<TabNavProps, ''> {
   constructor(props: TabNavProps) {
     super(props);
   }
 
   openTab(tabName: string) {
-    var i;
-    var tablinks = document.getElementsByClassName('tablinks');
-    //remove past active class selectors
+    let i;
+    let tablinks = document.getElementsByClassName('tablinks');
+    // remove past active class selectors
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].classList.remove('active')
+      tablinks[i].classList.remove('active');
     }
-    //scrolling
-    var topPos = document.getElementById(tabName).offsetTop;
+    // scrolling
+    let topPos = document.getElementById(tabName).offsetTop;
     document.documentElement.scrollTop = topPos - 160;
     // add an "active" class to the button that opened the tab
     document.getElementById(`${tabName}-button`).classList.add('active');
