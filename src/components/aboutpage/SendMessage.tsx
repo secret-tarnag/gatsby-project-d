@@ -1,13 +1,13 @@
 import * as React from 'react';
-import * as Modal from 'react-modal'
+import * as Modal from 'react-modal';
 import { css } from 'emotion';
 
 interface SendMessageProps {
-  lng: 'en' | 'hu'
-};
+  lng: 'en' | 'hu';
+}
 interface SendMessageState {
-  showModal: boolean
-};
+  showModal: boolean;
+}
 
 const SendMessageStyles = {
   overlay: {
@@ -16,7 +16,7 @@ const SendMessageStyles = {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(255, 255, 255, 0.2)'
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
   },
   content: {
     position: 'absolute',
@@ -30,9 +30,9 @@ const SendMessageStyles = {
     WebkitOverflowScrolling: 'touch',
     borderRadius: '0px',
     outline: 'none',
-    padding: '0px'
-  }
-}
+    padding: '0px',
+  },
+};
 
 const openButtonContainer = css({
   width: '15rem',
@@ -49,7 +49,7 @@ const openButtonStyles = css({
   ':hover': {
     color: 'black',
     backgroundColor: 'white',
-  }
+  },
 });
 const closeButtonStyles = css({
   position: 'relative',
@@ -127,8 +127,8 @@ const texts = {
   message: {
     en: 'Message:',
     hu: 'Üzenet:',
-  }
-}
+  },
+};
 
 Modal.setAppElement(document.getElementById('about-modal-root'));
 
@@ -136,7 +136,7 @@ class SendMessage extends React.PureComponent<SendMessageProps, SendMessageState
   constructor(props: SendMessageProps) {
     super(props);
     this.state = {
-      showModal: false
+      showModal: false,
     };
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
@@ -147,7 +147,7 @@ class SendMessage extends React.PureComponent<SendMessageProps, SendMessageState
   }
 
   handleCloseModal() {
-    this.setState({ showModal: false })
+    this.setState({ showModal: false });
   }
 
   render() {
