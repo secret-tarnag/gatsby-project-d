@@ -18,13 +18,13 @@ export default () => (
         </div>
         <div className="donate-link-container">
           <span><i className="icon material-icons">expand_more</i><a id="expand-more" onClick={() => {
-            var i;
-            var tablinks = document.getElementsByClassName('tablinks');
+            let i;
+            const tablinks = document.getElementsByClassName('tablinks');
 
             for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].classList.remove('active')
+              tablinks[i].classList.remove('active');
             }
-            var topPos = document.getElementById('contribute').offsetTop;
+            const topPos = document.getElementById('contribute').offsetTop;
             document.documentElement.scrollTop = topPos - 160;
             // add an "active" class to the button that opened the tab
             document.getElementById(`contribute-button`).classList.add('active');
@@ -86,16 +86,18 @@ export default () => (
     <div id="fundr">
       <div className="fundr-grid-item" id="paypal-account">
         <p>Paypal fiókkal:</p>
-        <span><img id="paypal-logo" alt="paypal logo" src="/assets/paypal-logo-png-22.png" /><a href="https://www.paypal.me/DemocrableHU" >Paypal.me</a></span>
+        <span>
+          <img id="paypal-logo" alt="paypal logo" src="/assets/paypal-logo-png-22.png" />
+          <a href="https://www.paypal.me/DemocrableHU" >Paypal.me</a></span>
       </div>
       <div className="fundr-grid-item" id="bank-account">
         <p>Bankkártyával:</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
           <input type="hidden" name="hosted_button_id" value="5HFCSKRBMZQ2Q" />
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
-            alt="PayPal - The safer, easier way to pay online!" />
-          <img alt="" border="0" src="https://www.paypalobjects.com/hu_HU/i/scr/pixel.gif" width="1" height="1" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" data-border="0"
+            name="submit" alt="PayPal - The safer, easier way to pay online!" />
+          <img alt="" data-border="0" src="https://www.paypalobjects.com/hu_HU/i/scr/pixel.gif" width="1" height="1" />
         </form>
       </div>
       <div className="fundr-grid-item" id="social-media">
