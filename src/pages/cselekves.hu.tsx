@@ -64,7 +64,7 @@ const summaryTitle =
   'Foglaljuk össze miért rossz a politikusoktól, barátaiktől és üzletfeleiktől vagy pártoktól függő média:';
 const summaryParagraphs = [
   'Azért, mert - akár az öncenzúra, akár a tényleges iránytó hatás miatt - nem tudják/akarják a' +
-    'híreket pártatlanul és objektíven közölni.',
+  'híreket pártatlanul és objektíven közölni.',
 ];
 
 const varietyTitle = 'A nem igazmondás fajtái:';
@@ -109,7 +109,7 @@ const varietyParagraphs = [
     >
       cikk az ügyről
     </a>{' '}
-    |
+    |{' '}
     <a href="docs/CSH_163_.pdf" target="_blank">
       a lapszám
     </a>
@@ -121,7 +121,7 @@ const varietyParagraphs = [
     >
       cikk az ügyről
     </a>
-    |
+    |{' '}
     <a href="docs/jozsefvaros_ujsag_2018-23.pdf" target="_blank">
       a lapszám
     </a>
@@ -249,7 +249,7 @@ export default () => (
     <Navbar isHomePage={false} lng="hu" urlSlug="cselekves" />
     <ScrollToTopButton />
     <div className="barlow acting-main" id="heading">
-      <h2 id="heading-cselekves">Cselekdj!</h2>
+      <h2 id="heading-cselekves">Cselekedj</h2>
     </div>
     <LinkList links={links} />
     <div id="cause" className="general-text">
