@@ -14,11 +14,11 @@
 /*Title Section*/
 .title-grid-container {
 	width: 90%;
-	margin: 8rem auto 0 auto;
-	height: 13rem;
+	margin: 8rem auto 1rem auto;
+	height: 10rem;
 	display: grid;
 	grid-template-columns: 25% 75%;
-	grid-template-rows: 13rem;
+	grid-template-rows: 10rem;
 	justify-content: start;
 	align-content: flex-start;
 }
@@ -29,17 +29,17 @@
 	margin: 1rem;
 	font-size: 1.8rem;
 }
+#chevron-left, #chevron-right {
+	position: relative;
+	float: right;
+}
 #chr-left {
 	transform: translateX(0);
 	transition: transform .3s;
-	position: relative;
-	float: right;
 }
 #chr-right {
 	transform: translateX(0);
 	transition: transform .3s;
-	position: relative;
-	float: right;
 }
 #chevron-left:hover #chr-left {
 	transform: translateX(-3px);
@@ -51,16 +51,21 @@
 	font-size: 5rem;
 	margin: 0 1rem 0 1rem;
 	position: relative;
-	top: -1rem;
-	
+	top: 50%;
+	transform: translateY(-50%);
 }
 .logo-container {
 	background-color: transparent;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-content: center;
 }
 #ulogo {
-	width: 80%;
-	max-height: 11rem;
-	margin: 1rem;
+	width: 100%;
+	height: auto;
+	max-height: 8rem;
 }
 /*Informations Section*/
 .info-grid-container {
@@ -103,9 +108,13 @@
 	margin: 1.5rem auto 1.5rem auto;
 	font-size: 1rem;
 }
+.source-title {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
 .source-list {
 	list-style-type: square;
-	padding-left: 1rem;
+	padding-left: 1.5rem;
 	line-height: 1.3rem;
 }
 footer {

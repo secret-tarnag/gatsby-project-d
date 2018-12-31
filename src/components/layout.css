@@ -233,12 +233,6 @@ a:active {
   background-color: #666666;
 }
 
-/* external links */
-a[href^="http://"] {
-  padding-left: 0.8125rem;
-  color: #1abc9c;
-}
-
 /* emails */
 a[href^="mailto:"] {
   padding-left: 2rem;

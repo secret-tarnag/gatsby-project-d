@@ -12,7 +12,7 @@ const text = {
 
 export default (props: SourcesProps) => (
   <div className="source-container">
-    <h3 className="slabo">{text[props.lang]}</h3>
+    <h3 className="source-title slabo">{text[props.lang]}</h3>
     <ul className="source-list">
       {props.sources.map(item => (
         <li><a href={item.link} target="_blank">{item.text}</a></li>
