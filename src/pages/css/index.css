@@ -30,6 +30,8 @@
   margin: 0.5rem auto;
   font-size: 1.1rem;
   color: white;
+  position: relative;
+  z-index: 2;
 }
 
 .helptext-title {
