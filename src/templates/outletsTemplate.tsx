@@ -7,6 +7,7 @@ import './css/outlets.css';
 import TitleAndLogo from '../components/outlets/TitleAndLogo';
 import Properties from '../components/outlets/Properties';
 import OutletFooter from '../components/outlets/OutletFooter';
+import Sources from '../components/outlets/Sources';
 
 interface KeyValue {
   key: string;
@@ -47,8 +48,9 @@ export default ({ data }: OutletTemplateProps) => {
       <div id="main-content" className="barlow">
         <TitleAndLogo {...frontmatter} />
         <Properties {...frontmatter} />
+        <Sources {...frontmatter} />
       </div>
-      <OutletFooter lng={frontmatter.lang} />
+      <OutletFooter lang={frontmatter.lang} />
     </Layout>
   );
 };

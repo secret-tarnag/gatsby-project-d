@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 interface OutletFooterProps {
-  lng: 'en' | 'hu';
+  lang: 'en' | 'hu';
 }
 
 const footerText = {
@@ -22,7 +22,7 @@ export default (props: OutletFooterProps) => (
     <hr className="horizontal" />
     <p id="media-footer">
       <br />
-      {footerText[props.lng]}
+      {footerText[props.lang]}
       <br />
       {footerText.license}
     </p>
