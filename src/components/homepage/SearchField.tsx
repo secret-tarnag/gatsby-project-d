@@ -2,6 +2,7 @@ import * as React from 'react';
 import HelpText from './HelpText';
 import { NewsOutletNodes } from '../../pages/index.en';
 import Link from 'gatsby-link';
+import { css } from 'emotion';
 
 interface SearchFieldProps {
   newsOutlets: NewsOutletNodes[];
@@ -67,24 +68,29 @@ export default class SearchField extends React.PureComponent<
             />
             <button id="submit" className="search-button" type="submit" />
             {/* Suggestions */}
-            {this.props.newsOutlets
-              .filter(
-                outlet =>
-                  outlet.node.frontmatter.title
-                    .toLowerCase()
-                    .startsWith(this.state.searchText.toLowerCase()) &&
-                  outlet.node.frontmatter.lang === this.props.lang &&
-                  this.state.searchText.length > 0,
-              )
-              .map(outlet => (
-                <Link
-                  to={`/${this.props.lang}/outlets/${
-                    outlet.node.frontmatter.slug
-                    }`}
-                >
-                  <span>{outlet.node.frontmatter.title}</span>
-                </Link>
-              ))}
+            <div className="suggestion-container">
+              {this.props.newsOutlets
+                .filter(
+                  outlet =>
+                    outlet.node.frontmatter.title
+                      .toLowerCase()
+                      .startsWith(this.state.searchText.toLowerCase()) &&
+                    outlet.node.frontmatter.lang === this.props.lang &&
+                    this.state.searchText.length > 0,
+                )
+                .map(outlet => (
+                  <div className="suggestion-item">
+                    <Link
+                      className="suggestion-link"
+                      to={`/${this.props.lang}/outlets/${
+                        outlet.node.frontmatter.slug
+                        }`}
+                    >
+                      <span>{outlet.node.frontmatter.title}</span>
+                    </Link>
+                  </div>
+                ))}
+            </div>
           </form>
         </div>
         <HelpText
