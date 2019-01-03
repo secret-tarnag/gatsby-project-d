@@ -18,7 +18,7 @@ const grid = css({
   backgroundColor: 'transparent',
   '@media(max-width: 1000px)': {
     gridTemplateColumns: '45% 55%',
-  }
+  },
 });
 
 const controls = css({
@@ -43,7 +43,11 @@ const logo = css({
 export default (props: TitleAndLogoProps) => (
   <div className={grid}>
     <div id="logo-container">
-      <img className={logo} alt="logo" src={`/assets/media_icons/${props.logo}`} />
+      <img
+        className={logo}
+        alt="logo"
+        src={`/assets/media_icons/${props.logo}`}
+      />
     </div>
     <div id="title-container">
       <div className={controls}>

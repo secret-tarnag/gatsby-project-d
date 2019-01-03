@@ -66,10 +66,11 @@ const footerStyle = css({
   width: '100%',
   height: '10rem',
   marginTop: '2rem',
-  background: 'linear-gradient(to right, rgba(255, 188, 4, 0.76), rgba(255, 177, 117, 0.54))',
+  background:
+    'linear-gradient(to right, rgba(255, 188, 4, 0.76), rgba(255, 177, 117, 0.54))',
   '@media(max-width:600px)': {
     height: '35rem',
-  }
+  },
 });
 const footerGrid = css({
   display: 'grid',
@@ -84,7 +85,7 @@ const footerGrid = css({
     gridTemplateRows: '3rem 3rem 3rem 3rem',
     gridAutoRows: '2rem',
     textAlign: 'center',
-  }
+  },
 });
 const gridItem = css({
   display: 'inline',
@@ -108,7 +109,7 @@ const gridItem = css({
   },
   '@media(max-width:600px)': {
     fontSize: '1.3rem',
-  }
+  },
 });
 const firstRowStyle = css({
   fontSize: '1.2rem',
@@ -116,7 +117,7 @@ const firstRowStyle = css({
   marginTop: '0.6rem',
   '@media(max-width:600px)': {
     fontSize: '1.8rem',
-  }
+  },
 });
 const footerEmailLink = css({
   color: 'black',
@@ -124,7 +125,7 @@ const footerEmailLink = css({
 const footerBlank = css({
   '@media(max-width: 600px)': {
     display: 'none',
-  }
+  },
 });
 
 export default (props: FooterProps) => (

@@ -24,7 +24,7 @@ const button = css({
   },
   '@media(max-width: 600px)': {
     right: '-3rem',
-  }
+  },
 });
 
 export default () => (

@@ -15,7 +15,7 @@ const infoGrid = css({
   backgroundColor: 'transparent',
   '@media (max-width: 1000px)': {
     gridTemplateColumns: 'auto',
-  }
+  },
 });
 
 const gridElement = css({
