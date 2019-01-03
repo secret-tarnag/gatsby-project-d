@@ -77,6 +77,8 @@ hr {
 .highlight {
   color: white;
   background-color: black;
+  padding: 0.125rem;
+  border: 0.125rem solid white;
 }
 
 .inline {
