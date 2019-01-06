@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { graphql } from 'gatsby';
-
 import Layout from '../components/layout';
 import './css/sorry.css';
 import { Link } from '@reach/router';
@@ -12,17 +10,17 @@ const SorryPage = () => (
       <p id="p1">
         <b>Dear User!</b>
         <br />
-        Lelkes csapatunk folyamatosan dolgozik a weboldal fejlesztésén, ám az a
-        funkció,
+        Our committed team are always working on improving the webpage.
         <br />
-        melyre klikkeltél, még nem működik. Reméljük, nemsokára kész lesz.
+        However, this feature is still under construction. We hope we can
+        release it soon.
       </p>
       <p id="p2">
-        Ha lenne kedved weboldalt fejleszteni vagy közreműködni a projektben,{' '}
+        If you fancy helping developing a webpage or contribute in other ways,{' '}
         <Link className="sorrylink" to="/en/csatlakozz">
-          csatlakozz
-        </Link>
-        a csapatunkhoz!
+          join
+        </Link>{' '}
+        our team!
         <br />
         Democrable Developers
       </p>

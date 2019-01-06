@@ -12,10 +12,28 @@ interface SearchFieldState {
   searchText: string;
 }
 
+const helpTexts = {
+  maintext: {
+    en: 'Find out who is behind the news!',
+    hu: 'Tudd meg, hogy ki áll a hírek mögött!',
+  },
+  helptext: {
+    en: 'Here you can find all the important information of different mediums: owners, political connections, ' +
+      'publishers, editors, independence- and ethics factor and ideology.',
+    hu: 'Itt megtalálhatsz minden fontos információt a különböző médiumok tulajdonosairól, azok politikai ' +
+      'kapcsolatairól, a médium beállítottságáról, az általa támogatott politikai oldalról és megismerheted' +
+      'alapvető adatait.',
+  },
+};
+const title = {
+  en: 'The Big <span class="highlight">Media</span> Observer',
+  hu: 'A Nagy <span class="highlight">Média</span>figyelő',
+};
+
 export default class SearchField extends React.PureComponent<
   SearchFieldProps,
   SearchFieldState
-> {
+  > {
   constructor(props: SearchFieldProps) {
     super(props);
     this.state = {
@@ -31,9 +49,7 @@ export default class SearchField extends React.PureComponent<
   render() {
     return (
       <div id="sub-heading-et-search">
-        <h2 className="sub-heading">
-          A Nagy <span className="highlight">Média</span>
-          figyelő
+        <h2 className="sub-heading" dangerouslySetInnerHTML={{ __html: title[this.props.lang] }}>
         </h2>
         <div className="search-bar-container" role="search">
           <form
@@ -64,7 +80,7 @@ export default class SearchField extends React.PureComponent<
                 <Link
                   to={`/${this.props.lang}/outlets/${
                     outlet.node.frontmatter.slug
-                  }`}
+                    }`}
                 >
                   <span>{outlet.node.frontmatter.title}</span>
                 </Link>
@@ -72,12 +88,8 @@ export default class SearchField extends React.PureComponent<
           </form>
         </div>
         <HelpText
-          mainText={'Tudd meg, hogy ki áll a hírek mögött!'}
-          helpText={
-            'Itt megtalálhatsz minden fontos információt a különböző médiumok tulajdonosairól, azok politikai' +
-            'kapcsolatairól, a médium beállítottságáról, az általa támogatott politikai oldalról és megismerheted' +
-            'alapvető adatait.'
-          }
+          mainText={helpTexts.maintext[this.props.lang]}
+          helpText={helpTexts.helptext[this.props.lang]}
         />
       </div>
     );
