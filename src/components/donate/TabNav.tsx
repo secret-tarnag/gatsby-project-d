@@ -68,14 +68,13 @@ export default class TabNav extends React.PureComponent<TabNavProps, ''> {
   }
 
   openTab(tabName: string) {
-    let i;
-    let tablinks = document.getElementsByClassName('tablinks');
+    const tablinks = document.getElementsByClassName('tablinks');
     // remove past active class selectors
-    for (i = 0; i < tablinks.length; i++) {
+    for (let i = 0; i < tablinks.length; i++) {
       tablinks[i].classList.remove('active');
     }
     // scrolling
-    let topPos = document.getElementById(tabName).offsetTop;
+    const topPos = document.getElementById(tabName).offsetTop;
     document.documentElement.scrollTop = topPos - 160;
     // add an "active" class to the button that opened the tab
     document.getElementById(`${tabName}-button`).classList.add('active');
@@ -89,7 +88,13 @@ export default class TabNav extends React.PureComponent<TabNavProps, ''> {
           links.map(link => (
             <div>
               <span>
-                <button id={`${link.id}-button`} className="tablinks" onClick={() => this.openTab(`${link.id}`)}>{link[this.props.lng]}</button>
+                <button
+                  id={`${link.id}-button`}
+                  className="tablinks"
+                  onClick={() => this.openTab(`${link.id}`)}
+                >
+                  {link[this.props.lng]}
+                </button>
               </span>
             </div>
           ))
