@@ -2,7 +2,7 @@ import * as React from 'react';
 import { css } from 'emotion';
 
 interface OutletFooterProps {
-  lng: 'en' | 'hu';
+  lang: 'en' | 'hu';
 }
 
 const footerText = {
@@ -33,7 +33,7 @@ export default (props: OutletFooterProps) => (
     <hr className="horizontal" />
     <p>
       <br />
-      {footerText[props.lng]}
+      {footerText[props.lang]}
       <br />
       {footerText.license}
     </p>

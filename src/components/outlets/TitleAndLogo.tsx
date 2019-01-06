@@ -67,7 +67,7 @@ export default (props: TitleAndLogoProps) => (
         </a>
       </div>
       <div className={title}>
-        <h2>{props.title}</h2>
+        <h2 className="slabo">{props.title}</h2>
         <hr className="horizontal" />
       </div>
     </div>
