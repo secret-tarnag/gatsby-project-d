@@ -55,13 +55,6 @@ hr {
   transform: translate(-50%, -50%);
 }
 
-.contents-table {
-  width: 70%;
-  margin: 3rem auto;
-  padding: 0 0 0 2rem;
-  border-left: 3px solid #000;
-}
-
 .emphasize {
   padding: 0.125rem;
   border: 0.125rem solid white;
@@ -133,83 +126,12 @@ hr {
   float: right;
 }
 
-.social-media-icon {
-  width: 2.6rem;
-  height: 2.6rem;
-  margin: 0 0.3rem;
-}
-
-#github {
-  width: 2rem;
-  height: 2rem;
-  position: relative;
-  bottom: 0.4rem;
-}
-
-.social-media-icon:hover {
-  opacity: 0.85;
-}
-
 .sub-heading {
   text-align: center;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 3rem;
   margin: 0;
   padding-top: 5rem;
-}
-
-/*--------General Footer--------*/
-
-.general-footer {
-  width: 100%;
-  height: 10rem;
-  margin-top: 2rem;
-  background: linear-gradient(to right, rgba(255, 188, 4, 0.76), rgba(255, 177, 117, 0.54));
-}
-
-.footer-grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: 2rem 1.3rem;
-  grid-auto-flow: row;
-  grid-auto-rows: 1.3rem;
-  grid-gap: 0.6rem;
-  justify-content: space-around;
-}
-
-.footer-grid-item {
-  display: inline;
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 1rem;
-}
-
-.first-row {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 0.6rem;
-}
-
-.footer-grid-item a {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.footer-grid-item a:hover {
-  color: black;
-  background-color: transparent;
-  text-decoration: underline solid;
-  /*#ffb006*/
-}
-
-.footer-grid-item a:active {
-  color: black;
-  background-color: lightgray;
-  text-decoration: none;
-}
-
-#footer-email-link {
-  color: black;
 }
 
 /*~~~~Links~~~~*/
@@ -233,6 +155,12 @@ a:active {
   background-color: #666666;
 }
 
+/* external links */
+a[href^="http://"] {
+  padding-left: 0.8125rem;
+  color: #1abc9c;
+}
+
 /* emails */
 a[href^="mailto:"] {
   padding-left: 2rem;
@@ -249,7 +177,7 @@ a[href$=".pdf"] {
   background-size: 1.125rem auto;
 }
 
-/*rsponsivity*/
+/*responsivity*/
 @media screen and (max-width: 1000px) {
   .general-text {
     width: 90%;
@@ -266,29 +194,8 @@ a[href$=".pdf"] {
 }
 
 @media screen and (max-width: 600px) {
-  .general-footer {
-    height: 35rem;
-  }
-
-  .footer-grid-container {
-    grid-template-columns: auto;
-    grid-template-rows: 3rem 3rem 3rem 3rem;
-    grid-auto-flow: row;
-    grid-auto-rows: 2rem;
-    text-align: center;
-  }
-
   #license,
-  #footer-email,
-  .footer-blank {
+  #footer-email{
     display: none;
-  }
-
-  .footer-grid-item {
-    font-size: 1.3rem;
-  }
-
-  .first-row {
-    font-size: 1.8rem;
   }
 }

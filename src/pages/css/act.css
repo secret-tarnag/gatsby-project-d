@@ -10,37 +10,3 @@ h2 {
 	text-align: center;
 	font-size: 2.5rem;
 }
-
-.scrolltop-button-container {
-	display: none;
-	position: fixed;
-	top: 7rem;
-	right: 5rem;
-	z-index: 4;
-}
-.scrolltop-button {
-	height: 2rem;
-	width: 2rem;
-	border: 1px solid #969696;
-	border-radius: 50%;
-	outline: none;
-	background-color: transparent;
-	color: #000;
-}
-.scrolltop-button:hover {
-	border-color: #000;
-}
-@media screen and (max-width: 1000px)
-{
-	.scrolltop-button-container
-	{
-		right: 0.5rem;
-	}
-}
-@media screen and (max-width: 600px)
-{
-	.scrolltop-button-container
-	{
-		right: -3rem;
-	}
-}
