@@ -6,8 +6,8 @@ interface SourcesProps {
 }
 
 const text = {
-  'en': 'Sources, documents',
-  'hu': 'Források, dokumentumok',
+  en: 'Sources, documents',
+  hu: 'Források, dokumentumok',
 };
 
 export default (props: SourcesProps) => (
