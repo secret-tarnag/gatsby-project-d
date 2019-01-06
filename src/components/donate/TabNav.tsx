@@ -70,9 +70,12 @@ export default class TabNav extends React.PureComponent<TabNavProps, ''> {
   openTab(tabName: string) {
     const tablinks = document.getElementsByClassName('tablinks');
     // remove past active class selectors
-    for (let i = 0; i < tablinks.length; i++) {
+    /*for (let i = 0; i < tablinks.length; i++) {
       tablinks[i].classList.remove('active');
-    }
+    }*/
+    Array.from(tablinks).forEach(tablink => {
+      tablink.classList.remove('active');
+    });
     // scrolling
     const topPos = document.getElementById(tabName).offsetTop;
     document.documentElement.scrollTop = topPos - 160;
