@@ -116,5 +116,6 @@ export default () => (
       <div id="dataprotection"><Link to="/hu/adatvedelem">Adatvédelem</Link></div>
       <div id="license"><span>&copy; 2018; Democrable Community</span></div>
     </footer>
+
   </Layout>
 );
