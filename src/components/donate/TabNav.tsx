@@ -102,6 +102,27 @@ export default class TabNav extends React.PureComponent<TabNavProps, ''> {
             </div>
           ))
         }
+        {/*Its an ugly solution, but its working
+        <script>
+          {
+            window.onscroll = () => {
+              const tablinks = document.getElementsByClassName('tablinks');
+              const tabs = document.getElementsByClassName('tabcontent');
+              const nav = document.getElementById('tab');
+              for (let j = 0; j < tabs.length; j++) {
+                if (tabs[j].offsetTop <= nav.offsetHeight + nav.offsetTop + 100) {
+                  /*for (let i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(' active', '');
+                  }
+                  Array.from(tablinks).forEach(tablink => {
+                    tablink.className = tablink.className.replace(' active', '');
+                  });
+                  tablinks[j].className += ' active';
+                }
+              }
+            }
+          }
+        </script>*/}
       </div>
     );
   }
