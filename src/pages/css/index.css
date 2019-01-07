@@ -24,30 +24,11 @@
   /*opacity: 0.8;*/
 }
 
-#helptext {
-  width: 85%;
-  text-align: center;
-  margin: 0.5rem auto;
-  font-size: 1.1rem;
-  color: white;
-  position: relative;
-  z-index: 2;
-}
-
-.helptext-title {
-  cursor: help;
-  font-weight: normal;
-}
-
 .helptext-p {
   opacity: 0;
   padding: 0.3rem;
-  /*border-left: 3px solid #ffb006;
-   border-right: 3px solid #ffb006;
-   background-color: rgba(255,255,255,0.15);*/
   transition: opacity .2s;
 }
-
 .helptext-p.is-visible {
   opacity: 1;
 }
