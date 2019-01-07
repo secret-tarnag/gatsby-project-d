@@ -31,6 +31,72 @@ const title = {
   hu: 'A Nagy <span class="highlight">Média</span>figyelő',
 };
 
+const searchBarContainer = css({
+  width: '60%',
+  height: '3rem',
+  margin: 'auto',
+  marginTop: '3rem',
+  marginBottom: '2.5rem',
+  backgroundColor: 'transparent',
+  '@media (max-width:1000px)': {
+    width: '73%',
+  },
+});
+const searchButton = css({
+  width: '13%',
+  minWidth: '2.125rem',
+  height: '3rem',
+  color: 'white',
+  float: 'right',
+  backgroundColor: 'black',
+  backgroundImage: 'url("/assets/search_ico_invert.png")',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'center',
+  backgroundSize: '2rem 2rem',
+  border: '2px solid black',
+  borderRadius: '2px',
+  ':hover': {
+    backgroundColor: 'transparent',
+    border: '2px solid black',
+    backgroundImage: 'url("/assets/search_ico_transparent.png")',
+  },
+  ':active': {
+    color: 'black',
+    backgroundColor: 'lightgray',
+  },
+  '@media (max-width:1000px)': {
+    width: '15%',
+  },
+});
+const suggestionContainer = css({
+  width: '84%',
+  position: 'relative',
+  marginTop: '0.3rem',
+  backgroundColor: 'white',
+  borderRadius: '2px',
+  fontFamily: '"Roboto Condensed", sans-serif',
+  zIndex: 3,
+});
+const suggestionItem = css({
+  width: '100%',
+  height: '2rem',
+  borderBottom: '1px solid #ebebeb',
+  ':hover': {
+    color: '#000',
+    backgroundColor: '#ebebeb',
+  },
+});
+const suggestionLink = css({
+  fontSize: '1.2rem',
+  lineHeight: '2rem',
+  padding: '0.2rem 80% 0.2rem 1rem',
+  ':hover, :active': {
+    textDecoration: 'none',
+    color: '#000',
+    backgroundColor: 'transparent',
+  },
+});
+
 export default class SearchField extends React.PureComponent<
   SearchFieldProps,
   SearchFieldState
@@ -52,7 +118,7 @@ export default class SearchField extends React.PureComponent<
       <div id="sub-heading-et-search">
         <h2 className="sub-heading" dangerouslySetInnerHTML={{ __html: title[this.props.lang] }}>
         </h2>
-        <div className="search-bar-container" role="search">
+        <div className={searchBarContainer} role="search">
           <form
             name="search"
             action="javascript:void(0)"
@@ -66,9 +132,9 @@ export default class SearchField extends React.PureComponent<
               placeholder="keresés"
               onChange={e => this.setState({ searchText: e.target.value })}
             />
-            <button id="submit" className="search-button" type="submit" />
+            <button id="submit" className={searchButton} type="submit" />
             {/* Suggestions */}
-            <div className="suggestion-container">
+            <div className={suggestionContainer}>
               {this.props.newsOutlets
                 .filter(
                   outlet =>
@@ -79,9 +145,9 @@ export default class SearchField extends React.PureComponent<
                     this.state.searchText.length > 0,
                 )
                 .map(outlet => (
-                  <div className="suggestion-item">
+                  <div className={suggestionItem}>
                     <Link
-                      className="suggestion-link"
+                      className={suggestionLink}
                       to={`/${this.props.lang}/outlets/${
                         outlet.node.frontmatter.slug
                         }`}
