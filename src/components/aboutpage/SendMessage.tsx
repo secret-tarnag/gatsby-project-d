@@ -130,7 +130,7 @@ const texts = {
   },
 };
 
-Modal.setAppElement(document.getElementById('about-modal-root'));
+Modal.setAppElement('#about-modal-root');
 
 class SendMessage extends React.PureComponent<SendMessageProps, SendMessageState> {
   constructor(props: SendMessageProps) {
