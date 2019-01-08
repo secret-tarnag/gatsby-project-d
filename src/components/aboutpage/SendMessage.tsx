@@ -130,7 +130,11 @@ const texts = {
   },
 };
 
+<<<<<<< HEAD
 /*Modal.setAppElement('#about-modal-root');*/
+=======
+Modal.setAppElement(document.getElementById('about-modal-root'));
+>>>>>>> parent of 4df5b37... bugfix
 
 class SendMessage extends React.PureComponent<SendMessageProps, SendMessageState> {
   constructor(props: SendMessageProps) {
