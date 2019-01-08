@@ -130,13 +130,12 @@ const texts = {
   },
 };
 
-<<<<<<< HEAD
 /*Modal.setAppElement('#about-modal-root');*/
-=======
-Modal.setAppElement(document.getElementById('about-modal-root'));
->>>>>>> parent of 4df5b37... bugfix
 
-class SendMessage extends React.PureComponent<SendMessageProps, SendMessageState> {
+class SendMessage extends React.PureComponent<
+  SendMessageProps,
+  SendMessageState
+> {
   constructor(props: SendMessageProps) {
     super(props);
     this.state = {
@@ -166,12 +165,18 @@ class SendMessage extends React.PureComponent<SendMessageProps, SendMessageState
           </button>
         </div>
         {/*out: className:contact-form-container id:contact-form*/}
-        <Modal isOpen={this.state.showModal} onRequestClose={this.handleCloseModal} style={SendMessageStyles}>
+        <Modal
+          isOpen={this.state.showModal}
+          onRequestClose={this.handleCloseModal}
+          style={SendMessageStyles}
+        >
           <div className={formContainer}>
             <h3 className={`barlow ${formTitle}`}>
               {texts.title[this.props.lng]}
             </h3>
-            <span className={closeButtonStyles} onClick={this.handleCloseModal}>&times;</span>
+            <span className={closeButtonStyles} onClick={this.handleCloseModal}>
+              &times;
+            </span>
             <form id="form" action="" method="post" className={messageForm}>
               <span className={`barlow ${formText}`}>
                 {texts.name[this.props.lng]}
@@ -213,7 +218,9 @@ class SendMessage extends React.PureComponent<SendMessageProps, SendMessageState
                 rows={1}
                 cols={100}
                 required
-              /><br /><br />
+              />
+              <br />
+              <br />
               <input
                 id="submit-button"
                 className="barlow"
@@ -223,10 +230,9 @@ class SendMessage extends React.PureComponent<SendMessageProps, SendMessageState
             </form>
           </div>
         </Modal>
-      </div >
+      </div>
     );
   }
-
 }
 
 export default SendMessage;
