@@ -49,21 +49,7 @@
 	list-style-type: none;
 	margin-left: 2rem;
 }
-/*Sources*/
-.source-container {
-	width: 90%;
-	margin: 1.5rem auto 1.5rem auto;
-	font-size: 1rem;
-}
-.source-title {
-	font-size: 1.5rem;
-	margin: 1rem 0;
-}
-.source-list {
-	list-style-type: square;
-	padding-left: 1.5rem;
-	line-height: 1.3rem;
-}
+
 .horizontal {
 	height: 3px;
 	border: none;
