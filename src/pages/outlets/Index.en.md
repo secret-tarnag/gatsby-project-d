@@ -2,7 +2,7 @@
 title: index.hu
 lang: en
 slug: Index
-logo: index_logo.png
+logo: index.svg
 isIndependent: true
 properties:
   - key: Category

@@ -8,11 +8,11 @@ interface TitleAndLogoProps {
 
 const grid = css({
   width: '90%',
-  margin: '8rem auto 0 auto',
-  height: '13rem',
+  margin: '8rem auto 1rem auto',
+  height: '10rem',
   display: 'grid',
   gridTemplateColumns: '25% 75%',
-  gridTemplateRows: '13rem',
+  gridTemplateRows: '10rem',
   justifyContent: 'start',
   alignContent: 'flex-start',
   backgroundColor: 'transparent',
@@ -31,18 +31,25 @@ const title = css({
   fontFamily: '"Slabo 27px", serif',
   margin: '0 1rem 0 1rem',
   position: 'relative',
-  top: '-1rem',
+  top: '50%',
+  transform: 'translateY(-50%)',
 });
-
+const logoContainer = css({
+  display: 'grid',
+  gridTemplateColumns: '100%',
+  gridTemplateRows: 'auto',
+  justifyContent: 'center',
+  alignContent: 'center',
+});
 const logo = css({
-  width: '80%',
-  maxHeight: '11rem',
-  margin: '1rem',
+  width: '100%',
+  height: 'auto',
+  maxHeight: '8rem',
 });
 
 export default (props: TitleAndLogoProps) => (
   <div className={grid}>
-    <div id="logo-container">
+    <div className={logoContainer}>
       <img
         className={logo}
         alt="logo"

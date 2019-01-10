@@ -11,17 +11,17 @@
 	font-family: 'Slabo 27px', serif;
 }
 /*Title Section*/
+#chevron-left, #chevron-right {
+	position: relative;
+	float: right;
+}
 #chr-left {
 	transform: translateX(0);
 	transition: transform .3s;
-	position: relative;
-	float: right;
 }
 #chr-right {
 	transform: translateX(0);
 	transition: transform .3s;
-	position: relative;
-	float: right;
 }
 #chevron-left:hover #chr-left {
 	transform: translateX(-3px);
@@ -55,9 +55,13 @@
 	margin: 1.5rem auto 1.5rem auto;
 	font-size: 1rem;
 }
+.source-title {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
 .source-list {
 	list-style-type: square;
-	padding-left: 1rem;
+	padding-left: 1.5rem;
 	line-height: 1.3rem;
 }
 .horizontal {
