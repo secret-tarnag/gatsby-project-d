@@ -1,8 +1,8 @@
 ---
-title: index.hu
+title: inews.hu
 lang: hu
-slug: Index
-logo: index_logo.png
+slug: Inews
+logo: inews_logo.png
 isIndependent: true
 properties:
   - key: Kategória
