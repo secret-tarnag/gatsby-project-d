@@ -3,97 +3,266 @@
 
 /*----Styling for tamogatas.html----*/
 
-#bckg-pic {
+/*Fonts:*/
+/*font-family: 'Cabin Sketch', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Roboto Condensed', sans-serif;*/
+
+.donate-grid-container {
 	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	background: url(../../../static/assets/donate_background.JPG) no-repeat center;
-	background-size: cover;
-	opacity: 0.45;
-	z-index: -1;
+	height: 90%;
+	display: grid;
+	grid-template-columns: 48% 48%;
+	grid-template-rows: 100%;
+	align-content: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+	font-family: 'Cabin Sketch', cursive;
 }
-#donate-container {
+
+.comingsoon-logo-container {
+	background: url(../../../static/assets/logo_bw_comingsoon.png) no-repeat center;
+	background-size: contain;
+}
+
+.donate-title {
+	text-align: center;
+	font-size: 6rem;
+	color: #272727;
+	background-color: transparent;
+	margin-top: 2rem;
+}
+
+.donate-description {
+	text-align: center;
+	font-size: 1.3rem;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #272727;
+	background-color: transparent;
+	position: relative;
+	top: 4rem;
+}
+
+.donate-link-container {
+	font-family: 'Comfortaa', cursive;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 7rem;
+}
+
+.language-links .language-link {
+	position: relative;
+	top: 1rem;
+	font-size: 1rem;
+	font-weight: bold;
+	color: black;
+}
+
+.language-links .language-link:hover {
+	text-decoration: none;
+	color: #4b6677;
+}
+
+.icon {
+	position: relative;
+	top: 0.3rem;
+}
+
+/* Create an active/current tablink class */
+#about-button.active {
+	background: url(../../../static/assets/link1_bw.png) no-repeat center;
+	background-size: contain;
+}
+
+#goals-button.active {
+	background: url(../../../static/assets/link2_bw.png) no-repeat center;
+	background-size: contain;
+}
+
+#contribute-button.active {
+	background: url(../../../static/assets/link3_bw.png) no-repeat center;
+	background-size: contain;
+}
+
+/* Style the tab content */
+.tabcontent {
+	font-family: 'Roboto Condensed', sans-serif;
 	width: 60%;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	margin-top: 6rem;
-	text-align: center;
-	background-color: transparent;
-}
-.donate-title {
-	font-weight: normal;
-	font-size: 4rem;
-	margin-bottom: 1rem;
-}
-.donate-text {
-	font-size: 1.6rem;
-	line-height: 2.3rem;
-	margin-bottom: 2rem;
-}
-.donate-label {
-	font-size: 1.2rem;
-}
-.donate-button {
-	margin: 1rem;
-}
-.donate-link a{
-	font-size: 1.3rem;
-	color: #d9272a;
-	padding: 0 1rem;
-}
-.donate-link:hover a{
-	color: #d9272a;
-}
-.donate-link:active a{
-	background-color: transparent;
-}
-.donate-footer {
-	position: absolute;
-	bottom: 2rem;
-	right: 2rem;
-}
-#cc-join {
-	position: relative;
-	top: 1.35rem;
-	right: 1.5rem;
+	line-height: 1.8rem;
 }
 
-@media (max-width: 1025px)
-{
-	#donate-container
-	{
-		width: 95%;
+.tabcontent h2 {
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 1.1rem;
+}
+
+.tabcontent p {
+	margin: 0.7rem;
+}
+
+.tabcontent p,
+.tabcontent li {
+	font-size: 1.2rem;
+}
+
+.tabcontent ul {
+	list-style-type: square;
+	padding-left: 2rem;
+}
+
+#fundr {
+	width: 100%;
+	height: 36rem;
+	display: grid;
+	margin-top: 3rem;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 12rem 12rem 12rem;
+	justify-content: space-evenly;
+	align-content: center;
+	background: url(../../../static/assets/fund_pos_bckg.png) no-repeat bottom;
+	background-size: cover;
+}
+
+.fundr-grid-item {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	text-align: center;
+}
+
+#fundr p {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1rem;
+	font-style: italic;
+}
+
+#paypal-account {
+	font-size: 2rem;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#paypal-account a {
+	color: black;
+	background-color: transparent;
+}
+
+#social-media {
+	grid-column: 1/3;
+}
+
+#bottom-text {
+	grid-column: 1/3;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#paypal-logo {
+	width: 2.5rem;
+	height: 2.5rem;
+	position: relative;
+	top: 0.5rem;
+}
+
+#donate-footer {
+	width: 100%;
+	height: 6rem;
+	font-family: 'Comfortaa', cursive;
+	font-size: 1.1rem;
+	background-color: transparent;
+}
+
+#donate-footer div {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#dataprotection {
+	width: 45%;
+	position: relative;
+	top: 50%;
+	float: left;
+	text-align: center;
+}
+
+#license {
+	width: 55%;
+	position: relative;
+	top: 50%;
+	float: right;
+	text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+	.donate-grid-container {
+		display: block;
 	}
-	#bckg-pic
-	{
-		height: 120%;
+
+	.comingsoon-logo-container {
+		width: 100%;
+		height: 20rem;
 	}
-	.donate-footer
-	{
-		bottom: -7rem;
+
+	.donate-description {
+		top: 1rem;
+	}
+
+	.donate-link-container {
+		margin-top: 4rem;
+	}
+
+	.tab {
+		grid-gap: 0;
+	}
+
+	.tabcontent {
+		width: 90%;
 	}
 }
-@media (max-width: 550px)
-{
-	#bckg-pic
-	{
-		height: 150%;
+
+@media screen and (max-width: 800px) {
+	.tab-image-container {
+		display: none;
 	}
-	.donate-footer
-	{
-		bottom: -17rem;
+
+	.tab {
+		grid-template-columns: 33% 33% 33%;
+		height: 8rem;
+	}
+
+	#about-button.active,
+	#goals-button.active,
+	#contribute-button.active {
+		background-size: cover;
+		overflow: hidden;
+		font-weight: bold;
 	}
 }
-@media (max-width: 450px)
-{
-	#bckg-pic
-	{
-		height: 165%;
+
+@media screen and (max-width: 500px) {
+	.donate-title {
+		font-size: 3rem;
 	}
-	.donate-footer
-	{
-		bottom: -23rem;
+}
+
+@media screen and (max-width: 400px) {
+	#fundr {
+		grid-template-columns: 100% 0;
+		grid-template-rows: repeat(4, 9rem);
+		height: 40rem;
+	}
+
+	#paypal-account,
+	#bank-account {
+		grid-column: 1/3;
+	}
+
+	.tab,
+	.tab button {
+		height: 6rem;
 	}
 }

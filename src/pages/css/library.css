@@ -5,19 +5,23 @@
 .library-main {
 	margin: 10rem 0 5rem 0;
 }
-h2 {
+
+.library-title {
 	text-align: center;
 	font-size: 2.5rem;
 }
+
 /*Spacial navbar*/
 #topnav {
 	background-color: white;
-	box-shadow: 0 3px 5px 3px rgba(0,0,0,0.05);
+	box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.05);
 }
+
 #topnav a {
 	background-color: transparent;
 	color: black;
 }
+
 #topnav a:hover {
 	text-decoration: underline;
 }
@@ -30,11 +34,33 @@ h2 {
 	transform: translateX(-50%);
 	margin-bottom: 5rem;
 }
+
+.library-list-section {
+	margin: 1rem 0;
+}
+
+.library-section-title {
+	font-size: 2rem;
+	font-weight: normal;
+	margin-bottom: 1rem;
+}
+
 .library-hr {
 	height: 1px;
 	background-color: #000;
 	border: none;
 	margin: 0.5rem;
+}
+
+.library-link {
+	font-size: 1.2rem;
+	margin-left: 3rem;
+}
+
+.library-comment {
+	font-size: 1.1rem;
+	font-style: italic;
+	margin-left: 5rem;
 }
 
 /*Special footer*/
@@ -45,6 +71,7 @@ h2 {
 	background: none;
 	background-color: white;
 }
+
 #library-footer-grid hr {
 	height: 3px;
 	background-color: black;
@@ -52,21 +79,18 @@ h2 {
 }
 
 /*mobile optimization*/
-@media screen and (max-width: 1000px)
-{
-	.library-list
-	{
+@media screen and (max-width: 1000px) {
+	.library-list {
 		width: 90%;
 	}
 }
-@media screen and (max-width: 600px)
-{
-	.library-comment
-	{
+
+@media screen and (max-width: 600px) {
+	.library-comment {
 		margin-left: 1rem;
 	}
-	.library-link
-	{
+
+	.library-link {
 		height: auto;
 	}
 }
