@@ -67,12 +67,35 @@ export default class TabNav extends React.PureComponent<TabNavProps, ''> {
     super(props);
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', e => this.handleScroll());
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', e => this.handleScroll());
+  }
+
+  handleScroll() {
+    // This is an ugly bit imported form pre TS+React+Gatsby times
+    const tablinks = document.getElementsByClassName('tablinks');
+    const tabs: any = document.getElementsByClassName('tabcontent');
+    const nav = document.getElementById('tab');
+    for (let j = 0; j < tabs.length; j++) {
+      if (tabs[j].offsetTop <= nav.offsetHeight + nav.offsetTop + 100) {
+        Array.from(tablinks).forEach(tablink => {
+          tablink.className = tablink.className.replace(' active', '');
+        });
+        Array.from(tablinks).forEach(tablink => {
+          tablink.className = tablink.className.replace(' active', '');
+        });
+        tablinks[j].className += ' active';
+      }
+    }
+  }
+
   openTab(tabName: string) {
     const tablinks = document.getElementsByClassName('tablinks');
     // remove past active class selectors
-    /*for (let i = 0; i < tablinks.length; i++) {
-      tablinks[i].classList.remove('active');
-    }*/
     Array.from(tablinks).forEach(tablink => {
       tablink.classList.remove('active');
     });
@@ -86,43 +109,20 @@ export default class TabNav extends React.PureComponent<TabNavProps, ''> {
   render() {
     return (
       <div id="tab" className={tabStyle}>
-        <div id="tab-image" className={tabImage}></div>
-        {
-          links.map(link => (
-            <div>
-              <span>
-                <button
-                  id={`${link.id}-button`}
-                  className="tablinks"
-                  onClick={() => this.openTab(`${link.id}`)}
-                >
-                  {link[this.props.lng]}
-                </button>
-              </span>
-            </div>
-          ))
-        }
-        {/*Its an ugly solution, but its working
-        <script>
-          {
-            window.onscroll = () => {
-              const tablinks = document.getElementsByClassName('tablinks');
-              const tabs = document.getElementsByClassName('tabcontent');
-              const nav = document.getElementById('tab');
-              for (let j = 0; j < tabs.length; j++) {
-                if (tabs[j].offsetTop <= nav.offsetHeight + nav.offsetTop + 100) {
-                  /*for (let i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(' active', '');
-                  }
-                  Array.from(tablinks).forEach(tablink => {
-                    tablink.className = tablink.className.replace(' active', '');
-                  });
-                  tablinks[j].className += ' active';
-                }
-              }
-            }
-          }
-        </script>*/}
+        <div id="tab-image" className={tabImage} />
+        {links.map(link => (
+          <div>
+            <span>
+              <button
+                id={`${link.id}-button`}
+                className="tablinks"
+                onClick={() => this.openTab(`${link.id}`)}
+              >
+                {link[this.props.lng]}
+              </button>
+            </span>
+          </div>
+        ))}
       </div>
     );
   }
