@@ -6,12 +6,14 @@ interface DescriptionProps {
 }
 
 const descriptionContainer = css({
-  width: '90%',
+  width: '80%',
   margin: '1rem auto',
   fontSize: '1.15rem',
+  lineHeight: '1.5rem',
+  wordSpacing: '0.2rem',
 });
 const descriptionParagraphs = css({
-  margin: '0.3rem 0',
+  margin: '0.5rem 0',
 });
 
 export default (props: DescriptionProps) => (

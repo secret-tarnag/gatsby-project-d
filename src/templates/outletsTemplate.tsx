@@ -8,6 +8,8 @@ import TitleAndLogo from '../components/outlets/TitleAndLogo';
 import Properties from '../components/outlets/Properties';
 import OutletFooter from '../components/outlets/OutletFooter';
 import Sources from '../components/outlets/Sources';
+import Description from '../components/outlets/Description';
+import Contacts from '../components/outlets/Contacts';
 
 interface KeyValue {
   key: string;
@@ -29,6 +31,7 @@ interface OutletTemplateProps {
           fields: KeyValue[];
         };
         sources: Array<{ text: string; link: string }>;
+        description: Array<{ text: string }>;
       };
     };
   };
@@ -48,6 +51,7 @@ export default ({ data }: OutletTemplateProps) => {
       <div id="main-content" className="barlow">
         <TitleAndLogo {...frontmatter} />
         <Properties {...frontmatter} />
+        <Description {...frontmatter} />
         <Sources {...frontmatter} />
       </div>
       <OutletFooter lang={frontmatter.lang} />
@@ -81,6 +85,9 @@ export const pageQuery = graphql`
         sources {
           text
           link
+        }
+        description {
+          text
         }
       }
     }
