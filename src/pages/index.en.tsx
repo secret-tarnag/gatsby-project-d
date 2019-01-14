@@ -8,15 +8,11 @@ import './css/search.css';
 import LinkList from '../components/homepage/LinkList';
 import Footer from '../components/Footer';
 import Layout from '../components/layout';
+import { NewsOutlet } from '../outlet';
 
 export interface NewsOutletNodes {
   node: {
-    frontmatter: {
-      title: string;
-      lang: 'en' | 'hu';
-      isIndependent: boolean;
-      slug: string;
-    };
+    frontmatter: NewsOutlet;
   };
 }
 

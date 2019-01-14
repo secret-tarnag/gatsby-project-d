@@ -2,7 +2,8 @@
 title: inews.hu
 lang: hu
 slug: Inews
-logo: inews_logo.png
+logo: index.svg
+dailyReach: 125250
 isIndependent: true
 properties:
   - key: Kategória

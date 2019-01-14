@@ -3,6 +3,7 @@ title: index.hu
 lang: hu
 slug: Index
 logo: index.svg
+dailyReach: 687098
 isIndependent: true
 properties:
   - key: Kategória
