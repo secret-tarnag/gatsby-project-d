@@ -2,7 +2,7 @@ import * as React from 'react';
 import { css } from 'emotion';
 
 interface DescriptionProps {
-  description: Array<{ text: string; }>;
+  description: Array<{ text: string }>;
 }
 
 const descriptionContainer = css({
@@ -18,8 +18,12 @@ const descriptionParagraphs = css({
 
 export default (props: DescriptionProps) => (
   <div className={descriptionContainer}>
-    {props.description.map(paragraph => (
-      <p className={descriptionParagraphs}>{paragraph.text}</p>
-    ))}
+    {props.description === null ? (
+      <p>Missing description</p>
+    ) : (
+      props.description.map(paragraph => (
+        <p className={descriptionParagraphs}>{paragraph.text}</p>
+      ))
+    )}
   </div>
 );

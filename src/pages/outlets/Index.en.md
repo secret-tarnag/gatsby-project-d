@@ -14,14 +14,14 @@ properties:
   - key: Owner
     value: Magyar Fejlődésért Alapítvány (dr. Bodolai László – curator)
 contact:
-  - name: Contact
-    fields:
-      - key: Address
-        value: Flórián Udvar, 1033 Budapest, Flórián tér 1., Floors I. and II.
-      - key: Telephone
-        value: +36 555-7000
-      - key: Fax
-        value: 349-0393
+  name: Contact
+  fields:
+    - key: Address
+      value: Flórián Udvar, 1033 Budapest, Flórián tér 1., Floors I. and II.
+    - key: Telephone
+      value: +36 555-7000
+    - key: Fax
+      value: 349-0393
 sources:
   - text: index.hu
     link: https://index.hu/

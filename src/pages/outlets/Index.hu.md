@@ -22,14 +22,14 @@ properties:
   - key: Tulajdonosok
     value: Magyar Fejlődésért Alapítvány (dr. Bodolai László – kurátor)
 contact:
-  - name: Kiadó elérhetőségei
-    fields:
-      - key: Cím
-        value: Flórián Udvar, 1033 Budapest, Flórián tér 1., I. és II. emelet
-      - key: Telefon
-        value: +36 555-7000
-      - key: Fax
-        value: 349-0393
+  name: Kiadó elérhetőségei
+  fields:
+    - key: Cím
+      value: Flórián Udvar, 1033 Budapest, Flórián tér 1., I. és II. emelet
+    - key: Telefon
+      value: +36 555-7000
+    - key: Fax
+      value: 349-0393
 sources:
   - text: index.hu
     link: https://index.hu/
@@ -48,7 +48,7 @@ sources:
   - text: Simicska kapitulációja
     link: https://hvg.hu/gazdasag/20180704_Simicska_Lajos_kiszall_uzleti_erdekeltsegeibol
   - text: Simicskátlanítás az Indexnél
-    link:	https://hvg.hu/gazdasag/20180913_Mar_nem_Simicska_embere_vezeti_az_Index_mogott_allo_rejtelyes_ceget
+    link: https://hvg.hu/gazdasag/20180913_Mar_nem_Simicska_embere_vezeti_az_Index_mogott_allo_rejtelyes_ceget
   - text: Simicska mindent elad Nyergesnek
     link: https://hvg.hu/gazdasag/20180715_simicska_lajos_orban_viktor_csucsoligarcha_visszavonulas_nyerges_zsolt
 description:
