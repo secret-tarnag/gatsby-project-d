@@ -53,6 +53,7 @@ export default ({ data }: OutletTemplateProps) => {
         <Properties {...frontmatter} />
         <Description {...frontmatter} />
         <Sources {...frontmatter} />
+        <Contacts {...frontmatter.contact} />
       </div>
       <OutletFooter lang={frontmatter.lang} />
     </Layout>

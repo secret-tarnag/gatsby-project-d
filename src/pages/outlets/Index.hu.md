@@ -7,6 +7,8 @@ isIndependent: true
 properties:
   - key: Kategória
     value: közéleti híroldal
+  - key: Látogatottság
+    value: 599 627 látogató/nap (2018 július)
   - key: Megjelenési forma
     value: online
   - key: Világnézet
@@ -20,8 +22,8 @@ properties:
   - key: Tulajdonosok
     value: Magyar Fejlődésért Alapítvány (dr. Bodolai László – kurátor)
 contact:
-  - key: Kiadó elérhetőségei
-    value:
+  - name: Kiadó elérhetőségei
+    fields:
       - key: Cím
         value: Flórián Udvar, 1033 Budapest, Flórián tér 1., I. és II. emelet
       - key: Telefon
