@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+import { css } from 'emotion';
 
 import Layout from '../components/layout';
 import Navbar from '../components/Navbar';
@@ -37,6 +38,14 @@ interface OutletTemplateProps {
   };
 }
 
+const gridContainer = css({
+  width: '90%',
+  margin: '0 auto',
+  display: 'grid',
+  gridTemplateColumns: '50% 50%',
+  gridTemplateRows: 'auto',
+});
+
 export default ({ data }: OutletTemplateProps) => {
   const { outlet } = data;
   const { frontmatter, html } = outlet;
@@ -52,8 +61,10 @@ export default ({ data }: OutletTemplateProps) => {
         <TitleAndLogo {...frontmatter} />
         <Properties {...frontmatter} />
         <Description {...frontmatter} />
-        <Sources {...frontmatter} />
-        <Contacts {...frontmatter.contact} />
+        <div className={gridContainer}>
+          <Sources {...frontmatter} />
+          <Contacts {...frontmatter.contact} />
+        </div>
       </div>
       <OutletFooter lang={frontmatter.lang} />
     </Layout>

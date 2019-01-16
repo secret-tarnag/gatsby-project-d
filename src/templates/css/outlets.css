@@ -29,26 +29,6 @@
 #chevron-right:hover #chr-right {
 	transform: translateX(3px);
 }
-/*Descriptions Section*/
-.description-container {
-	width: 90%;
-	margin: 5rem auto 2rem auto;
-	font-size: 1.2rem;
-}
-.description-container p {
-	margin: 1rem 0;
-}
-.description-container p::first-letter{
-	padding-left: 0.5rem;
-	font-size: 1.4rem;
-}
-.description-container h3 {
-	margin: 1rem 0;
-}
-.description-container ul {
-	list-style-type: none;
-	margin-left: 2rem;
-}
 
 .horizontal {
 	height: 3px;
