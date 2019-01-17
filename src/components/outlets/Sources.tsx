@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { css, cx } from 'emotion';
 
 interface SourcesProps {
   sources: Array<{ text: string; link: string }>;
@@ -10,13 +11,27 @@ const text = {
   hu: 'Források, dokumentumok',
 };
 
+const sourceContainer = css({
+  width: '80%',
+  margin: '1.5rem auto 1.5rem auto',
+  fontSize: '1rem',
+});
+const sourceTitle = css({
+  fontSize: '1.5rem',
+  margin: '1rem 0',
+});
+const sourceList = css({
+  paddingLeft: '1.5rem',
+  lineHeight: '1.3rem',
+});
+
 export default (props: SourcesProps) => (
-  <div className="source-container">
-    <h3 className="source-title slabo">{text[props.lang]}</h3>
-    <ul className="source-list">
+  <div className={sourceContainer}>
+    <h3 className={cx(`slabo ${sourceTitle}`)}>{text[props.lang]}</h3>
+    <ol className={sourceList}>
       {props.sources.map(item => (
         <li><a href={item.link} target="_blank">{item.text}</a></li>
       ))}
-    </ul>
+    </ol>
   </div>
 );

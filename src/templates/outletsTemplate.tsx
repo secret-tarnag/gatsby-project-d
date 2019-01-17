@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+import { css } from 'emotion';
 
 import Layout from '../components/layout';
 import Navbar from '../components/Navbar';
@@ -8,6 +9,8 @@ import TitleAndLogo from '../components/outlets/TitleAndLogo';
 import Properties from '../components/outlets/Properties';
 import OutletFooter from '../components/outlets/OutletFooter';
 import Sources from '../components/outlets/Sources';
+import Description from '../components/outlets/Description';
+import Contacts from '../components/outlets/Contacts';
 
 interface KeyValue {
   key: string;
@@ -29,10 +32,19 @@ interface OutletTemplateProps {
           fields: KeyValue[];
         };
         sources: Array<{ text: string; link: string }>;
+        description: Array<{ text: string }>;
       };
     };
   };
 }
+
+const gridContainer = css({
+  width: '90%',
+  margin: '0 auto',
+  display: 'grid',
+  gridTemplateColumns: '50% 50%',
+  gridTemplateRows: 'auto',
+});
 
 export default ({ data }: OutletTemplateProps) => {
   const { outlet } = data;
@@ -48,7 +60,11 @@ export default ({ data }: OutletTemplateProps) => {
       <div id="main-content" className="barlow">
         <TitleAndLogo {...frontmatter} />
         <Properties {...frontmatter} />
-        <Sources {...frontmatter} />
+        <Description {...frontmatter} />
+        <div className={gridContainer}>
+          <Sources {...frontmatter} />
+          <Contacts {...frontmatter.contact} />
+        </div>
       </div>
       <OutletFooter lang={frontmatter.lang} />
     </Layout>
@@ -81,6 +97,9 @@ export const pageQuery = graphql`
         sources {
           text
           link
+        }
+        description {
+          text
         }
       }
     }
