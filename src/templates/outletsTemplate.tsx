@@ -32,7 +32,6 @@ interface OutletTemplateProps {
           fields: KeyValue[];
         };
         sources: Array<{ text: string; link: string }>;
-        description: Array<{ text: string }>;
       };
     };
   };
@@ -60,7 +59,7 @@ export default ({ data }: OutletTemplateProps) => {
       <div id="main-content" className="barlow">
         <TitleAndLogo {...frontmatter} />
         <Properties {...frontmatter} />
-        <Description {...frontmatter} />
+        <Description description={html} />
         <div className={gridContainer}>
           <Sources {...frontmatter} />
           <Contacts {...frontmatter.contact} />
@@ -97,9 +96,6 @@ export const pageQuery = graphql`
         sources {
           text
           link
-        }
-        description {
-          text
         }
       }
     }
