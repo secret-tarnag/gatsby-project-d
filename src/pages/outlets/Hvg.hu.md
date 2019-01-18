@@ -43,6 +43,8 @@ sources:
     link: https://hu.wikipedia.org/wiki/HVG
   - text: Látogatottsági adatok - Digitális Közönségmérési Tanács
     link: http://dkt.hu/hu/menu/ola.html
+  - text: Eladási példányszámok - MATESZ
+    link: https://matesz.hu
 ---
 
 ###Történet
