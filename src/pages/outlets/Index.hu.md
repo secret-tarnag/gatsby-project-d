@@ -33,7 +33,7 @@ contact:
 sources:
   - text: index.hu
     link: https://index.hu/
-  - text: Wikipedia szócikk
+  - text: Wikipédia szócikk
     link: https://hu.wikipedia.org/wiki/Index.hu
   - text: Látogatottsági adatok - Digitális Közönségmérési Tanács
     link: http://dkt.hu/hu/menu/ola.html
