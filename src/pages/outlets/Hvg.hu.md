@@ -1,7 +1,7 @@
 ---
 title: HVG
 lang: hu
-slug: Hvg
+slug: hvg
 logo: hvg.jpg
 isIndependent: true
 properties:

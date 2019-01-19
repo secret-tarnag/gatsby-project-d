@@ -1,7 +1,7 @@
 ---
 title: index.hu
 lang: hu
-slug: Index
+slug: index
 logo: index.svg
 isIndependent: true
 properties:
