@@ -55,14 +55,14 @@ sources:
 
 Az Index az egyik legnagyobb online híroldal Magyarországon. A történetét itt nem mesélnénk el, mert hosszú és kacifántos (és amúgy sem ez a célja ennek az oldalnak), szerencsére a [Wikipédián](https://hu.wikipedia.org/wiki/Index.hu) részletes szócikke van (mely azért hagy kívánnivalót maga után). Csak azzal foglalkozunk most, ami a függetlenség szempontjából érdekes.
 
-###Tulajdonosok
+###Tulajdonosok###
 
 Az Indexet kiadó Index.hu Zrt.-t 2017 áprilisában vásárolta meg Simicska Lajos vagyonkezelője az addigra kegyvesztetté vált Spéder Zoltántól, majd a vállalat tulajdonjogát a Magyar Fejlődésért Alapítványra ruházta, melynek kurátora Bodolai László, Simicskával jó viszonyban levő emberként ismert. A portálhoz szorosan kapcsolódó – hirdetési helyeit értékesítő, és ezáltal a bevétel nagyobb részét szerző – vállalatok (a CEMP csoport) Spéder tulajdonában maradtak.
 
 
 Simicska időleges befolyásszerzése után megkezdődött a visszarendeződés. Miután 2018 nyarán a legtöbb gazdasági érdekeltségét eladta üzlettársának Nyerges Zsoltnak (azaz kiszállt vagy kapitulált vagy amit akartok), az index mögött álló cégből is távoztak emberei. Végül 2018 szeptemberében Ziegler Gábor (indexes felsővezető) és a KDNP-s Oltyán József megvette Spédertől a CEMP csoport vállalatait és a NP Nanga Parbat Zrt.-t, mely a Magyar Fejlődésért Alapítvány alapítói jogaival rendelkezik. Ezzel párhuzamosan Simicska megmaradt emberei is távoztak az Index.hu Zrt.-ből, Bodolai László viszont maradt az alapítványnál.
 
-###Függetlenség
+###Függetlenség###
 
 Tehát mind Simicska, mind Spéder befolyása megszűnt a portál fölött, ami viszont a KDNP közelébe került. Habár a szerkesztőség és Bodolai továbbra is megmaradó függetlenségüket hangsúlyozva nyilatkoztak, emellett az oldal hangvételében és objektivitásában nem is történt érzékelhető változás, a CEMP csoport új tulajdonosai több felől is nyomást tudnak gyakorolni az Indexre. Egyrészt a hirdetési felületek értékesítőjeként (mely bevételek nélkül az oldal nem tudna sokáig működni), másrészt az alapítvány alapítói jogain keresztül.
 

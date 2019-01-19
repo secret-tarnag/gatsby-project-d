@@ -35,8 +35,8 @@ sources:
     link: http://www.siteworthtraffic.com/report/atlatszo.hu
 ---
 
-###Tevékenység
+###Tevékenység###
 
-###Függetlenség
+###Függetlenség###
 
 Az Átlátszó történetéről és egyéb infókért nézd meg a [Wikipédia-oldalukat](https://hu.wikipedia.org/wiki/%C3%81tl%C3%A1tsz%C3%B3.hu).
