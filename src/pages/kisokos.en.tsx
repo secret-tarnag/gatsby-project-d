@@ -5,11 +5,11 @@ import Footer from '../components/Footer';
 
 export default () => (
   <Layout>
-    <Navbar isHomePage={false} lng="en" urlSlug="kisokos" />
+    <Navbar id="topnav" isHomePage={false} lng="en" urlSlug="kisokos" />
     <div className="barlow dictionary-main" id="heading">
       <h2>Dictionary</h2>
     </div>
 
-    <Footer lng="en" />
+    <Footer lng="en" id="library-footer-grid" />
   </Layout>
 );
