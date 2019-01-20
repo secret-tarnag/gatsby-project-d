@@ -43,7 +43,7 @@ export default class DictionaryListItem extends React.PureComponent<
     const itemClass = this.state.visible ? visibleDescription : description;
     return (
       <div>
-        <div className={titleStyle} onClick={this.click}>
+        <div className={titleStyle} onClick={() => this.click()}>
           <h3>{this.props.title}</h3>
         </div>
         <div className={itemClass}>
