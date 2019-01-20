@@ -20,11 +20,11 @@ const content = [
 
 export default () => (
   <Layout>
-    <Navbar id="topnav" isHomePage={false} lng="en" urlSlug="kisokos" />
+    <Navbar id="topnav" isHomePage={true} lng="en" urlSlug="kisokos" />
     <div className="barlow dictionary-main" id="heading">
       <h2 className="dictionary-title">Dictionary</h2>
     </div>
-    <div>
+    <div className="dictionary-list">
       {content.map(item => (
         <DictionaryListItem title={item.title} pharagraphs={item.pharagraphs} />
       ))}

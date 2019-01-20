@@ -18,15 +18,26 @@ const content = [
       },
     ],
   },
+  {
+    title: 'konzervativizmus',
+    pharagraphs: [
+      {
+        text: 'Még egy lorem ipsumocska #3',
+      },
+      {
+        text: 'Meg még egy hesteg négy',
+      },
+    ],
+  },
 ];
 
 export default () => (
   <Layout>
-    <Navbar id="topnav" isHomePage={false} lng="hu" urlSlug="kisokos" />
+    <Navbar id="topnav" isHomePage={true} lng="hu" urlSlug="kisokos" />
     <div className="barlow dictionary-main" id="heading">
       <h2 className="dictionary-title">Kisokos</h2>
     </div>
-    <div>
+    <div className="dictionary-list">
       {content.map(item => (
         <DictionaryListItem title={item.title} pharagraphs={item.pharagraphs} />
       ))}

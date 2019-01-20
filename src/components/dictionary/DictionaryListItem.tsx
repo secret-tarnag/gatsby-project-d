@@ -12,14 +12,39 @@ interface DictionaryListItemState {
   visible: boolean;
 }
 
+const itemContainer = css({
+  fontFamily: '"Roboto Condensed", sans-serif',
+});
+const titleStyle = css({
+  fontSize: '1.2rem',
+  fontFamily: '"Comfortaa", cursive',
+  padding: '0.3rem',
+  margin: '0.3rem 0',
+  cursor: 'pointer',
+  borderTop: '1px solid transparent',
+  transition: 'all .3s',
+  ':hover': {
+    borderTop: '1px solid gray',
+  },
+});
+const iconContainer = css({
+  position: 'relative',
+  top: '0.3rem',
+  left: '4rem',
+});
 const description = css({
+  height: '0rem',
   display: 'none',
 });
 const visibleDescription = css({
+  height: 'auto',
   display: 'block',
+  padding: '0.2rem 0.3rem',
+  margin: '0.2rem 0',
+  fontSize: '1.1rem',
 });
-const titleStyle = css({
-  fontSize: '2rem',
+const pharagraphStyle = css({
+  margin: '0.5rem 0',
 });
 
 export default class DictionaryListItem extends React.PureComponent<
@@ -42,13 +67,18 @@ export default class DictionaryListItem extends React.PureComponent<
   render() {
     const itemClass = this.state.visible ? visibleDescription : description;
     return (
-      <div>
+      <div className={itemContainer}>
         <div className={titleStyle} onClick={() => this.click()}>
-          <h3>{this.props.title}</h3>
+          <span>
+            {this.props.title}
+          </span>
+          <span className={iconContainer}>
+            <i className="material-icons">{this.state.visible ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}</i>
+          </span>
         </div>
         <div className={itemClass}>
           {this.props.pharagraphs.map(pharagraph => (
-            <p>{pharagraph.text}</p>
+            <p className={pharagraphStyle}>{pharagraph.text}</p>
           ))}
         </div>
       </div>
