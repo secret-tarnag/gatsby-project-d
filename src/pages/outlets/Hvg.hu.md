@@ -46,17 +46,18 @@ sources:
   - text: Eladási példányszámok - MATESZ
     link: https://matesz.hu
 ---
+# Leírás
 
-###Történet
+## Történet
 
 A HVG a **Világgazdaság** című lap utódjaként alakult 1979-ben. Az eredetileg *Heti Világgazdaság* címen megjelenő gazdasági-társadalmi hetilap közkedvelt rövidítése volt a HVG, ami mára a lap hivatalos címévé vált.
 A lap munkatársai közül többeket Joseph Pulitzer-emlékdíjjal tüntettek ki: Juhász Gábort 1994-ben, Rádi Antóniát 1999-ben.  Emellett a szerkesztőség is Pulitzer-emlékdíjas (1992). További történeti részletekért lásd a [Wikipédia szócikket](https://hu.wikipedia.org/wiki/HVG).
 
-###Függetlenség
+## Függetlenség
 
 Erős garanciával szolgál a lap függetlenségére az a tény, hogy tulajdonosa maga a szerkesztőség a **Szerkesztőségi Vagyonkezelő Zrt.**-n keresztül. Pénzügyi helyzetük, bár - a nyomtatott sajtó globális mélyrepülése folytán - a példányszám csökkenő tendenciát mutat, stabilnak tekinthető. Hogy a finanszírozás stabilabb legyen, a [HVG Pártolói Tagság](https://tagsag.hvg.hu/) programot indított, ahol az olvasók támogathatják a kiadót különböző módokon.
 
-###Portfólió
+## Portfólió
 
 Nyomtatott portfólió: [HVG hetilap](https://hvg.hu/hetilap), HVG különszámok, HVG Plusz kiadványok, [Műértő](https://hvg.hu/hvgmuerto), [HVG Könyvek](https://hvgkonyvek.hu/)
 

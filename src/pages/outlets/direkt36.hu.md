@@ -36,9 +36,10 @@ sources:
   - text: Látogatottsági adatok - Siteworthtraffic
     link: http://www.siteworthtraffic.com/report/direkt36.hu
 ---
+# Leírás
 
-###Alapítás###
+## Alapítás
 
-###Tevékenység###
+## Tevékenység
 
-###Függetlenség###
+## Függetlenség
