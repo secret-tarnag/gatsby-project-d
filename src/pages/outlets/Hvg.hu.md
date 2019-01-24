@@ -34,8 +34,8 @@ contact:
       value: 436-2244
     - key: Fax
       value: 436-2011
-	  - key: Email
-	    value: hvg@hvg.hu
+    - key: Email
+      value: hvg@hvg.hu
 sources:
   - text: hvg.hu
     link: https://hvg.hu/
