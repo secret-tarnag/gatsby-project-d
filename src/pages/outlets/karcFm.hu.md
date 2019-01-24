@@ -12,7 +12,7 @@ properties:
   - key: Vételkörzet
     value: Budapest és 8 vidéki város
   - key: Frekvencia
-    value: 105.9
+    value: 105,9
   - key: Világnézet
     value: konzervatív, nacionalista
   - key: Státusz

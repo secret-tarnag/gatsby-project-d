@@ -3,7 +3,7 @@ title: Mérce
 lang: hu
 slug: merce
 logo: merce.png
-isIndependent: true/false
+isIndependent: true
 properties:
   - key: Kategória
     value: közéleti híroldal

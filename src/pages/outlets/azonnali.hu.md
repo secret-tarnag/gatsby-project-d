@@ -3,7 +3,7 @@ title: Azonnali.hu
 lang: hu
 slug: azonnali
 logo: azonnali.png
-isIndependent: true/false
+isIndependent: true
 properties:
   - key: Kategória
     value: közéleti híroldal

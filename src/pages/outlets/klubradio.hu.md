@@ -12,7 +12,7 @@ properties:
   - key: Vételkörzet
     value: Budapest és környéke
   - key: Frekvencia
-    value: 92.9
+    value: 92,9
   - key: Világnézet
     value: liberális
   - key: Státusz

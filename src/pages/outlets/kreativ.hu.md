@@ -3,7 +3,7 @@ title: Kreatív.hu
 lang: hu
 slug: kreativ
 logo: kreativ.png
-isIndependent: true/false
+isIndependent: true
 properties:
   - key: Kategória
     value: tematikus híroldal és havi magazin
