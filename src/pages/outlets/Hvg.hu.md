@@ -55,7 +55,7 @@ A lap munkatársai közül többeket Joseph Pulitzer-emlékdíjjal tüntettek ki
 
 ## Függetlenség
 
-Erős garanciával szolgál a lap függetlenségére az a tény, hogy tulajdonosa maga a szerkesztőség a **Szerkesztőségi Vagyonkezelő Zrt.**-n keresztül. Pénzügyi helyzetük, bár - a nyomtatott sajtó globális mélyrepülése folytán - a példányszám csökkenő tendenciát mutat, stabilnak tekinthető. Hogy a finanszírozás stabilabb legyen, a [HVG Pártolói Tagság](https://tagsag.hvg.hu/) programot indított, ahol az olvasók támogathatják a kiadót különböző módokon.
+Erős garanciával szolgál a lap függetlenségére az a tény, hogy tulajdonosa maga a szerkesztőség a **Szerkesztőségi Vagyonkezelő Zrt.**-n keresztül. Pénzügyi helyzetük, bár - a nyomtatott sajtó globális mélyrepülése folytán - a példányszám csökkenő tendenciát mutat, stabilnak tekinthető. Hogy a finanszírozás még több lábon álljon, a HVG [Pártolói Tagság](https://tagsag.hvg.hu/) programot indított, ahol az olvasók támogathatják a kiadót különböző módokon.
 
 ## Portfólió
 
