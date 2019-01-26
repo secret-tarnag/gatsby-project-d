@@ -39,6 +39,8 @@ sources:
     link: https://hu.wikipedia.org/wiki/Klubr%C3%A1di%C3%B3
   - text: Hallgatottsági adatok - Radiosite
     link: http://radiosite.hu/hallgatottsagi-adatok-2017-december
+  - text: A Brit Media tulajdonrészének mértéke
+    link: http://zsido.com/koves-slomo-buszkek-vagyunk-arra-hogy-tudtunk-segiteni-klubradionak/
 ---
 
 Description comes here.
