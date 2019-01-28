@@ -3,6 +3,9 @@ import { css, cx } from 'emotion';
 
 const container = css({
   margin: '0rem auto',
+  '& a:active': {
+    backgroundColor: 'transparent',
+  },
 });
 const icon = css({
   width: '2.6rem',
