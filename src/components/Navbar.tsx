@@ -13,11 +13,13 @@ const links = [
     en: 'Independent Media',
     hu: 'Független média',
     link: 'fuggetlen',
+    id: 'independent',
   },
   {
     en: 'Propaganda',
     hu: 'Propaganda',
     link: 'propaganda',
+    id: 'propaganda',
   },
 ];
 
@@ -89,10 +91,10 @@ export default (props: NavBarProps) => (
             </Link>
           </li>
         ) : (
-          ''
-        )}
+            ''
+          )}
         {links.map(link => (
-          <li className="nav-li" key={link.hu}>
+          <li className="nav-li" id={link.id} key={link.hu}>
             <Link to={`${props.lng}/${link.link}`}>{link[props.lng]}</Link>
           </li>
         ))}
