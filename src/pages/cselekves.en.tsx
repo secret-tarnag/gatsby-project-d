@@ -97,7 +97,7 @@ const varietyParagraphs = [
       article
     </a>{' '}
     |{' '}
-    <a href="docs/CSH_163_.pdf" target="_blank">
+    <a href="/assets/docs/CSH_163_.pdf" target="_blank">
       release
     </a>
     )<br />
@@ -109,7 +109,7 @@ const varietyParagraphs = [
       article
     </a>
     |{' '}
-    <a href="docs/jozsefvaros_ujsag_2018-23.pdf" target="_blank">
+    <a href="/assets/docs/jozsefvaros_ujsag_2018-23.pdf" target="_blank">
       release
     </a>
     )
@@ -132,7 +132,7 @@ const varietyParagraphs = [
       article
     </a>{' '}
     |{' '}
-    <a href="docs/Szúrópróba-26.pdf" target="_blank">
+    <a href="/assets/docs/Szúrópróba-26.pdf" target="_blank">
       the study
     </a>
     ).
