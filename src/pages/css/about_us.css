@@ -14,10 +14,19 @@
 .about-modal-root p {
 	margin: 0.3rem 0rem;
 }
-.rolunk-sm-span {
+.contact-grid {
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-content: center;
+}
+.about-sm-icons {
+	margin: 0 auto;
 	position: relative;
-	left: 35%;
-	transform: translateX(-35%);
+	top: 1rem;
 }
 #message-sent {
 	width: 100%;

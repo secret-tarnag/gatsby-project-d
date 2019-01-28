@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { css, cx } from 'emotion';
 
+const container = css({
+  margin: '0rem auto',
+});
 const icon = css({
   width: '2.6rem',
   height: '2.6rem',
@@ -17,7 +20,7 @@ const github = css({
 });
 
 export default () => (
-  <div>
+  <div className={container}>
     <a href="https://www.facebook.com/Democrable" target="_blank">
       <img
         className={icon}
