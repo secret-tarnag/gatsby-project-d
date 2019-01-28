@@ -15,8 +15,8 @@ export default () => (
         </div>
         <div className="donate-description">
           <span id="countdown">
-            Azért küzdünk, hogy mindenki átlátható formában hozzáférjen bármely híreket közlő médium információihoz,
-            így erősítve a médiatudatosságot és az átláthatóságot, ezzel pedig a demokráciát.
+            Azért küzdünk, hogy mindenki átlátható formában hozzáférjen információkhoz bármely híreket közlő médium
+            hátteréről, így erősítve a médiatudatosságot és az átláthatóságot, ezzel pedig a demokráciát.
           </span>
         </div>
         <div className="donate-link-container">
