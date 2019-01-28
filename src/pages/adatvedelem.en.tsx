@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Layout from '../components/layout';
+import Link from 'gatsby-link';
 
 import './css/privacy.css';
 
@@ -7,9 +8,9 @@ export default () => (
   <Layout>
     <div className="privacy-container">
       <div className="privacy-nav">
-        <a id="backlink" href="index.html">
+        <Link id="backlink" to="/en/">
           <i className="material-icons">chevron_left</i> Back to homepage
-        </a>
+        </Link>
       </div>
       <div className="privacy-content">
         <h2 className="privacy-title">Privacy Protection Declaration</h2>
