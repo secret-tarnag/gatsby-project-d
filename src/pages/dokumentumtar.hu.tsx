@@ -16,21 +16,21 @@ const a = [
 const c = [
   {
     text: 'Csepeli Hírmondó',
-    to: '',
+    to: '/assets/docs/CSH_163_.pdf',
     comment: '2018.02.22. szám',
   },
 ];
 const f = [
   {
     text: 'Foglalt nevek listája',
-    to: '',
+    to: '/assets/docs/foglalt-nevlista.pdf',
     comment: 'Democrable tagok görög álnevei',
   },
 ];
 const j = [
   {
     text: 'Józsefváros (kerületi lap)',
-    to: '',
+    to: '/assets/docs/jozsefvaros_ujsag_2018-23.pdf',
     comment: '2018. július 4-i szám',
   },
 ];
