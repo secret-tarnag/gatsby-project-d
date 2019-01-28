@@ -190,7 +190,7 @@ a[href$=".pdf"] {
 
 @media screen and (max-width: 600px) {
 
-  #license,
+  #cclicense,
   #footer-email {
     display: none;
   }
