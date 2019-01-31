@@ -12,6 +12,7 @@ interface LogoTilesProps {
 const containerStyle = css({
   listStyle: 'none',
   display: 'flex',
+  flexWrap: 'wrap',
 });
 
 const itemStyle = css({});
@@ -21,6 +22,7 @@ const minImgSize = 80;
 const referenceReach = 800000;
 
 function calculateWidth(reach: number): number {
+  console.log('Calculating reach: ' + reach);
   return minImgSize + ((maxImgSize - minImgSize) * reach) / referenceReach;
 }
 
