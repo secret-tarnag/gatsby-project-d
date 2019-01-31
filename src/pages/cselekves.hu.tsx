@@ -110,7 +110,7 @@ const varietyParagraphs = [
       cikk az ügyről
     </a>{' '}
     |{' '}
-    <a href="docs/CSH_163_.pdf" target="_blank">
+    <a href="/assets/docs/CSH_163_.pdf" target="_blank">
       a lapszám
     </a>
     )<br />
@@ -122,7 +122,7 @@ const varietyParagraphs = [
       cikk az ügyről
     </a>
     |{' '}
-    <a href="docs/jozsefvaros_ujsag_2018-23.pdf" target="_blank">
+    <a href="/assets/docs/jozsefvaros_ujsag_2018-23.pdf" target="_blank">
       a lapszám
     </a>
     )
@@ -151,7 +151,7 @@ const varietyParagraphs = [
       cikk az ügyről
     </a>{' '}
     |{' '}
-    <a href="docs/Szúrópróba-26.pdf" target="_blank">
+    <a href="/assets/docs/Szúrópróba-26.pdf" target="_blank">
       az elemzés
     </a>
     )

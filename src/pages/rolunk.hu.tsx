@@ -121,6 +121,7 @@ export default () => (
       </div>
       <div className="general-text" id="contactinfo">
         <h2>Elérhetőségeink</h2>
+        <br />
         <p>
           E-mail: <a href="mailto:democrable@gmail.com">democrable@gmail.com</a>
           <br />
@@ -128,10 +129,12 @@ export default () => (
           küldeni, akkor megfontolhatja, hogy az alábbi formmal küld nekünk
           üzenetet vagy valamelyik közösségi oldalon:
       </p>
-        <span className="rolunk-sm-span">
-          <SocialMediaLinks />
-        </span>
-        <SendMessage lng="hu" />
+        <div className="contact-grid">
+          <div className="about-sm-icons">
+            <SocialMediaLinks />
+          </div>
+          <SendMessage lng="hu" />
+        </div>
       </div>
       <div id="message-sent">
         <span className="barlow">Az üzenet sikeresen elküldve.</span>

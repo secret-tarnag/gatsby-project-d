@@ -27,7 +27,7 @@ const controls = css({
 });
 
 const title = css({
-  fontSize: '5rem',
+  fontSize: '3.5rem',
   fontFamily: '"Slabo 27px", serif',
   margin: '0 1rem 0 1rem',
   position: 'relative',

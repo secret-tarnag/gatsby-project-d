@@ -81,15 +81,19 @@ const suggestionItem = css({
   width: '100%',
   height: '2rem',
   borderBottom: '1px solid #ebebeb',
+  overflow: 'hidden',
   ':hover': {
     color: '#000',
     backgroundColor: '#ebebeb',
   },
 });
 const suggestionLink = css({
+  display: 'block',
+  width: '100%',
+  height: '2rem',
   fontSize: '1.2rem',
   lineHeight: '2rem',
-  padding: '0.2rem 80% 0.2rem 1rem',
+  padding: '0.2rem 0 0.2rem 1rem',
   ':hover, :active': {
     textDecoration: 'none',
     color: '#000',
@@ -152,7 +156,7 @@ export default class SearchField extends React.PureComponent<
                         outlet.node.frontmatter.slug
                         }`}
                     >
-                      <span>{outlet.node.frontmatter.title}</span>
+                      {outlet.node.frontmatter.title}
                     </Link>
                   </div>
                 ))}

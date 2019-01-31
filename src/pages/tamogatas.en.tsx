@@ -22,14 +22,8 @@ export default () => (
         <div className="donate-link-container">
           <span><i className="icon material-icons">expand_more</i><a id="expand-more" onClick={() => {
             const tablinks = document.getElementsByClassName('tablinks');
-
-            Array.from(tablinks).forEach(tablink => {
-              tablink.classList.remove('active');
-            });
             const topPos = document.getElementById('contribute').offsetTop;
             document.documentElement.scrollTop = topPos - 160;
-            // add an "active" class to the button that opened the tab
-            document.getElementById(`contribute-button`).classList.add('active');
           }}>
             donate us.</a>
           </span>
@@ -93,7 +87,7 @@ export default () => (
         <p>If you have a PayPal account:</p>
         <span>
           <img id="paypal-logo" alt="paypal logo" src="/assets/paypal-logo-png-22.png" />
-          <a href="https://www.paypal.me/DemocrableHU" >Paypal.me</a></span>
+          <a href="https://www.paypal.me/DemocrableHU" target="_blank">Paypal.me</a></span>
       </div>
       <div className="fundr-grid-item" id="bank-account">
         <p>Credit or debit card:</p>

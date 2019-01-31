@@ -47,10 +47,10 @@ export default () => (
         <p>
           Free media.
         <br /> Someone once said that an election cannot be considered 'free' if
-            the people cannot vote freely. However, for voting freeliy, people must
-            not be overinfluenced by media, but rather be informed objectively and
-            factually. It is - of course - impossible to be 100% unbiased, but you
-            can reach a level which you can actually call objective journalism.
+                the people cannot vote freely. However, for voting freeliy, people must
+                not be overinfluenced by media, but rather be informed objectively and
+                factually. It is - of course - impossible to be 100% unbiased, but you
+                can reach a level which you can actually call objective journalism.
       </p>
         <br />
         <br />
@@ -117,6 +117,7 @@ export default () => (
       </div>
       <div className="general-text" id="contactinfo">
         <h2>Contact us</h2>
+        <br />
         <p>
           Email: <a href="mailto:democrable@gmail.com">democrable@gmail.com</a>
           <br />
@@ -124,10 +125,12 @@ export default () => (
           to write an email, you can also send us a direct message or contact us
           via social media:
       </p>
-        <span className="rolunk-sm-span">
-          <SocialMediaLinks />
-        </span>
-        <SendMessage lng="en" />
+        <div className="contact-grid">
+          <div className="about-sm-icons">
+            <SocialMediaLinks />
+          </div>
+          <SendMessage lng="en" />
+        </div>
       </div>
       <div id="message-sent">
         <span className="barlow">Your message has been sent successfully.</span>

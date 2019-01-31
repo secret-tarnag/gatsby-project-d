@@ -15,21 +15,15 @@ export default () => (
         </div>
         <div className="donate-description">
           <span id="countdown">
-            Azért küzdünk, hogy mindenki átlátható formában hozzáférjen bármely híreket közlő médium információihoz,
-            így erősítve a médiatudatosságot és az átláthatóságot, ezzel pedig a demokráciát.
+            Azért küzdünk, hogy mindenki átlátható formában hozzáférjen információkhoz bármely híreket közlő médium
+            hátteréről, így erősítve a médiatudatosságot és az átláthatóságot, ezzel pedig a demokráciát.
           </span>
         </div>
         <div className="donate-link-container">
           <span><i className="icon material-icons">expand_more</i><a id="expand-more" onClick={() => {
             const tablinks = document.getElementsByClassName('tablinks');
-
-            Array.from(tablinks).forEach(tablink => {
-              tablink.classList.remove('active');
-            });
             const topPos = document.getElementById('contribute').offsetTop;
             document.documentElement.scrollTop = topPos - 160;
-            // add an "active" class to the button that opened the tab
-            document.getElementById(`contribute-button`).classList.add('active');
           }}>
             támogasd az indulásunkat.</a>
           </span>
@@ -90,7 +84,7 @@ export default () => (
         <p>Paypal fiókkal:</p>
         <span>
           <img id="paypal-logo" alt="paypal logo" src="/assets/paypal-logo-png-22.png" />
-          <a href="https://www.paypal.me/DemocrableHU" >Paypal.me</a></span>
+          <a href="https://www.paypal.me/DemocrableHU" target="_blank">Paypal.me</a></span>
       </div>
       <div className="fundr-grid-item" id="bank-account">
         <p>Bankkártyával:</p>

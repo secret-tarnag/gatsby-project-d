@@ -147,7 +147,7 @@ export default (props: FooterProps) => (
           <Link to={`${props.lng}/${item.link}`}>{item[props.lng]}</Link>
         </div>
       ))}
-      <div className={gridItem} id="license">
+      <div className={gridItem} id="cclicense">
         <a
           rel="license"
           href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
