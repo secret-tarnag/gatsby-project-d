@@ -8,24 +8,48 @@ import '../pages/css/dictionary.css';
 
 const content = [
   {
-    title: 'liberalizmus',
+    title: 'autokrácia',
     pharagraphs: [
       {
-        text: 'Lorem ipsum dolor sit amet bleble blabla lahlah hallali#1',
-      },
-      {
-        text: 'Lorem ipsum  lihd lsadée ések fse ések ékscxcknv rk rj v ncy #2',
+        text: 'Az autokrácia (magyarul: egyeduralom, önkényuralom) olyan politikai rendszer, amelyben a politikai' +
+          ' hatalom egésze egyetlen személy (vagy személyek kis zárt csoportja) kezében összpontosul.',
       },
     ],
   },
   {
-    title: 'konzervativizmus',
+    title: 'diktatúra',
     pharagraphs: [
       {
-        text: 'Még egy lorem ipsumocska #3',
+        text: 'A diktatúra autokrácia, vagyis valamely személynek vagy csoportnak az állam törvényeit figyelmen kívül' +
+          ' hagyó, erőszakszervezetekre támaszkodó, kivételes törvényekkel szentesített korlátlan hatalma.',
       },
+    ],
+  },
+  {
+    title: 'fékek és ellensúlyok',
+    pharagraphs: [
       {
-        text: 'Meg még egy hesteg négy',
+        text: 'A hatalmi ágak szétválasztásának és egymás fölötti ellenőrzési jogosítványaiknak biztosítása és a ' +
+          'túlhatalom kialakulásának megakadályozása érdekében törvényben bevezetett intézkedések és jogi restrikciók.',
+      },
+    ],
+  },
+  {
+    title: 'hatalmi ágak szétválasztása',
+    pharagraphs: [
+      {
+        text: 'A hatalomkoncentráció megakadályozásának eszközeként az államhatalom fő ' +
+          'funkcióinak elválasztását, különböző állami szervekre történő szétosztását, az ezek közötti kölcsönös ' +
+          'ellenőrzést és egyensúlyban tartást jelenti.',
+      },
+    ],
+  },
+  {
+    title: 'öncenzúra',
+    pharagraphs: [
+      {
+        text: 'A szóbeli vagy írásbeli megnyilvánulások és a tettek fölötti önellenőrzés gyakorlata a vélt' +
+          ' (vagy valós) következmények elkerülésének érdekében.',
       },
     ],
   },
