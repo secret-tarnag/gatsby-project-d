@@ -34,7 +34,7 @@ export default ({ data }: AllOutletsQueryType) => (
     {' '}
     <Navbar id="" isHomePage={true} lng="hu" urlSlug="" />
     <header id="heading" role="banner">
-      <h1>Democrable</h1>
+      <h1 className="header-title">Democrable</h1>
     </header>
     <SearchField newsOutlets={data.outlets.edges} lang={'hu'} />
     <div id="main-content" role="main">
