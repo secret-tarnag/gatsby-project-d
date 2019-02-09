@@ -3,6 +3,7 @@ title: Propeller.hu
 lang: hu
 slug: propeller
 logo: propeller.png
+dailyReach: 48289
 isIndependent: true
 properties:
   - key: Kategória

@@ -3,6 +3,7 @@ title: K-Monitor
 lang: hu
 slug: kmonitor
 logo: k-monitor.gif
+dailyReach: 495
 isIndependent: true
 properties:
   - key: Kategória

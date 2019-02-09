@@ -3,6 +3,7 @@ title: Klubrádió
 lang: hu
 slug: klubradio
 logo: klubradio_logo.jpg
+dailyReach: 214000
 isIndependent: true
 properties:
   - key: Kategória

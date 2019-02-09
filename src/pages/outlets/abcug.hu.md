@@ -3,6 +3,7 @@ title: Abcúg.hu
 lang: hu
 slug: abcug
 logo: abcug.jpg
+dailyReach: 694
 isIndependent: true
 properties:
   - key: Kategória

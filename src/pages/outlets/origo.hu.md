@@ -3,6 +3,7 @@ title: Origó
 lang: hu
 slug: origo
 logo: Origo.png
+dailyReach: 548513
 isIndependent: false
 properties:
   - key: Kategória

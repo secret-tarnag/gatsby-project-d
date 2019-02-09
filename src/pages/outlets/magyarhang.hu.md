@@ -3,6 +3,7 @@ title: Magyar Hang
 lang: hu
 slug: magyarhang
 logo: mh.png
+dailyReach: 6500
 isIndependent: true
 properties:
   - key: Kategória

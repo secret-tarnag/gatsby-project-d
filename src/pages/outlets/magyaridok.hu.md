@@ -3,6 +3,7 @@ title: Magyar Idők
 lang: hu
 slug: magyaridok
 logo: magyaridok.svg
+dailyReach: 14397
 isIndependent: false
 properties:
   - key: Kategória

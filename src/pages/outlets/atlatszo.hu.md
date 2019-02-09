@@ -3,6 +3,7 @@ title: Átlátszó
 lang: hu
 slug: atlatszo
 logo: atlatszo.jpg
+dailyReach: 7034
 isIndependent: true
 properties:
   - key: Kategória

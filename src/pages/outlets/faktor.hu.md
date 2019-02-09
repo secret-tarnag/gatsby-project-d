@@ -3,6 +3,7 @@ title: Faktor.hu
 lang: hu
 slug: faktor
 logo: faktor.png
+dailyReach: 13229
 isIndependent: false
 properties:
   - key: Kategória

@@ -3,6 +3,7 @@ title: About Hungary
 lang: hu
 slug: abouthungary
 logo: 
+dailyReach: 849
 isIndependent: false
 properties:
   - key: Kategória

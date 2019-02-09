@@ -13,6 +13,7 @@ const containerStyle = css({
   listStyle: 'none',
   display: 'flex',
   flexWrap: 'wrap',
+  alignItems: 'center',
 });
 
 const itemStyle = css({});

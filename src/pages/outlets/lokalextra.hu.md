@@ -3,6 +3,7 @@ title: Lokál Extra
 lang: hu
 slug: lokalextra
 logo: lokal.jpg
+dailyReach: 4888
 isIndependent: false
 properties:
   - key: Kategória

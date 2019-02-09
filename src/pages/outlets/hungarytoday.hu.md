@@ -3,6 +3,7 @@ title: Hungary Today
 lang: hu
 slug: hungarytoday
 logo: hungarytoday.jpg
+dailyReach: 549
 isIndependent: true
 properties:
   - key: Kategória

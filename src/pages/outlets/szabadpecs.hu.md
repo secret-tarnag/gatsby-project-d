@@ -3,6 +3,7 @@ title: Szabad Pécs
 lang: hu
 slug: szabadpecs
 logo: szabadpecs.png
+dailyReach: 1511
 isIndependent: true
 properties:
   - key: Kategória

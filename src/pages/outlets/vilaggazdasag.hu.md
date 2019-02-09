@@ -3,6 +3,7 @@ title: Világgazdaság
 lang: hu
 slug: vilaggazdasag
 logo: vg.jpg
+dailyReach: 7585
 isIndependent: false
 properties:
   - key: Kategória

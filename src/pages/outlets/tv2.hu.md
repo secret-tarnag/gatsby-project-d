@@ -3,6 +3,7 @@ title: TV2
 lang: hu
 slug: tv2
 logo: TV2.png
+dailyReach: 800000
 isIndependent: false
 properties:
   - key: Kategória

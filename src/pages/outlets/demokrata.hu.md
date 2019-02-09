@@ -3,6 +3,7 @@ title: Demokrata
 lang: hu
 slug: demokrata
 logo: demokrata.png
+dailyReach: 10279
 isIndependent: false
 properties:
   - key: Kategória

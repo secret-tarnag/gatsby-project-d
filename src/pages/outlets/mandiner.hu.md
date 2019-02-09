@@ -3,6 +3,7 @@ title: Mandiner.hu
 lang: hu
 slug: mandiner
 logo: mandiner.png
+dailyReach: 29095
 isIndependent: false
 properties:
   - key: Kategória

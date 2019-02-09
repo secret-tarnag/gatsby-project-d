@@ -1,8 +1,9 @@
 ---
 title: HVG
 lang: hu
-slug: hvg
+slug: Hvg
 logo: hvg.jpg
+dailyReach: 350911
 isIndependent: true
 properties:
   - key: Kategória

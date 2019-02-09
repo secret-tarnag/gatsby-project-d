@@ -3,6 +3,7 @@ title: Mérce
 lang: hu
 slug: merce
 logo: merce.png
+dailyReach: 10151
 isIndependent: true
 properties:
   - key: Kategória
