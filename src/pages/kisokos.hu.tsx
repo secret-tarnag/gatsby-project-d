@@ -8,6 +8,17 @@ import '../pages/css/dictionary.css';
 
 const content = [
   {
+    title: 'átláthatóság',
+    pharagraphs: [
+      {
+        text: '(transzparencia) Az átláthatóság az elszámoltathatóság és az integritás mellett a közpénzekkel ' +
+          'való gazdálkodás egyik legfontosabb szempontja, ezáltal demokratikus alapelv. Az átláthatóság semmi mást ' +
+          'nem jelent, mint hogy a közpénzek felett rendelkező személyek vagy szervezetek ide tartozó tevékenysége ' +
+          'teljes mértékben nyilvános, megismerhető.',
+      },
+    ],
+  },
+  {
     title: 'autokrácia',
     pharagraphs: [
       {
@@ -26,11 +37,32 @@ const content = [
     ],
   },
   {
+    title: 'elszámoltathatóság',
+    pharagraphs: [
+      {
+        text: 'Az elszámoltathatóság az átláthatóság és az integritás mellett a közpénzekkel ' +
+          'való gazdálkodás egyik legfontosabb szempontja, ezáltal demokratikus alapelv. Azt jelenti, hogy ' +
+          'bármely közpénzek felett rendelkező személy vagy szervezet működése ellenőrizhető, az esetleges hibák ' +
+          'felderíthetők és a jogsértések megbüntethetők.',
+      },
+    ],
+  },
+  {
     title: 'fékek és ellensúlyok',
     pharagraphs: [
       {
         text: 'A hatalmi ágak szétválasztásának és egymás fölötti ellenőrzési jogosítványaiknak biztosítása és a ' +
           'túlhatalom kialakulásának megakadályozása érdekében törvényben bevezetett intézkedések és jogi restrikciók.',
+      },
+    ],
+  },
+  {
+    title: 'független média',
+    pharagraphs: [
+      {
+        text: 'Olyan médiumok együttese melyek nem állnak gazdasági, politikai vagy személyes érdekeknek kedvező ' +
+          'befolyás alatt. Az szerkesztőség értékrendje által gyakorolt hatásokat nem tekintjük függésnek, hiszen ' +
+          'nincs olyan médium, ami ne lenne valamilyen értékrend szerint elkötelezett.',
       },
     ],
   },
@@ -45,11 +77,34 @@ const content = [
     ],
   },
   {
+    title: 'integritás',
+    pharagraphs: [
+      {
+        text: 'Az integritás az átláthatóság és az elszámoltathatóság mellett a közpénzekkel ' +
+          'való gazdálkodás egyik legfontosabb szempontja, ezáltal demokratikus alapelv. Azt fejezi ki, hogy ' +
+          'a közpénzek felett rendelkező szervezetek vagy személyek ellenállóak-e a különböző szándékos helytelen ' +
+          'magatartással szemben (pl. korrupció).',
+      },
+    ],
+  },
+  {
     title: 'öncenzúra',
     pharagraphs: [
       {
         text: 'A szóbeli vagy írásbeli megnyilvánulások és a tettek fölötti önellenőrzés gyakorlata a vélt' +
           ' (vagy valós) következmények elkerülésének érdekében.',
+      },
+    ],
+  },
+  {
+    title: 'propaganda',
+    pharagraphs: [
+      {
+        text: 'Nem tényszerű információ és ennek terjesztése, mely a célközönség befolyásolására szolgál. ' +
+          'A tényszerűtlenség elérhető ' +
+          'csupán a tények szelektív válogatásával, tudatos elferdítésével vagy egyszerű hazugsággal. Gyakran ' +
+          'politikai célok elérésének eszköze. A propagandát közlő felületekre itthon elterjedt megnevezés a ' +
+          'propaganda média, mi csupán a propaganda szóval jelöljük őket, mivel ezek a közegek nem médiumok.',
       },
     ],
   },
