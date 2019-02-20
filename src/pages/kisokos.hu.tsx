@@ -88,11 +88,30 @@ const content = [
     ],
   },
   {
+    title: 'médiatudatosság',
+    pharagraphs: [
+      {
+        text: 'Az információ különböző megjelentetési technikáinak és ezen módszerek hasznának és veszélyeinek ' +
+          'ismerete, melynek használatával az egyén képes elkülöníteni a valóságot a fikciótól, és felismerni a ' +
+          'valóság ábrázolásának küönböző szintjeit.',
+      },
+    ],
+  },
+  {
     title: 'öncenzúra',
     pharagraphs: [
       {
         text: 'A szóbeli vagy írásbeli megnyilvánulások és a tettek fölötti önellenőrzés gyakorlata a vélt' +
           ' (vagy valós) következmények elkerülésének érdekében.',
+      },
+    ],
+  },
+  {
+    title: 'plurális média',
+    pharagraphs: [
+      {
+        text: 'Sokszínű, sokféle értékrendű, az eltérő véleményeknek és elemzéseknek hangot adó, sok tulajdonos által' +
+          ' tulajdonolt média.',
       },
     ],
   },
