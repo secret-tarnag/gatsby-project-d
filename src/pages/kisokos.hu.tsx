@@ -28,6 +28,16 @@ const content = [
     ],
   },
   {
+    title: 'demokrácia',
+    pharagraphs: [
+      {
+        text: 'Olyan politikai kormányzati rendszer, melyben a hatalmat közvetlenül vagy közvetetten (választott ' +
+          'képviselők útján) az emberek (vagy bizonyos cenzusnak megfelelő emberek: pl. 18 év feletti korúak) ' +
+          'gyakorolják.',
+      },
+    ],
+  },
+  {
     title: 'diktatúra',
     pharagraphs: [
       {
@@ -124,6 +134,14 @@ const content = [
           'csupán a tények szelektív válogatásával, tudatos elferdítésével vagy egyszerű hazugsággal. Gyakran ' +
           'politikai célok elérésének eszköze. A propagandát közlő felületekre itthon elterjedt megnevezés a ' +
           'propaganda média, mi csupán a propaganda szóval jelöljük őket, mivel ezek a közegek nem médiumok.',
+      },
+    ],
+  },
+  {
+    title: 'újságírói etikai szabályzat',
+    pharagraphs: [
+      {
+        text: 'Olyan magatartási vagy szakmai szabályok, melyek segítik az újságírókat az etikus munkavégzésben.',
       },
     ],
   },
