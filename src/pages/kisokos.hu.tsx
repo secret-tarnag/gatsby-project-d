@@ -98,6 +98,35 @@ const content = [
     ],
   },
   {
+    title: 'konzervativizmus',
+    pharagraphs: [
+      {
+        text: 'Politikai és társadalmi eszmerendszer, mely a hagyományok, tradíciók fontosságát hangsúlyozza,' +
+          'tiszteli a családot, a helyi és vallási közösségeket, régi szokásokat és intézményrendszereket. A ' +
+          'konzervatív gondolkodás elveti a forradalmi változásokat, a racionális ám elvont elvek alapján történő ' +
+          'átalakulás helyett a lassú, szerves, hagyományokon alapuló fejlődést támogatja. Nagymértékben tiszteli a ' +
+          'magántulajdont, melyet az emberi méltósághoz nélkülözhetetlennek tart, viszont lehetetlennek tartja' +
+          ' a szabadság és az egyenlőség egyidejű megvalósítását, utóbbit csak a legtehetségesebbek és leggazdagabbak' +
+          ' szabadságának korlátozásával lehetne elérni, ezzel elvetik hogy minden ember képességeiben és ' +
+          'lehetőségeiben egyenlő lenne, azaz elismeri és támogatja valamely elit hatalmának megtartását.',
+      },
+    ],
+  },
+  {
+    title: 'liberalizmus',
+    pharagraphs: [
+      {
+        text: 'Politikai és társadalmi eszmerendszer, mely az egyéni szabadságon és az egyenlőségen alapszik. ' +
+          'Az ideológia szerint az ember tudatos, szabad lény, minden embert egyforma jogok illetnek meg.' +
+          'A társadalmi rendet nem a hagyományok útján, hanem jogi eszközökkel kell szavatolni, mégpedig az egyén' +
+          'jogainak és kötelezettségeinek specifikálásával. Bármely hatalom felett törvények állnak, melyek ' +
+          'megvédelmezik az egyes emberek jogait. Sérthetetlennek tekintik a magántulajdont, mint az egyéni szabadság' +
+          ' biztosítékát. Ellenzik az állam túlzott beavatkozását a gazdaságba, támogatják az emberi jogokat, a faji,' +
+          ' vallási, nemi és kulturális egyenlőséget.',
+      },
+    ],
+  },
+  {
     title: 'médiatudatosság',
     pharagraphs: [
       {
@@ -141,7 +170,8 @@ const content = [
     title: 'újságírói etikai szabályzat',
     pharagraphs: [
       {
-        text: 'Olyan magatartási vagy szakmai szabályok, melyek segítik az újságírókat az etikus munkavégzésben.',
+        text: 'Olyan magatartási vagy szakmai szabályok gyűjteménye, melyek segítik az újságírókat az etikus ' +
+          'munkavégzésben.',
       },
     ],
   },
