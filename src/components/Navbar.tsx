@@ -8,6 +8,10 @@ interface NavBarProps {
   id?: string;
 }
 
+interface NavBarState {
+  preScrollPos: number;
+}
+
 const links = [
   {
     en: 'Independent Media',
@@ -75,71 +79,102 @@ const sideNav = [
   },
 ];
 
-export default (props: NavBarProps) => (
-  <div>
-    <nav id={props.id ? props.id : ''} className="nav" role="navigation">
-      <ul>
-        <li id="logo-container" className="nav-li">
-          <Link id="logo-link" to={`${props.lng}#heading`}>
-            <img id="logo" src="/assets/logo_hres_40826d.png" alt="D logo" />
-          </Link>
-        </li>
-        {!props.isHomePage ? (
-          <li className="nav-li">
-            <Link id="home-container" to={`/${props.lng}/`}>
-              <img id="home" src="/assets/baseline-home-white.svg" alt="home" />
-            </Link>
-          </li>
-        ) : (
-            ''
-          )}
-        {links.map(link => (
-          <li className="nav-li" id={link.id} key={link.hu}>
-            <Link to={`${props.lng}/${link.link}`}>{link[props.lng]}</Link>
-          </li>
-        ))}
-        <li id="nav-right" className="nav-li">
-          <button
-            className="hamburger hamburger--3dy"
-            type="button"
-            aria-label="Menu"
-            aria-controls="navigation"
-            onClick={() => {
-              const hamburger = document.querySelector('.hamburger');
-              const menu = document.querySelector('.menu');
+export default class Navbar extends React.PureComponent<NavBarProps, NavBarState> {
+  constructor(props: NavBarProps) {
+    super(props);
 
-              hamburger.classList.toggle('is-active');
-              menu.classList.toggle('is-active');
-            }}
-          >
-            <span className="hamburger-box">
-              <span className="hamburger-inner" />
-            </span>
-          </button>
-        </li>
-      </ul>
-    </nav>
-    <div id="sidenav" className="menu" role="menu">
-      <ul className="menu-list">
-        {sideNav.map(item => (
-          <li className="menu_item" key={item.hu}>
-            <Link to={`${props.lng}/${item.link}`}>
-              <span className="menu_item_title">{item[props.lng]}</span>
-              <span id={item.iconId} className="menu_item_icon">
-                <i className="icon fa material-icons">{item.logo}</i>
+  }
+
+  componentDidMount() {
+    window.addEventListener('click', e => this.handleScroll());
+  }
+
+  componentWillUnmount() {
+    window.addEventListener('click', e => this.handleScroll());
+  }
+
+  handleScroll() {
+    const nav = document.getElementById('topnav');
+    const currentScrollPos = window.pageYOffset;
+
+    if (currentScrollPos > 550 && this.state.preScrollPos < currentScrollPos) {
+      nav.style.opacity = '0';
+      setTimeout(() => { nav.style.display = 'none'; }, 400);
+    } else {
+      nav.style.display = 'block';
+      setTimeout(() => { nav.style.opacity = '1'; }, 200);
+    }
+    this.setState({ preScrollPos = currentScrollPos });
+  }
+
+  render() {
+    return (
+      <div>
+        <nav id={this.props.id ? this.props.id : ''} className="nav" role="navigation">
+          <ul>
+            <li id="logo-container" className="nav-li">
+              <Link id="logo-link" to={`${this.props.lng}#heading`}>
+                <img id="logo" src="/assets/logo_hres_40826d.png" alt="D logo" />
+              </Link>
+            </li>
+            {!this.props.isHomePage ? (
+              <li className="nav-li">
+                <Link id="home-container" to={`/${this.props.lng}/`}>
+                  <img id="home" src="/assets/baseline-home-white.svg" alt="home" />
+                </Link>
+              </li>
+            ) : (
+                ''
+              )}
+            {links.map(link => (
+              <li className="nav-li" id={link.id} key={link.hu}>
+                <Link to={`${this.props.lng}/${link.link}`}>{link[this.props.lng]}</Link>
+              </li>
+            ))}
+            <li id="nav-right" className="nav-li">
+              <button
+                className="hamburger hamburger--3dy"
+                type="button"
+                aria-label="Menu"
+                aria-controls="navigation"
+                onClick={() => {
+                  const hamburger = document.querySelector('.hamburger');
+                  const menu = document.querySelector('.menu');
+
+                  hamburger.classList.toggle('is-active');
+                  menu.classList.toggle('is-active');
+                }}
+              >
+                <span className="hamburger-box">
+                  <span className="hamburger-inner" />
+                </span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div id="sidenav" className="menu" role="menu">
+          <ul className="menu-list">
+            {sideNav.map(item => (
+              <li className="menu_item" key={item.hu}>
+                <Link to={`${this.props.lng}/${item.link}`}>
+                  <span className="menu_item_title">{item[this.props.lng]}</span>
+                  <span id={item.iconId} className="menu_item_icon">
+                    <i className="icon fa material-icons">{item.logo}</i>
+                  </span>
+                </Link>
+              </li>
+            ))}
+            <li className="language-link-container barlow bold">
+              <span className="language-link">
+                <Link to={`/hu/${this.props.urlSlug}`}>HU</Link>
               </span>
-            </Link>
-          </li>
-        ))}
-        <li className="language-link-container barlow bold">
-          <span className="language-link">
-            <Link to={`/hu/${props.urlSlug}`}>HU</Link>
-          </span>
-          <span className="language-link">
-            <Link to={`/en/${props.urlSlug}`}>EN</Link>
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
-);
+              <span className="language-link">
+                <Link to={`/en/${this.props.urlSlug}`}>EN</Link>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
+}
