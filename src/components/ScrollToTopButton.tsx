@@ -1,6 +1,10 @@
 import * as React from 'react';
 import { css } from 'emotion';
 
+interface ScrollTopState {
+  visible: boolean;
+}
+
 const buttonContainer = css({
   display: 'none',
   position: 'fixed',
@@ -27,15 +31,43 @@ const button = css({
   },
 });
 
-export default () => (
-  <div className={buttonContainer} id="st-butt-cont">
-    <button
-      onClick={() => {
-        document.documentElement.scrollTop = 0;
-      }}
-      className={button}
-    >
-      <i className="material-icons">expand_less</i>
-    </button>
-  </div>
-);
+export default class ScrollToTopButton extends React.PureComponent<'', ScrollTopState> {
+  constructor(props: '') {
+    super(props);
+    this.state = {
+      visible: false,
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', e => this.handleScroll());
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', e => this.handleScroll());
+  }
+
+  handleScroll() {
+    const scrollButton = document.getElementById('st-butt-cont');
+    if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+      scrollButton.style.display = 'block';
+    } else {
+      scrollButton.style.display = 'none';
+    }
+  }
+
+  render() {
+    return (
+      <div className={buttonContainer} id="st-butt-cont">
+        <button
+          onClick={() => {
+            document.documentElement.scrollTop = 0;
+          }}
+          className={button}
+        >
+          <i className="material-icons">expand_less</i>
+        </button>
+      </div>
+    );
+  }
+}
