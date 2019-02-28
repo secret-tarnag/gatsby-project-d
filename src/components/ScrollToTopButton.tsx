@@ -1,10 +1,6 @@
 import * as React from 'react';
 import { css } from 'emotion';
 
-interface ScrollTopState {
-  visible: boolean;
-}
-
 const buttonContainer = css({
   display: 'none',
   position: 'fixed',
@@ -31,12 +27,9 @@ const button = css({
   },
 });
 
-export default class ScrollToTopButton extends React.PureComponent<'', ScrollTopState> {
+export default class ScrollToTopButton extends React.PureComponent<'', ''> {
   constructor(props: '') {
     super(props);
-    this.state = {
-      visible: false,
-    };
   }
 
   componentDidMount() {
