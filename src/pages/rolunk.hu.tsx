@@ -9,7 +9,7 @@ import SendMessage from '../components/aboutpage/SendMessage';
 export default () => (
   <Layout>
     <div id="about-modal-root">
-      <Navbar id="" lng="hu" urlSlug="rolunk" isHomePage={false} />
+      <Navbar id="hideonscroll" lng="hu" urlSlug="rolunk" isHomePage={false} />
       <div className="about_main barlow" id="heading">
         <h2 className="about-heading">Rólunk</h2>
       </div>

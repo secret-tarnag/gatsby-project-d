@@ -220,7 +220,7 @@ const possibilitiesParagraphs = [
 
 export default () => (
   <Layout>
-    <Navbar isHomePage={false} lng="en" urlSlug="cselekves" />
+    <Navbar id="hideonscroll" isHomePage={false} lng="en" urlSlug="cselekves" />
     <ScrollToTopButton />
     <div className="barlow acting-main" id="heading">
       <h2 id="heading-cselekves" className="act-title">Take Action</h2>

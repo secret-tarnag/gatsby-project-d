@@ -82,29 +82,38 @@ const sideNav = [
 export default class Navbar extends React.PureComponent<NavBarProps, NavBarState> {
   constructor(props: NavBarProps) {
     super(props);
-
+    this.state = {
+      preScrollPos: 0,
+    };
   }
 
   componentDidMount() {
-    window.addEventListener('click', e => this.handleScroll());
+    window.addEventListener('scroll', e => this.handleNavScroll());
   }
 
   componentWillUnmount() {
-    window.addEventListener('click', e => this.handleScroll());
+    window.addEventListener('scroll', e => this.handleNavScroll());
   }
 
-  handleScroll() {
-    const nav = document.getElementById('topnav');
+  handleNavScroll() {
+    const nav = document.getElementById('hideonscroll');
+    if (nav == null) {
+      return;
+    }
     const currentScrollPos = window.pageYOffset;
 
     if (currentScrollPos > 550 && this.state.preScrollPos < currentScrollPos) {
       nav.style.opacity = '0';
-      setTimeout(() => { nav.style.display = 'none'; }, 400);
+      nav.style.top = '-5rem';
+      // nav.style.display = 'none';
+      // setTimeout(() => { nav.style.display = 'none'; }, 400);
     } else {
-      nav.style.display = 'block';
-      setTimeout(() => { nav.style.opacity = '1'; }, 200);
+      // nav.style.display = 'block';
+      nav.style.top = '0rem';
+      nav.style.opacity = '1';
+      // setTimeout(() => { nav.style.opacity = '1'; }, 200);
     }
-    this.setState({ preScrollPos = currentScrollPos });
+    this.setState({ preScrollPos: currentScrollPos });
   }
 
   render() {

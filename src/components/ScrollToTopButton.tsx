@@ -33,15 +33,18 @@ export default class ScrollToTopButton extends React.PureComponent<'', ''> {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', e => this.handleScroll());
+    window.addEventListener('scroll', e => this.handleButtonScroll());
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', e => this.handleScroll());
+    window.removeEventListener('scroll', e => this.handleButtonScroll());
   }
 
-  handleScroll() {
+  handleButtonScroll() {
     const scrollButton = document.getElementById('st-butt-cont');
+    if (scrollButton == null) {
+      return;
+    }
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
       scrollButton.style.display = 'block';
     } else {
