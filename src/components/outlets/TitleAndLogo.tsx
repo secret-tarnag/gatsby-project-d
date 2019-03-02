@@ -33,18 +33,21 @@ const title = css({
   position: 'relative',
   top: '50%',
   transform: 'translateY(-50%)',
+  textAlign: 'right',
 });
 const logoContainer = css({
-  display: 'grid',
-  gridTemplateColumns: '100%',
-  gridTemplateRows: 'auto',
-  justifyContent: 'center',
-  alignContent: 'center',
+  width: '100%',
+  height: '100%',
 });
 const logo = css({
-  width: '100%',
+  width: 'auto',
+  maxWidth: '100%',
   height: 'auto',
-  maxHeight: '8rem',
+  maxHeight: '100%',
+  position: 'relative',
+  left: '50%',
+  top: '50%',
+  transform: 'translate(-50%, -50%)',
 });
 
 export default (props: TitleAndLogoProps) => (

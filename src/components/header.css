@@ -262,7 +262,7 @@
     background-attachment: fixed;
   }
 
-  h1 {
+  .header-title {
 
     display: inline;
     font-family: 'Cabin Sketch', cursive;
@@ -506,7 +506,7 @@
   /*mobile optimization*/
   @media screen and (max-width: 1000px) {
 
-    h1 {
+    .header-title {
       font-size: 3rem;
     }
 
