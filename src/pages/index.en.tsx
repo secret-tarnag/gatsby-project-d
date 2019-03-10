@@ -50,7 +50,7 @@ const links = [
 export default ({ data }: AllOutletsQueryType) => (
   <Layout>
     {' '}
-    <Navbar id="" isHomePage={true} lng="en" urlSlug="" />
+    <Navbar id="hideonscroll" isHomePage={true} lng="en" urlSlug="" />
     <header id="heading" role="banner">
       <h1 className="header-title">Democrable</h1>
     </header>
