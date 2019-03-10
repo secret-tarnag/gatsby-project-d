@@ -56,7 +56,6 @@ export default ({ data }: AllOutletsQueryType) => (
     </header>
     <SearchField newsOutlets={data.outlets.edges} lang={'en'} />
     <div id="main-content" role="main">
-      <LinkList links={links} />
     </div>
     <Footer lng="en" id="" />
   </Layout>

@@ -2,7 +2,7 @@ import * as React from 'react';
 import HelpText from './HelpText';
 import { NewsOutletNodes } from '../../pages/index.en';
 import Link from 'gatsby-link';
-import { css } from 'emotion';
+import { css, cx } from 'emotion';
 
 interface SearchFieldProps {
   newsOutlets: NewsOutletNodes[];
@@ -22,7 +22,7 @@ const helpTexts = {
     en: 'Here you can find all the important information of different mediums: owners, political connections, ' +
       'publishers, editors, independence- and ethics factor and ideology.',
     hu: 'Itt megtalálhatsz minden fontos információt a különböző médiumok tulajdonosairól, azok politikai ' +
-      'kapcsolatairól, a médium beállítottságáról, az általa támogatott politikai oldalról és megismerheted' +
+      'kapcsolatairól, a médium beállítottságáról, az általa támogatott politikai oldalról és megismerheted ' +
       'alapvető adatait.',
   },
 };
@@ -31,6 +31,9 @@ const title = {
   hu: 'A Nagy <span class="highlight">Média</span>figyelő',
 };
 
+const titleStyle = css({
+  color: 'white',
+});
 const searchBarContainer = css({
   width: '60%',
   height: '3rem',
@@ -120,7 +123,7 @@ export default class SearchField extends React.PureComponent<
   render() {
     return (
       <div id="sub-heading-et-search">
-        <h2 className="sub-heading" dangerouslySetInnerHTML={{ __html: title[this.props.lang] }}>
+        <h2 className={cx(`sub-heading ${titleStyle}`)} dangerouslySetInnerHTML={{ __html: title[this.props.lang] }}>
         </h2>
         <div className={searchBarContainer} role="search">
           <form

@@ -65,7 +65,7 @@ const fourthRow = [
 const footerStyle = css({
   width: '100%',
   height: '10rem',
-  marginTop: '2rem',
+  marginTop: '0rem',
   background:
     'linear-gradient(to right, rgba(255, 188, 4, 0.76), rgba(255, 177, 117, 0.54))',
   '@media(max-width:600px)': {
