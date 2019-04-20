@@ -10,7 +10,7 @@ import LogoTiles from '../components/LogoTiles';
 export default ({ data }: AllOutletsQueryType) => (
   <Layout>
     <Navbar id="hideonscroll" isHomePage={false} lng="en" urlSlug="propaganda" />
-    <ul
+    <div
       className={css({
         marginTop: 100,
       })}
