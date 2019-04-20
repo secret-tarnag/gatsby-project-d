@@ -18,8 +18,8 @@ const containerStyle = css({
 
 const itemStyle = css({});
 
-const maxImgSize = 500;
-const minImgSize = 80;
+const maxImgSize = 400;
+const minImgSize = 150;
 const referenceReach = 800000;
 
 function calculateWidth(reach: number): number {
