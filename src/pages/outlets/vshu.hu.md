@@ -3,6 +3,7 @@ title: VS.hu
 lang: hu
 slug: vshu
 logo: vs.png
+dailyReach: 2818
 isIndependent: false
 properties:
   - key: Kategória

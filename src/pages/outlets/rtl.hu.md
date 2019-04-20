@@ -3,6 +3,7 @@ title: RTL
 lang: hu
 slug: rtl
 logo: RTL_KLUB.svg
+dailyReach: 950000
 isIndependent: true
 properties:
   - key: Kategória

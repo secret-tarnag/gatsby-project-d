@@ -3,6 +3,7 @@ title: Inforádió
 lang: hu
 slug: inforadio
 logo: inforadio.jpg
+dailyReach: 57000
 isIndependent: true
 properties:
   - key: Kategória

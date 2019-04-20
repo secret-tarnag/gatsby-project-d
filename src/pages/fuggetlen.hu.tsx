@@ -5,6 +5,7 @@ import { AllOutletsQueryType } from './index.en';
 import Navbar from '../components/Navbar';
 import { css } from 'emotion';
 import Footer from '../components/Footer';
+import LogoTiles from '../components/LogoTiles';
 
 export default ({ data }: AllOutletsQueryType) => (
   <Layout>
@@ -14,18 +15,17 @@ export default ({ data }: AllOutletsQueryType) => (
         marginTop: 100,
       })}
     >
-      {data.outlets.edges
-        .filter(
-          outlet =>
-            outlet.node.frontmatter.lang === 'hu' &&
-            outlet.node.frontmatter.isIndependent,
-        )
-        .map(outlet => (
-          <li key={outlet.node.frontmatter.title}>
-            <h2>{outlet.node.frontmatter.title}</h2>
-          </li>
-        ))}
-    </ul>
+      <LogoTiles
+        lang="hu"
+        items={data.outlets.edges
+          .filter(
+            outlet =>
+              outlet.node.frontmatter.lang === 'hu' &&
+              outlet.node.frontmatter.isIndependent,
+          )
+          .map(outlet => outlet.node.frontmatter)}
+      />
+    </div>
     <Footer lng="hu" id="" />
   </Layout>
 );
@@ -39,7 +39,10 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
+            slug
             lang
+            logo
+            dailyReach
             isIndependent
           }
         }

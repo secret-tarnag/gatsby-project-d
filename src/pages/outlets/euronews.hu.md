@@ -3,6 +3,7 @@ title: Euronews
 lang: hu
 slug: euronews
 logo: euronews.svg
+dailyReach: 199407
 isIndependent: true
 properties:
   - key: Kategória

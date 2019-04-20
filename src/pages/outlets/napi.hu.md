@@ -3,6 +3,7 @@ title: Napi.hu
 lang: hu
 slug: napi
 logo: napihu.png
+dailyReach: 242768
 isIndependent: true
 properties:
   - key: Kategória

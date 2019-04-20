@@ -3,6 +3,7 @@ title: Polgár Portál
 lang: hu
 slug: polgarportal
 logo: polgarportal.jpg
+dailyReach: 356
 isIndependent: false
 properties:
   - key: Kategória

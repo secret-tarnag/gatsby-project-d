@@ -3,6 +3,7 @@ title: Menedzsment Fórum
 lang: hu
 slug: mfor
 logo: mfor.jpg
+dailyReach: 34348
 isIndependent: true
 properties:
   - key: Kategória

@@ -3,6 +3,7 @@ title: Magyar Narancs
 lang: hu
 slug: magyarnarancs
 logo: magyarnarancs.jpg
+dailyReach: 21700
 isIndependent: true
 properties:
   - key: Kategória

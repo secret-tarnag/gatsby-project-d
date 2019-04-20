@@ -3,6 +3,7 @@ title: Nyugat.hu
 lang: hu
 slug: nyugathu
 logo: nyugat.png
+dailyReach: 22482
 isIndependent: true
 properties:
   - key: Kategória

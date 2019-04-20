@@ -3,6 +3,7 @@ title: Népszava
 lang: hu
 slug: nepszava
 logo: nepszava.svg
+dailyReach: 31919
 isIndependent: true
 properties:
   - key: Kategória

@@ -3,6 +3,7 @@ title: ATV
 lang: hu
 slug: atv
 logo: atv.png
+dailyReach: 120206
 isIndependent: true
 properties:
   - key: Kategória

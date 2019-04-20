@@ -3,6 +3,7 @@ title: Tények.hu
 lang: hu
 slug: tenyekhu
 logo: tenyekhu.png
+dailyReach: 6505
 isIndependent: false
 properties:
   - key: Kategória

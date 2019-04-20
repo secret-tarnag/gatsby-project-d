@@ -3,6 +3,7 @@ title: Direkt36
 lang: hu
 slug: direkt36
 logo: direkt36.jpg
+dailyReach: 1022
 isIndependent: true
 properties:
   - key: Kategória

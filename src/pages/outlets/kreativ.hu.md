@@ -3,6 +3,7 @@ title: Kreatív.hu
 lang: hu
 slug: kreativ
 logo: kreativ.png
+dailyReach: 3690
 isIndependent: true
 properties:
   - key: Kategória

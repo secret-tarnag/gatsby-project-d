@@ -3,6 +3,7 @@ title: Figyelő
 lang: hu
 slug: figyelo
 logo: figyelo.jpg
+dailyReach: 1063
 isIndependent: false
 properties:
   - key: Kategória

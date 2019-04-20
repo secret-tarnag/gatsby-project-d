@@ -3,6 +3,7 @@ title: Médiapiac.hu
 lang: hu
 slug: mediapiac
 logo: mp.jpg
+dailyReach: 1727
 isIndependent: true
 properties:
   - key: Kategória

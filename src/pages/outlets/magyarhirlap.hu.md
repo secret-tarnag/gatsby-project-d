@@ -3,6 +3,7 @@ title: Magyar Hírlap
 lang: hu
 slug: magyarhirlap
 logo: magyarhirlap.gif
+dailyReach: 9167
 isIndependent: false
 properties:
   - key: Kategória

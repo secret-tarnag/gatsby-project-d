@@ -3,6 +3,7 @@ title: Echo  Tv
 lang: hu
 slug: echoTv
 logo: Echo.svg
+dailyReach: 5211
 isIndependent: false
 properties:
   - key: Kategória

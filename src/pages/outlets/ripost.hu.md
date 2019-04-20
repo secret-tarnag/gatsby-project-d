@@ -3,6 +3,7 @@ title: Ripost
 lang: hu
 slug: ripost
 logo: ripost.png
+dailyReach: 20641
 isIndependent: false
 properties:
   - key: Kategória

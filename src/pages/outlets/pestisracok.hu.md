@@ -3,6 +3,7 @@ title: Pesti Srácok
 lang: hu
 slug: pestisracok
 logo: pestisracok.png
+dailyReach: 27226
 isIndependent: false
 properties:
   - key: Kategória

@@ -3,6 +3,7 @@ title: Hír Tv
 lang: hu
 slug: hirTv
 logo: Hirtv.jpg
+dailyReach: 25363
 isIndependent: false
 properties:
   - key: Kategória

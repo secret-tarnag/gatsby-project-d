@@ -3,6 +3,7 @@ title: Nyelv és Tudomány
 lang: hu
 slug: nyest
 logo: nyest.png
+dailyReach: 1987
 isIndependent: true
 properties:
   - key: Kategória
