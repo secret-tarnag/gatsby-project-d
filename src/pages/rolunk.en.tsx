@@ -9,9 +9,9 @@ import SendMessage from '../components/aboutpage/SendMessage';
 export default () => (
   <Layout>
     <div id="about-modal-root">
-      <Navbar id="" lng="en" urlSlug="rolunk" isHomePage={false} />
+      <Navbar id="hideonscroll" lng="en" urlSlug="rolunk" isHomePage={false} />
       <div className="about_main barlow" id="heading">
-        <h2 id="heading-title">About us</h2>
+        <h2 className="about-heading">About us</h2>
       </div>
       <div className="barlow local-nav">
         <span>
@@ -46,11 +46,12 @@ export default () => (
         <br />
         <p>
           Free media.
-        <br /> Someone once said that an election cannot be considered 'free' if
-                the people cannot vote freely. However, for voting freeliy, people must
-                not be overinfluenced by media, but rather be informed objectively and
-                factually. It is - of course - impossible to be 100% unbiased, but you
-                can reach a level which you can actually call objective journalism.
+        <br />
+          Someone once said that an election cannot be considered 'free' if
+          the people cannot vote freely. However, for voting freeliy, people must
+          not be overinfluenced by media, but rather be informed objectively and
+          factually. It is - of course - impossible to be 100% unbiased, but you
+          can reach a level which you can actually call objective journalism.
       </p>
         <br />
         <br />

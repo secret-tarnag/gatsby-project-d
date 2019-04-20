@@ -283,7 +283,7 @@
     margin-bottom: 2rem;
     z-index: 10;
     opacity: 1;
-    transition: opacity .4s;
+    transition: all .4s;
   }
 
   #logo {

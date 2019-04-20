@@ -32,13 +32,12 @@ const links = [
 export default ({ data }: AllOutletsQueryType) => (
   <Layout>
     {' '}
-    <Navbar id="" isHomePage={true} lng="hu" urlSlug="" />
+    <Navbar id="hideonscroll" isHomePage={true} lng="hu" urlSlug="" />
     <header id="heading" role="banner">
       <h1 className="header-title">Democrable</h1>
     </header>
     <SearchField newsOutlets={data.outlets.edges} lang={'hu'} />
     <div id="main-content" role="main">
-      <LinkList links={links} />
     </div>
     <Footer lng="hu" id="" />
   </Layout>

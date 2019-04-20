@@ -21,6 +21,7 @@ const sectionTitle = css({
 const libraryLink = css({
   fontSize: '1.2rem',
   marginLeft: '3rem',
+  fontFamily: '"Comfortaa", cursive',
 });
 const comment = css({
   fontSize: '1.1rem',

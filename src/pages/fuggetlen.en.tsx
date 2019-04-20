@@ -9,8 +9,8 @@ import LogoTiles from '../components/LogoTiles';
 
 export default ({ data }: AllOutletsQueryType) => (
   <Layout>
-    <Navbar id="" isHomePage={false} lng="en" urlSlug="fuggetlen" />
-    <div
+    <Navbar id="hideonscroll" isHomePage={false} lng="en" urlSlug="fuggetlen" />
+    <ul
       className={css({
         marginTop: 100,
       })}
