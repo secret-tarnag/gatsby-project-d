@@ -73,6 +73,8 @@ const searchButton = css({
 });
 const suggestionContainer = css({
   width: '84%',
+  maxHeight: '10rem',
+  overflow: 'auto',
   position: 'relative',
   marginTop: '0.3rem',
   backgroundColor: 'white',
