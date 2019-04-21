@@ -11,6 +11,7 @@ interface SearchFieldProps {
 
 interface SearchFieldState {
   searchText: string;
+  searchResults: NewsOutletNodes[];
 }
 
 const helpTexts = {
@@ -114,6 +115,7 @@ export default class SearchField extends React.PureComponent<
     super(props);
     this.state = {
       searchText: '',
+      searchResults: props.newsOutlets,
     };
   }
 
@@ -132,6 +134,7 @@ export default class SearchField extends React.PureComponent<
           outlet.node.frontmatter.properties
             .includes(query)));
     document.getElementById("suggestions").style.display = 'none';
+    this.setState({ searchResults: results });
   }
 
   render() {
@@ -184,7 +187,14 @@ export default class SearchField extends React.PureComponent<
           </form>
         </div>
         <div id="searchresults">
-          {}
+          {
+            // To implement: result boxes
+            this.state.searchResults.map(outlet => (
+              <div>
+
+              </div>
+            ))
+          }
         </div>
         <HelpText
           mainText={helpTexts.maintext[this.props.lang]}
