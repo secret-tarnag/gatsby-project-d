@@ -8,6 +8,7 @@ import './css/search.css';
 import LinkList from '../components/homepage/LinkList';
 import Footer from '../components/Footer';
 import Layout from '../components/layout';
+import { KeyValue } from '../templates/outletsTemplate';
 
 export interface NewsOutletNodes {
   node: {
@@ -16,6 +17,8 @@ export interface NewsOutletNodes {
       lang: 'en' | 'hu';
       isIndependent: boolean;
       slug: string;
+      logo: string;
+      properties: KeyValue[];
     };
   };
 }
@@ -73,6 +76,11 @@ export const pageQuery = graphql`
             lang
             isIndependent
             slug
+            logo
+            properties {
+              key
+              value
+            }
           }
         }
       }

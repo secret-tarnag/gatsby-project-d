@@ -55,6 +55,11 @@ export const pageQuery = graphql`
             lang
             isIndependent
             slug
+            logo
+            properties {
+              key
+              value
+            }
           }
         }
       }

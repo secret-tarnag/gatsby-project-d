@@ -120,6 +120,18 @@ export default class SearchField extends React.PureComponent<
   handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     console.log((e.currentTarget[0] as any).value); // This is a VERY UGLY use of as any
     console.log(this.props);
+
+    const query = e.currentTarget.value;
+    const results = this.props.newsOutlets.filter(
+      outlet =>
+        outlet.node.frontmatter.lang === this.props.lang &&
+        this.state.searchText.length > 0 &&
+        (outlet.node.frontmatter.title
+          .toLowerCase()
+          .includes(query.toLowerCase()) ||
+          outlet.node.frontmatter.properties
+            .includes(query)));
+    document.getElementById("suggestions").style.display = 'none';
   }
 
   render() {
@@ -139,11 +151,14 @@ export default class SearchField extends React.PureComponent<
               type="search"
               name="q"
               placeholder="keresés"
-              onChange={e => this.setState({ searchText: e.target.value })}
+              onChange={e => {
+                this.setState({ searchText: e.target.value });
+                document.getElementById("suggestions").style.display = 'block';
+              }}
             />
             <button id="submit" className={searchButton} type="submit" />
             {/* Suggestions */}
-            <div className={suggestionContainer}>
+            <div id="suggestions" className={suggestionContainer}>
               {this.props.newsOutlets
                 .filter(
                   outlet =>
@@ -167,6 +182,9 @@ export default class SearchField extends React.PureComponent<
                 ))}
             </div>
           </form>
+        </div>
+        <div id="searchresults">
+          {}
         </div>
         <HelpText
           mainText={helpTexts.maintext[this.props.lang]}

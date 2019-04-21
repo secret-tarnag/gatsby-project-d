@@ -12,7 +12,7 @@ import Sources from '../components/outlets/Sources';
 import Description from '../components/outlets/Description';
 import Contacts from '../components/outlets/Contacts';
 
-interface KeyValue {
+export interface KeyValue {
   key: string;
   value: string;
 }
